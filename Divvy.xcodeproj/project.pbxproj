@@ -101,14 +101,18 @@
 		C092E30623F0CA8300B79FF8 /* Divvy */ = {
 			isa = PBXGroup;
 			children = (
-				C092E30723F0CA8300B79FF8 /* AppDelegate.swift */,
-				C092E30923F0CA8300B79FF8 /* SceneDelegate.swift */,
-				C092E30B23F0CA8300B79FF8 /* ViewController.swift */,
-				C092E30D23F0CA8300B79FF8 /* Main.storyboard */,
-				C092E31323F0CA8700B79FF8 /* Assets.xcassets */,
-				C092E31523F0CA8700B79FF8 /* LaunchScreen.storyboard */,
 				C092E31823F0CA8700B79FF8 /* Info.plist */,
-				C092E31023F0CA8300B79FF8 /* Divvy.xcdatamodeld */,
+				C092E30723F0CA8300B79FF8 /* AppDelegate.swift */,
+				C092E34F23F0D3B500B79FF8 /* Model */,
+				C092E34D23F0D35500B79FF8 /* Views */,
+				C092E34E23F0D38E00B79FF8 /* Controllers */,
+				C092E34A23F0CF7800B79FF8 /* Verification */,
+				C092E34723F0CF5300B79FF8 /* SignUp */,
+				C092E34423F0CF3900B79FF8 /* Profile */,
+				C092E34123F0CF2500B79FF8 /* Login */,
+				C092E33E23F0CEC400B79FF8 /* Marketplace */,
+				C092E33B23F0CE9000B79FF8 /* Chat */,
+				C092E33A23F0CE6A00B79FF8 /* Backend */,
 			);
 			path = Divvy;
 			sourceTree = "<group>";
@@ -129,6 +133,178 @@
 				C092E32E23F0CA8700B79FF8 /* Info.plist */,
 			);
 			path = DivvyUITests;
+			sourceTree = "<group>";
+		};
+		C092E33A23F0CE6A00B79FF8 /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
+		C092E33B23F0CE9000B79FF8 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				C092E33D23F0CEB500B79FF8 /* Controllers */,
+				C092E33C23F0CEA000B79FF8 /* Views */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		C092E33C23F0CEA000B79FF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C092E33D23F0CEB500B79FF8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C092E33E23F0CEC400B79FF8 /* Marketplace */ = {
+			isa = PBXGroup;
+			children = (
+				C092E34023F0CED500B79FF8 /* Controllers */,
+				C092E33F23F0CECF00B79FF8 /* Views */,
+			);
+			path = Marketplace;
+			sourceTree = "<group>";
+		};
+		C092E33F23F0CECF00B79FF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C092E34023F0CED500B79FF8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C092E34123F0CF2500B79FF8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C092E34323F0CF3000B79FF8 /* Controllers */,
+				C092E34223F0CF2A00B79FF8 /* Views */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C092E34223F0CF2A00B79FF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C092E34323F0CF3000B79FF8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C092E34423F0CF3900B79FF8 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C092E34623F0CF4700B79FF8 /* Controllers */,
+				C092E34523F0CF4200B79FF8 /* Views */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		C092E34523F0CF4200B79FF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C092E34623F0CF4700B79FF8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C092E34723F0CF5300B79FF8 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				C092E34923F0CF6800B79FF8 /* Controllers */,
+				C092E34823F0CF5F00B79FF8 /* Views */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		C092E34823F0CF5F00B79FF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C092E34923F0CF6800B79FF8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C092E34A23F0CF7800B79FF8 /* Verification */ = {
+			isa = PBXGroup;
+			children = (
+				C092E34C23F0CF8500B79FF8 /* Controllers */,
+				C092E34B23F0CF8000B79FF8 /* Views */,
+			);
+			path = Verification;
+			sourceTree = "<group>";
+		};
+		C092E34B23F0CF8000B79FF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C092E34C23F0CF8500B79FF8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C092E34D23F0D35500B79FF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C092E31523F0CA8700B79FF8 /* LaunchScreen.storyboard */,
+				C092E30D23F0CA8300B79FF8 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C092E34E23F0D38E00B79FF8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C092E30B23F0CA8300B79FF8 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C092E34F23F0D3B500B79FF8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C092E31023F0CA8300B79FF8 /* Divvy.xcdatamodeld */,
+				C092E30923F0CA8300B79FF8 /* SceneDelegate.swift */,
+				C092E31323F0CA8700B79FF8 /* Assets.xcassets */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
