@@ -5,7 +5,14 @@
 //  Created by Bo on 2/11/20.
 //  Copyright © 2020 Jessica Trinh. All rights reserved.
 //
-
+/*
+ - ChatViewController corresponds to ChatViewController.xib
+ - Should haves:
+    [] header:
+        [] back button on left, takes user to Marketplace Page
+        [] Chat label in center
+    []
+*/
 import UIKit
 
 class ChatViewController: UIViewController {
