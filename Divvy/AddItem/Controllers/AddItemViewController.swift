@@ -9,14 +9,19 @@
  - AddItemViewController corresponds to AddItemViewController.xib
  - Should haves:
     [] header:
-        [] back button on left, takes user to Marketplace Page
-        [] Start Order label in center
+        [] Start Order title in center
         [] save button on right, brings users to Profile page
+ 
+     [] Tab Bar:
+        [] market place page button in center, takes users to market place page
+        [] profile button on the right, takes users to profile page
+        [] orders button on the left, takes users to current orders page
+ 
     [] textfield to search for food item
     [] imageview of item
     [] 3 text fields for item details
     [] + button to add people to order
-    [] "Post in Marketplace" button
+    [] "Post in Marketplace" button, for MVP it will take users to Marketplace Page
 */
 import UIKit
 

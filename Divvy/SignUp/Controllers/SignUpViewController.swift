@@ -8,12 +8,11 @@
 /*
  - SignUpViewController corresponds to SignUpViewController.xib
  - Should haves:
-    [] 4 text fields:
+    [] 3 text fields:
         [] first name
         [] last name
-        [] phone number
         [] password
-    [] Button to "Create Account", goes to Verification View1 Page
+    [] Button to "Create Account", goes to Verification Page
     [] Button "go back to login", goes to Login Page
 
 */

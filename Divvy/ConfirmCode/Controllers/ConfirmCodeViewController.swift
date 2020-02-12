@@ -1,20 +1,24 @@
 //
-//  ChatViewController.swift
+//  ConfirmCodeViewController.swift
 //  Divvy
 //
-//  Created by Bo on 2/11/20.
+//  Created by Bo on 2/12/20.
 //  Copyright © 2020 Jessica Trinh. All rights reserved.
 //
 /*
- - ChatViewController corresponds to ChatViewController.xib
+ - VerificationViewController corresponds to VerificationViewController.xib
  - Should haves:
-    [] header:
-        [] back button on left, takes user to Marketplace Page
-        [] Chat label in center
+    [] label stating "we sent code to phone number"
+    [] text field for user input/special code
+    [] button that says "verify", for MVP it should take users to Marketplace Page
+    [] number pad keyboard popup after textfield is pressed
+    [] another button that says resend
+    [] label asking "Didn't recieve code?"
+    [] Resend button under label
 */
 import UIKit
 
-class ChatViewController: UIViewController {
+class ConfirmCodeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

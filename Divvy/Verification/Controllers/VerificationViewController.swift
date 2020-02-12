@@ -8,22 +8,12 @@
 /*
  - VerificationViewController corresponds to VerificationViewController.xib
  - Should haves:
-        - 2 views:
-            - View1:
-                [] label "We need to verify you're human"
-                [] textfield for phone number
-                [] number pad keyboard popup after textfield is pressed
-                [] button "Send Code" that takes users to View2
-                [] second button that says "Continue as guest" -- takes users to marketplace page
- 
-            - View2:
-                [] label stating we sent code to phone number
-                [] text field for user input
-                [] button that says verify
-                [] number pad keyboard popup after textfield is pressed
-                [] another button that says resend
-                [] label asking "Didn't recieve code?"
-                [] Resend button under label
+    [] label "We need to verify you're human"
+    [] textfield for phone number
+    [] number pad keyboard popup after textfield is pressed
+    [] button "Send Code" that takes users to ConfirmCode Page
+    [] second button that says "Continue as guest" -- takes users to marketplace page
+
 */
 import UIKit
 
