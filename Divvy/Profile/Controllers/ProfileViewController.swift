@@ -5,7 +5,22 @@
 //  Created by Bo on 2/11/20.
 //  Copyright © 2020 Jessica Trinh. All rights reserved.
 //
-
+/*
+ - ProfileViewController corresponds to ProfileViewController.xib
+ - Should haves:
+    [] header:
+        [] back button on the left to take users to MarketPlace page
+        [] label in center for "My Profile"
+        [] bar button item on left to edit profile
+    [] ImageView for profile pic
+    [] first name label
+    [] last name label
+    [] label for average ratings
+    [] completed orders label
+    [] preferred split label
+    [] recent orders label
+    [] table view to hold past orders
+*/
 import UIKit
 
 class ProfileViewController: UIViewController {

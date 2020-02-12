@@ -1,22 +1,14 @@
 //
-//  LoginViewController.swift
+//  AddItemViewController.swift
 //  Divvy
 //
 //  Created by Bo on 2/11/20.
 //  Copyright © 2020 Jessica Trinh. All rights reserved.
 //
-/*
- - LoginViewController corresponds to LoginViewController.xib
- - Should haves:
-    [] textfield for cell
-    [] textfield for password
-    [] "Login" button, takes user to marketplace page
-    [] "Continue with Google" button, takes user to marketplace page
-    [] "Create New Account" button, takes users to SignUp page
-*/
+
 import UIKit
 
-class LoginViewController: UIViewController {
+class AddItemViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

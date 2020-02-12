@@ -1,22 +1,26 @@
 //
-//  LoginViewController.swift
+//  CurrentOrdersViewController.swift
 //  Divvy
 //
 //  Created by Bo on 2/11/20.
 //  Copyright © 2020 Jessica Trinh. All rights reserved.
 //
 /*
- - LoginViewController corresponds to LoginViewController.xib
+ - CurrentOrdersViewController corresponds to CurrentOrdersViewController.xib
  - Should haves:
-    [] textfield for cell
-    [] textfield for password
-    [] "Login" button, takes user to marketplace page
-    [] "Continue with Google" button, takes user to marketplace page
-    [] "Create New Account" button, takes users to SignUp page
+    [] header:
+        [] "Current Orders" centered
+        [] back button on left, takes user back to market place
+    [] table view of listings:
+        - each cell:
+            [] imageview from AddItem page
+            [] item description label
+            [] message button, takes users to Chat Page
+            [] remove buttton
 */
 import UIKit
 
-class LoginViewController: UIViewController {
+class CurrentOrdersViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
