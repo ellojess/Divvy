@@ -6,6 +6,12 @@
 //  Copyright © 2020 Jessica Trinh. All rights reserved.
 //
 
+/*
+ - Main ViewController corresponds to Main.storyboard
+ - Should be left empty for now
+ - Main.storyboard should be empty as well since we're working with .xib files
+ */
+
 import UIKit
 
 class ViewController: UIViewController {
