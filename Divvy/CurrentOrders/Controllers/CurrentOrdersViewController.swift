@@ -10,7 +10,10 @@
  - Should haves:
     [] header:
         [] "Current Orders" centered
-        [] back button on left, takes user back to market place
+    [] Tab Bar:
+        [] market place page button in center, takes users to market place page
+        [] profile button on the right, takes users to profile page
+        [] orders button on the left, takes users to current orders page
     [] table view of listings:
         - each cell:
             [] imageview from AddItem page

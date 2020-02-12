@@ -9,10 +9,12 @@
  - MarketplaceViewController corresponds to MarketplaceViewController.xib
  - Should haves:
     [] header:
-        [] profile button on left, takes user to Profile Page
-        [] marketplace label in center
-        [] cart button on right, brings users to Current Orders Page
-        [] + button, brings users to Add Item Page
+        [] marketplace label title in center
+        [] + button on right, brings users to Add Item Page
+     [] Tab Bar:
+          [] market place page button in center, takes users to market place page
+          [] profile button on the right, takes users to profile page
+          [] orders button on the left, takes users to current orders page
     [] textfield to search for food item
     [] collection views
         [] organized by department (Fruits, Vegetables, Pets, Household, Meat, ect)

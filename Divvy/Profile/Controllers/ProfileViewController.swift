@@ -9,9 +9,12 @@
  - ProfileViewController corresponds to ProfileViewController.xib
  - Should haves:
     [] header:
-        [] back button on the left to take users to MarketPlace page
-        [] label in center for "My Profile"
-        [] bar button item on left to edit profile
+        [] edit profile button on right
+        [] Title label in center for view name
+    [] Tab Bar:
+        [] market place page button in center, takes users to market place page
+        [] profile button on the right, takes users to profile page
+        [] orders button on the left, takes users to current orders page 
     [] ImageView for profile pic
     [] first name label
     [] last name label

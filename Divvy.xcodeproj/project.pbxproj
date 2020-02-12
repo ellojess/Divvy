@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C031680223F47DD20094A6F3 /* ConfirmCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C031680023F47DD20094A6F3 /* ConfirmCodeViewController.swift */; };
+		C031680323F47DD20094A6F3 /* ConfirmCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C031680123F47DD20094A6F3 /* ConfirmCodeViewController.xib */; };
 		C070980023F3AD6900CEC9E4 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07097FE23F3AD6900CEC9E4 /* VerificationViewController.swift */; };
 		C070980123F3AD6900CEC9E4 /* VerificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C07097FF23F3AD6900CEC9E4 /* VerificationViewController.xib */; };
 		C070980423F3AD8C00CEC9E4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070980223F3AD8C00CEC9E4 /* SignUpViewController.swift */; };
@@ -52,6 +54,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C031680023F47DD20094A6F3 /* ConfirmCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmCodeViewController.swift; sourceTree = "<group>"; };
+		C031680123F47DD20094A6F3 /* ConfirmCodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmCodeViewController.xib; sourceTree = "<group>"; };
+		C031680423F485810094A6F3 /* MaxFile.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = MaxFile.md; sourceTree = "<group>"; };
 		C07097FE23F3AD6900CEC9E4 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
 		C07097FF23F3AD6900CEC9E4 /* VerificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerificationViewController.xib; sourceTree = "<group>"; };
 		C070980223F3AD8C00CEC9E4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +115,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C03167FD23F47D9A0094A6F3 /* ConfirmCode */ = {
+			isa = PBXGroup;
+			children = (
+				C03167FF23F47DC00094A6F3 /* Controllers */,
+				C03167FE23F47DBB0094A6F3 /* Views */,
+			);
+			path = ConfirmCode;
+			sourceTree = "<group>";
+		};
+		C03167FE23F47DBB0094A6F3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C031680123F47DD20094A6F3 /* ConfirmCodeViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C03167FF23F47DC00094A6F3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C031680023F47DD20094A6F3 /* ConfirmCodeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		C07097FD23F3A65F00CEC9E4 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,14 +227,15 @@
 				C092E34F23F0D3B500B79FF8 /* Model */,
 				C092E34D23F0D35500B79FF8 /* Views */,
 				C092E34E23F0D38E00B79FF8 /* Controllers */,
-				C092E34A23F0CF7800B79FF8 /* Verification */,
-				C092E34723F0CF5300B79FF8 /* SignUp */,
-				C092E34423F0CF3900B79FF8 /* Profile */,
 				C092E34123F0CF2500B79FF8 /* Login */,
+				C092E34723F0CF5300B79FF8 /* SignUp */,
+				C092E34A23F0CF7800B79FF8 /* Verification */,
+				C03167FD23F47D9A0094A6F3 /* ConfirmCode */,
+				C092E34423F0CF3900B79FF8 /* Profile */,
+				C070981E23F3E63500CEC9E4 /* AddItem */,
 				C092E33E23F0CEC400B79FF8 /* Marketplace */,
 				C070981723F3E3CA00CEC9E4 /* CurrentOrders */,
 				C092E33B23F0CE9000B79FF8 /* Chat */,
-				C070981E23F3E63500CEC9E4 /* AddItem */,
 				C092E33A23F0CE6A00B79FF8 /* Backend */,
 				C07097FD23F3A65F00CEC9E4 /* SupportingFiles */,
 			);
@@ -232,6 +263,7 @@
 		C092E33A23F0CE6A00B79FF8 /* Backend */ = {
 			isa = PBXGroup;
 			children = (
+				C031680423F485810094A6F3 /* MaxFile.md */,
 			);
 			path = Backend;
 			sourceTree = "<group>";
@@ -517,6 +549,7 @@
 			files = (
 				C070982423F3E68200CEC9E4 /* AddItemViewController.xib in Resources */,
 				C070980923F3ADBC00CEC9E4 /* ProfileViewController.xib in Resources */,
+				C031680323F47DD20094A6F3 /* ConfirmCodeViewController.xib in Resources */,
 				C070980523F3AD8C00CEC9E4 /* SignUpViewController.xib in Resources */,
 				C070981523F3AE2E00CEC9E4 /* ChatViewController.xib in Resources */,
 				C092E31723F0CA8700B79FF8 /* LaunchScreen.storyboard in Resources */,
@@ -562,6 +595,7 @@
 				C092E30823F0CA8300B79FF8 /* AppDelegate.swift in Sources */,
 				C070981423F3AE2E00CEC9E4 /* ChatViewController.swift in Sources */,
 				C092E30A23F0CA8300B79FF8 /* SceneDelegate.swift in Sources */,
+				C031680223F47DD20094A6F3 /* ConfirmCodeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
