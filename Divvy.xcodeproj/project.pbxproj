@@ -78,6 +78,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C07097FD23F3A65F00CEC9E4 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C092E30923F0CA8300B79FF8 /* SceneDelegate.swift */,
+				C092E31323F0CA8700B79FF8 /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		C092E2FB23F0CA8300B79FF8 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +122,7 @@
 				C092E33E23F0CEC400B79FF8 /* Marketplace */,
 				C092E33B23F0CE9000B79FF8 /* Chat */,
 				C092E33A23F0CE6A00B79FF8 /* Backend */,
+				C07097FD23F3A65F00CEC9E4 /* SupportingFiles */,
 			);
 			path = Divvy;
 			sourceTree = "<group>";
@@ -301,8 +311,6 @@
 			isa = PBXGroup;
 			children = (
 				C092E31023F0CA8300B79FF8 /* Divvy.xcdatamodeld */,
-				C092E30923F0CA8300B79FF8 /* SceneDelegate.swift */,
-				C092E31323F0CA8700B79FF8 /* Assets.xcassets */,
 			);
 			path = Model;
 			sourceTree = "<group>";
