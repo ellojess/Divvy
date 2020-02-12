@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C070980023F3AD6900CEC9E4 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07097FE23F3AD6900CEC9E4 /* VerificationViewController.swift */; };
+		C070980123F3AD6900CEC9E4 /* VerificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C07097FF23F3AD6900CEC9E4 /* VerificationViewController.xib */; };
+		C070980423F3AD8C00CEC9E4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070980223F3AD8C00CEC9E4 /* SignUpViewController.swift */; };
+		C070980523F3AD8C00CEC9E4 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C070980323F3AD8C00CEC9E4 /* SignUpViewController.xib */; };
+		C070980823F3ADBC00CEC9E4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070980623F3ADBC00CEC9E4 /* ProfileViewController.swift */; };
+		C070980923F3ADBC00CEC9E4 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C070980723F3ADBC00CEC9E4 /* ProfileViewController.xib */; };
+		C070980C23F3ADD800CEC9E4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070980A23F3ADD800CEC9E4 /* LoginViewController.swift */; };
+		C070980D23F3ADD800CEC9E4 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C070980B23F3ADD800CEC9E4 /* LoginViewController.xib */; };
+		C070981023F3AE0000CEC9E4 /* MarketplaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070980E23F3AE0000CEC9E4 /* MarketplaceViewController.swift */; };
+		C070981123F3AE0000CEC9E4 /* MarketplaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C070980F23F3AE0000CEC9E4 /* MarketplaceViewController.xib */; };
+		C070981423F3AE2E00CEC9E4 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070981223F3AE2E00CEC9E4 /* ChatViewController.swift */; };
+		C070981523F3AE2E00CEC9E4 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C070981323F3AE2E00CEC9E4 /* ChatViewController.xib */; };
 		C092E30823F0CA8300B79FF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C092E30723F0CA8300B79FF8 /* AppDelegate.swift */; };
 		C092E30A23F0CA8300B79FF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C092E30923F0CA8300B79FF8 /* SceneDelegate.swift */; };
 		C092E30C23F0CA8300B79FF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C092E30B23F0CA8300B79FF8 /* ViewController.swift */; };
@@ -36,6 +48,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C07097FE23F3AD6900CEC9E4 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
+		C07097FF23F3AD6900CEC9E4 /* VerificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerificationViewController.xib; sourceTree = "<group>"; };
+		C070980223F3AD8C00CEC9E4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		C070980323F3AD8C00CEC9E4 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		C070980623F3ADBC00CEC9E4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C070980723F3ADBC00CEC9E4 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		C070980A23F3ADD800CEC9E4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C070980B23F3ADD800CEC9E4 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		C070980E23F3AE0000CEC9E4 /* MarketplaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketplaceViewController.swift; sourceTree = "<group>"; };
+		C070980F23F3AE0000CEC9E4 /* MarketplaceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketplaceViewController.xib; sourceTree = "<group>"; };
+		C070981223F3AE2E00CEC9E4 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		C070981323F3AE2E00CEC9E4 /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 		C092E30423F0CA8300B79FF8 /* Divvy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Divvy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C092E30723F0CA8300B79FF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C092E30923F0CA8300B79FF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +188,7 @@
 		C092E33C23F0CEA000B79FF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C070981323F3AE2E00CEC9E4 /* ChatViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,6 +196,7 @@
 		C092E33D23F0CEB500B79FF8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C070981223F3AE2E00CEC9E4 /* ChatViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -187,6 +213,7 @@
 		C092E33F23F0CECF00B79FF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C070980F23F3AE0000CEC9E4 /* MarketplaceViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,6 +221,7 @@
 		C092E34023F0CED500B79FF8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C070980E23F3AE0000CEC9E4 /* MarketplaceViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -210,6 +238,7 @@
 		C092E34223F0CF2A00B79FF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C070980B23F3ADD800CEC9E4 /* LoginViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -217,6 +246,7 @@
 		C092E34323F0CF3000B79FF8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C070980A23F3ADD800CEC9E4 /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -233,6 +263,7 @@
 		C092E34523F0CF4200B79FF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C070980723F3ADBC00CEC9E4 /* ProfileViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -240,6 +271,7 @@
 		C092E34623F0CF4700B79FF8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C070980623F3ADBC00CEC9E4 /* ProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -256,6 +288,7 @@
 		C092E34823F0CF5F00B79FF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C070980323F3AD8C00CEC9E4 /* SignUpViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -263,6 +296,7 @@
 		C092E34923F0CF6800B79FF8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C070980223F3AD8C00CEC9E4 /* SignUpViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -279,6 +313,7 @@
 		C092E34B23F0CF8000B79FF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C07097FF23F3AD6900CEC9E4 /* VerificationViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -286,6 +321,7 @@
 		C092E34C23F0CF8500B79FF8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C07097FE23F3AD6900CEC9E4 /* VerificationViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -419,8 +455,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C070980923F3ADBC00CEC9E4 /* ProfileViewController.xib in Resources */,
+				C070980523F3AD8C00CEC9E4 /* SignUpViewController.xib in Resources */,
+				C070981523F3AE2E00CEC9E4 /* ChatViewController.xib in Resources */,
 				C092E31723F0CA8700B79FF8 /* LaunchScreen.storyboard in Resources */,
+				C070980123F3AD6900CEC9E4 /* VerificationViewController.xib in Resources */,
 				C092E31423F0CA8700B79FF8 /* Assets.xcassets in Resources */,
+				C070980D23F3ADD800CEC9E4 /* LoginViewController.xib in Resources */,
+				C070981123F3AE0000CEC9E4 /* MarketplaceViewController.xib in Resources */,
 				C092E30F23F0CA8300B79FF8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,9 +488,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C070980423F3AD8C00CEC9E4 /* SignUpViewController.swift in Sources */,
 				C092E31223F0CA8300B79FF8 /* Divvy.xcdatamodeld in Sources */,
+				C070981023F3AE0000CEC9E4 /* MarketplaceViewController.swift in Sources */,
 				C092E30C23F0CA8300B79FF8 /* ViewController.swift in Sources */,
+				C070980023F3AD6900CEC9E4 /* VerificationViewController.swift in Sources */,
+				C070980C23F3ADD800CEC9E4 /* LoginViewController.swift in Sources */,
+				C070980823F3ADBC00CEC9E4 /* ProfileViewController.swift in Sources */,
 				C092E30823F0CA8300B79FF8 /* AppDelegate.swift in Sources */,
+				C070981423F3AE2E00CEC9E4 /* ChatViewController.swift in Sources */,
 				C092E30A23F0CA8300B79FF8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
