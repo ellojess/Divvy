@@ -82,7 +82,7 @@
     <resources>
         <image name="DivvyLogo" width="666" height="612"/>
         <namedColor name="GoogleBlue">
-            <color red="0.25845041871070862" green="0.52207911014556885" blue="0.96225875616073608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.25799998641014099" green="0.5220000147819519" blue="0.96200001239776611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="divvyGreen">
             <color red="0.25900000333786011" green="0.68500000238418579" blue="0.16300000250339508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
