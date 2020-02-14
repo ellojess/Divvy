@@ -1,5 +1,5 @@
 //
-//  LoginView.swift
+//  SignUpView.swift
 //  Divvy
 //
 //  Created by Henry Calderon on 2/14/20.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class LoginView: UIView {
-    
+class SignUpView: UIView {
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
