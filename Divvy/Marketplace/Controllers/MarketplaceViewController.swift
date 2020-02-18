@@ -25,6 +25,9 @@ import UIKit
 class MarketplaceViewController: UIViewController {
     
     var marketItems = [MarketItem]()
+    //MARK: NAV Top Bar
+    @IBOutlet weak var AddItemButton: UIBarButtonItem!
+    
     
     //MARK: Table View Items
     @IBOutlet weak var MarketTableView: UITableView!
@@ -61,6 +64,14 @@ class MarketplaceViewController: UIViewController {
     
     
     //MARK: Buttons that link the views all together
+    //=======Top=======
+    @IBAction func AddItemTapped(_ sender: UIBarButtonItem) {
+        let nextVC = AddItemViewController()
+        self.navigationController?.pushViewController(nextVC, animated: true)
+    }
+    
+    
+    //=======Bottom========
     @IBAction func OrdersTapped(_ sender: UIBarButtonItem) {
         
     }

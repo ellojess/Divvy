@@ -22,7 +22,10 @@ class MarketItemViewCell: UITableViewCell {
     }
     
     func setContents(marketItem: MarketItem){
-//        itedmDetail1?.text = "What"
+//        DetailLabelOne?.text = "What"
+//        DetailLabelOne.text = marketItem.itemDetail1
+//         DetailLabelTwo.text = marketItem.itemDetail2
+//         DetailLabelThree.text = marketItem.itemDetail3
 
     }
     
