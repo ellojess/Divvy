@@ -19,13 +19,29 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
-
+    @IBOutlet weak var createAccountButton: UIButton!
+    
+    @IBOutlet weak var googleButton: UIButton!
+    @IBOutlet weak var GoBackToLoginButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
+    @IBAction func createAccountTapped(_ sender: UIButton) {
+        let nextVC = VerificationViewController()
+        self.navigationController?.pushViewController(nextVC, animated: true)
+    }
+    @IBAction func googleButtonTapped(_ sender: UIButton) {
+        let nextVC = MarketplaceViewController()
+        self.navigationController?.pushViewController(nextVC, animated: true)
+    }
+    @IBAction func GoBackToLoginTapped(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popToRootViewController(animated: true)
+    }
+    
 
     /*
     // MARK: - Navigation
