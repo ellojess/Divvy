@@ -24,15 +24,10 @@ import UIKit
 
 class MarketplaceViewController: UIViewController {
     
+    var marketItems = [MarketItem]()
+    
     //MARK: Table View Items
     @IBOutlet weak var MarketTableView: UITableView!
-    @IBOutlet var MarketItemCell: UITableViewCell!
-        //Table View Cell Items
-        @IBOutlet weak var ItemCellView: UIImageView!
-        @IBOutlet weak var ItemDetailOneLabel: UILabel!
-        @IBOutlet weak var ItemDetailTwoLabel: UILabel!
-        @IBOutlet weak var ItemDetailThreeLabel: UILabel!
-    
     
     //MARK: NAV Bar Buttons
     @IBOutlet weak var PreviousOrdersButton: UIBarButtonItem!
@@ -43,17 +38,27 @@ class MarketplaceViewController: UIViewController {
     //MARK: View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
-        MarketTableView.register(UINib(nibName: "MarketItemCell", bundle: nil), forCellReuseIdentifier: "MarketItemCell")
+        
 //        self.navigationController?.initRootViewController(vc: self)
 //        self.navigationController?.isNavigationBarHidden = false
 //        self.navigationController?.title = "Market Place"
         setMarketPlace()
+        getData()
     }
     
     //MARK: Setting Up the Market Place.
     func setMarketPlace(){
-        
+//        MarketTableView.register(MarCell.self, forCellReuseIdentifier: PastBoxesCell.identifier)
+       MarketTableView.register(UINib(nibName: "MarketItemViewCell", bundle: nil), forCellReuseIdentifier: "MarketCell")
+        MarketTableView.delegate = self
+        MarketTableView.dataSource = self
     }
+    
+    func getData(){
+        let testBox = MarketItem(itemDetail1: "I", itemDetail2: "Need", itemDetail3: "Help")
+        marketItems.append(testBox)
+    }
+    
     
     //MARK: Buttons that link the views all together
     @IBAction func OrdersTapped(_ sender: UIBarButtonItem) {
@@ -63,16 +68,25 @@ class MarketplaceViewController: UIViewController {
         let nextVC = ProfileViewController()
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
-    
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+//MARK: Extenstion
+extension MarketplaceViewController: UITableViewDelegate, UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return marketItems.count
     }
-    */
 
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MarketCell", for: indexPath) as! MarketItemViewCell
+        //        cell.textLabel?.text = "\(indexPath.row) \(testBoxes[indexPath.row].date)"
+        cell.setContents(marketItem:marketItems[indexPath.row])
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+
+    
 }

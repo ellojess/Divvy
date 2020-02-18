@@ -3,7 +3,6 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,11 +10,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MarketplaceViewController" customModule="Divvy" customModuleProvider="target">
             <connections>
                 <outlet property="HomeButton" destination="bYI-ey-n5Y" id="qPi-j3-bib"/>
-                <outlet property="ItemCellView" destination="6Iq-qD-A37" id="jar-nB-Pqo"/>
-                <outlet property="ItemDetailOneLabel" destination="y4U-nE-mq8" id="1Ez-rH-GiG"/>
-                <outlet property="ItemDetailThreeLabel" destination="VQZ-MS-8Ja" id="9R1-pB-kmV"/>
-                <outlet property="ItemDetailTwoLabel" destination="3Fw-rj-hyp" id="Di2-wO-4eq"/>
-                <outlet property="MarketItemCell" destination="aGx-Oe-Vka" id="rik-AI-7qS"/>
                 <outlet property="MarketTableView" destination="hIm-I8-p3Q" id="P97-j0-btO"/>
                 <outlet property="PreviousOrdersButton" destination="gTe-jp-OZa" id="ZXV-WM-2BN"/>
                 <outlet property="ProfileButton" destination="7ML-QN-xli" id="CI1-MP-ZOf"/>
@@ -54,54 +48,5 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="138.40000000000001" y="152.47376311844079"/>
         </view>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MarketItemCell" rowHeight="112" id="aGx-Oe-Vka" customClass="MarketItemCell" customModule="Divvy" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="389" height="112"/>
-            <autoresizingMask key="autoresizingMask"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aGx-Oe-Vka" id="Jts-TT-TxS">
-                <rect key="frame" x="0.0" y="0.0" width="389" height="112"/>
-                <autoresizingMask key="autoresizingMask"/>
-                <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Item Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4U-nE-mq8">
-                        <rect key="frame" x="130" y="11" width="91" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" name="divvyGreen"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Iq-qD-A37">
-                        <rect key="frame" x="13" y="11" width="90" height="89"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Item Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Fw-rj-hyp">
-                        <rect key="frame" x="130" y="44" width="91" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" name="divvyGreen"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Item Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQZ-MS-8Ja">
-                        <rect key="frame" x="130" y="79" width="91" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" name="divvyGreen"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHB-8x-Wnb">
-                        <rect key="frame" x="298" y="41" width="51" height="30"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" name="divvyGreen"/>
-                        <state key="normal" title="Join">
-                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </state>
-                    </button>
-                </subviews>
-            </tableViewCellContentView>
-            <point key="canvasLocation" x="138" y="-245"/>
-        </tableViewCell>
     </objects>
-    <resources>
-        <namedColor name="divvyGreen">
-            <color red="0.25900000333786011" green="0.68500000238418579" blue="0.16300000250339508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-    </resources>
 </document>
