@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F2BA75623F74DA200E91400 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F2BA75523F74DA200E91400 /* LoginViewController.xib */; };
+		3F2BA75623F74DA200E91400 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F2BA75523F74DA200E91400 /* LoginView.xib */; };
 		3F2BA75823F74F1A00E91400 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2BA75723F74F1A00E91400 /* LoginView.swift */; };
 		3F2BA75A23F75F2300E91400 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2BA75923F75F2300E91400 /* SignUpView.swift */; };
 		3F2BA75C23F761EE00E91400 /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2BA75B23F761EE00E91400 /* VerificationView.swift */; };
@@ -59,7 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3F2BA75523F74DA200E91400 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		3F2BA75523F74DA200E91400 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		3F2BA75723F74F1A00E91400 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		3F2BA75923F75F2300E91400 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		3F2BA75B23F761EE00E91400 /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
@@ -341,7 +341,7 @@
 		C092E34223F0CF2A00B79FF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3F2BA75523F74DA200E91400 /* LoginViewController.xib */,
+				3F2BA75523F74DA200E91400 /* LoginView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -570,7 +570,7 @@
 				C092E31723F0CA8700B79FF8 /* LaunchScreen.storyboard in Resources */,
 				C070980123F3AD6900CEC9E4 /* VerificationViewController.xib in Resources */,
 				C070981D23F3E40A00CEC9E4 /* CurrentOrdersViewController.xib in Resources */,
-				3F2BA75623F74DA200E91400 /* LoginViewController.xib in Resources */,
+				3F2BA75623F74DA200E91400 /* LoginView.xib in Resources */,
 				C092E31423F0CA8700B79FF8 /* Assets.xcassets in Resources */,
 				C070981123F3AE0000CEC9E4 /* MarketplaceViewController.xib in Resources */,
 				C092E30F23F0CA8300B79FF8 /* Main.storyboard in Resources */,
