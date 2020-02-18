@@ -34,6 +34,8 @@ class MarketplaceViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    @IBAction func OrdersTapped(_ sender: UIBarButtonItem) {
+    }
     @IBAction func ProfileTapped(_ sender: UIBarButtonItem) {
         let nextVC = ProfileViewController()
         self.navigationController?.pushViewController(nextVC, animated: true)
