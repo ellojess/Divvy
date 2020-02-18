@@ -27,13 +27,9 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginViewTapped(_ sender: UIButton) {
-        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
-        guard let nextVC = mainStoryboard.instantiateViewController(withIdentifier: "nextVC") as? ViewController else {
-          return print("storyboard not set up correctly, check the identity of \"nextVC\"")
-        }
-
-        present(nextVC, animated: true, completion: nil)
+        let nextVC = SignUpViewController()
+        self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
 
