@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfirmCodeViewController" customModule="Divvy" customModuleProvider="target">
             <connections>
+                <outlet property="ResendButton" destination="hdk-Ql-cVr" id="jm0-Iv-wTk"/>
+                <outlet property="VerifyButton" destination="h0e-c5-Gg9" id="nWQ-FF-kOi"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -64,6 +66,9 @@
                     <state key="normal" title="Verify">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="VerifyTapped:" destination="-1" eventType="touchUpInside" id="QNv-sX-s5s"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Didn't recieve code?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0KB-Jz-RfZ">
                     <rect key="frame" x="65" y="401" width="245" height="37"/>

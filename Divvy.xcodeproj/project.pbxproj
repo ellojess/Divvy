@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F2BA75623F74DA200E91400 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F2BA75523F74DA200E91400 /* LoginViewController.xib */; };
+		3F16CF0F23FC6A9800DCECC4 /* MarketModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F16CF0E23FC6A9800DCECC4 /* MarketModels.swift */; };
+		3F16CF1423FC755900DCECC4 /* MarketItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F16CF1223FC755900DCECC4 /* MarketItemViewCell.swift */; };
+		3F16CF1523FC755900DCECC4 /* MarketItemViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F16CF1323FC755900DCECC4 /* MarketItemViewCell.xib */; };
+		3F2BA75623F74DA200E91400 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F2BA75523F74DA200E91400 /* LoginView.xib */; };
 		3F2BA75823F74F1A00E91400 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2BA75723F74F1A00E91400 /* LoginView.swift */; };
 		3F2BA75A23F75F2300E91400 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2BA75923F75F2300E91400 /* SignUpView.swift */; };
 		3F2BA75C23F761EE00E91400 /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2BA75B23F761EE00E91400 /* VerificationView.swift */; };
@@ -18,12 +21,12 @@
 		C070980023F3AD6900CEC9E4 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07097FE23F3AD6900CEC9E4 /* VerificationViewController.swift */; };
 		C070980123F3AD6900CEC9E4 /* VerificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C07097FF23F3AD6900CEC9E4 /* VerificationViewController.xib */; };
 		C070980423F3AD8C00CEC9E4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070980223F3AD8C00CEC9E4 /* SignUpViewController.swift */; };
-		C070980523F3AD8C00CEC9E4 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C070980323F3AD8C00CEC9E4 /* SignUpViewController.xib */; };
+		C070980523F3AD8C00CEC9E4 /* SignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C070980323F3AD8C00CEC9E4 /* SignUpView.xib */; };
 		C070980823F3ADBC00CEC9E4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070980623F3ADBC00CEC9E4 /* ProfileViewController.swift */; };
-		C070980923F3ADBC00CEC9E4 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C070980723F3ADBC00CEC9E4 /* ProfileViewController.xib */; };
+		C070980923F3ADBC00CEC9E4 /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C070980723F3ADBC00CEC9E4 /* ProfileView.xib */; };
 		C070980C23F3ADD800CEC9E4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070980A23F3ADD800CEC9E4 /* LoginViewController.swift */; };
 		C070981023F3AE0000CEC9E4 /* MarketplaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070980E23F3AE0000CEC9E4 /* MarketplaceViewController.swift */; };
-		C070981123F3AE0000CEC9E4 /* MarketplaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C070980F23F3AE0000CEC9E4 /* MarketplaceViewController.xib */; };
+		C070981123F3AE0000CEC9E4 /* MarketplaceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C070980F23F3AE0000CEC9E4 /* MarketplaceView.xib */; };
 		C070981423F3AE2E00CEC9E4 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070981223F3AE2E00CEC9E4 /* ChatViewController.swift */; };
 		C070981523F3AE2E00CEC9E4 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C070981323F3AE2E00CEC9E4 /* ChatViewController.xib */; };
 		C070981C23F3E40A00CEC9E4 /* CurrentOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070981A23F3E40A00CEC9E4 /* CurrentOrdersViewController.swift */; };
@@ -59,7 +62,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3F2BA75523F74DA200E91400 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		3F16CF0E23FC6A9800DCECC4 /* MarketModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketModels.swift; sourceTree = "<group>"; };
+		3F16CF1223FC755900DCECC4 /* MarketItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketItemViewCell.swift; sourceTree = "<group>"; };
+		3F16CF1323FC755900DCECC4 /* MarketItemViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketItemViewCell.xib; sourceTree = "<group>"; };
+		3F2BA75523F74DA200E91400 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		3F2BA75723F74F1A00E91400 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		3F2BA75923F75F2300E91400 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		3F2BA75B23F761EE00E91400 /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
@@ -71,12 +77,12 @@
 		C07097FE23F3AD6900CEC9E4 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
 		C07097FF23F3AD6900CEC9E4 /* VerificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerificationViewController.xib; sourceTree = "<group>"; };
 		C070980223F3AD8C00CEC9E4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		C070980323F3AD8C00CEC9E4 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		C070980323F3AD8C00CEC9E4 /* SignUpView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpView.xib; sourceTree = "<group>"; };
 		C070980623F3ADBC00CEC9E4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		C070980723F3ADBC00CEC9E4 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		C070980723F3ADBC00CEC9E4 /* ProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
 		C070980A23F3ADD800CEC9E4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C070980E23F3AE0000CEC9E4 /* MarketplaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketplaceViewController.swift; sourceTree = "<group>"; };
-		C070980F23F3AE0000CEC9E4 /* MarketplaceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketplaceViewController.xib; sourceTree = "<group>"; };
+		C070980F23F3AE0000CEC9E4 /* MarketplaceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketplaceView.xib; sourceTree = "<group>"; };
 		C070981223F3AE2E00CEC9E4 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		C070981323F3AE2E00CEC9E4 /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 		C070981A23F3E40A00CEC9E4 /* CurrentOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentOrdersViewController.swift; sourceTree = "<group>"; };
@@ -316,7 +322,8 @@
 		C092E33F23F0CECF00B79FF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C070980F23F3AE0000CEC9E4 /* MarketplaceViewController.xib */,
+				C070980F23F3AE0000CEC9E4 /* MarketplaceView.xib */,
+				3F16CF1323FC755900DCECC4 /* MarketItemViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -325,6 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				C070980E23F3AE0000CEC9E4 /* MarketplaceViewController.swift */,
+				3F16CF1223FC755900DCECC4 /* MarketItemViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -341,7 +349,7 @@
 		C092E34223F0CF2A00B79FF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3F2BA75523F74DA200E91400 /* LoginViewController.xib */,
+				3F2BA75523F74DA200E91400 /* LoginView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -367,7 +375,7 @@
 		C092E34523F0CF4200B79FF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C070980723F3ADBC00CEC9E4 /* ProfileViewController.xib */,
+				C070980723F3ADBC00CEC9E4 /* ProfileView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -393,7 +401,7 @@
 		C092E34823F0CF5F00B79FF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C070980323F3AD8C00CEC9E4 /* SignUpViewController.xib */,
+				C070980323F3AD8C00CEC9E4 /* SignUpView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -454,6 +462,7 @@
 			isa = PBXGroup;
 			children = (
 				C092E31023F0CA8300B79FF8 /* Divvy.xcdatamodeld */,
+				3F16CF0E23FC6A9800DCECC4 /* MarketModels.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -563,16 +572,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				C070982423F3E68200CEC9E4 /* AddItemViewController.xib in Resources */,
-				C070980923F3ADBC00CEC9E4 /* ProfileViewController.xib in Resources */,
+				C070980923F3ADBC00CEC9E4 /* ProfileView.xib in Resources */,
 				C031680323F47DD20094A6F3 /* ConfirmCodeViewController.xib in Resources */,
-				C070980523F3AD8C00CEC9E4 /* SignUpViewController.xib in Resources */,
+				3F16CF1523FC755900DCECC4 /* MarketItemViewCell.xib in Resources */,
+				C070980523F3AD8C00CEC9E4 /* SignUpView.xib in Resources */,
 				C070981523F3AE2E00CEC9E4 /* ChatViewController.xib in Resources */,
 				C092E31723F0CA8700B79FF8 /* LaunchScreen.storyboard in Resources */,
 				C070980123F3AD6900CEC9E4 /* VerificationViewController.xib in Resources */,
 				C070981D23F3E40A00CEC9E4 /* CurrentOrdersViewController.xib in Resources */,
-				3F2BA75623F74DA200E91400 /* LoginViewController.xib in Resources */,
+				3F2BA75623F74DA200E91400 /* LoginView.xib in Resources */,
 				C092E31423F0CA8700B79FF8 /* Assets.xcassets in Resources */,
-				C070981123F3AE0000CEC9E4 /* MarketplaceViewController.xib in Resources */,
+				C070981123F3AE0000CEC9E4 /* MarketplaceView.xib in Resources */,
 				C092E30F23F0CA8300B79FF8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -599,6 +609,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C070980423F3AD8C00CEC9E4 /* SignUpViewController.swift in Sources */,
+				3F16CF0F23FC6A9800DCECC4 /* MarketModels.swift in Sources */,
 				3F2BA75A23F75F2300E91400 /* SignUpView.swift in Sources */,
 				C092E31223F0CA8300B79FF8 /* Divvy.xcdatamodeld in Sources */,
 				C070981023F3AE0000CEC9E4 /* MarketplaceViewController.swift in Sources */,
@@ -606,6 +617,7 @@
 				C070980023F3AD6900CEC9E4 /* VerificationViewController.swift in Sources */,
 				C070982323F3E68200CEC9E4 /* AddItemViewController.swift in Sources */,
 				C070980C23F3ADD800CEC9E4 /* LoginViewController.swift in Sources */,
+				3F16CF1423FC755900DCECC4 /* MarketItemViewCell.swift in Sources */,
 				C070981C23F3E40A00CEC9E4 /* CurrentOrdersViewController.swift in Sources */,
 				3F2BA75823F74F1A00E91400 /* LoginView.swift in Sources */,
 				3F2BA76023F774ED00E91400 /* ProfileView.swift in Sources */,

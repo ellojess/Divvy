@@ -8,7 +8,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Divvy" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Divvy" customModuleProvider="target">
+            <connections>
+                <outlet property="CreateAccountButton" destination="0fh-e2-nyb" id="zxY-co-ZD1"/>
+                <outlet property="GoogleButton" destination="oTQ-IZ-iH5" id="dLz-cW-SIj"/>
+                <outlet property="LoginButton" destination="tgv-4p-q7j" id="V0V-5A-dpm"/>
+                <outlet property="loginButton" destination="tgv-4p-q7j" id="dNo-6d-pFh"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Spk-Js-YGz"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoginView" customModule="Divvy" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -40,6 +48,9 @@
                     <state key="normal" title="Login">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="loginViewTapped:" destination="-1" eventType="touchUpInside" id="m4u-Pp-In3"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTQ-IZ-iH5">
                     <rect key="frame" x="87" y="472" width="200" height="40"/>
@@ -49,6 +60,9 @@
                     <state key="normal" title="Continue with Google">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="continueWithGoogleTapped:" destination="-1" eventType="touchUpInside" id="41f-9L-fm4"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2e-8K-t20">
                     <rect key="frame" x="87" y="520" width="200" height="30"/>
@@ -63,6 +77,9 @@
                     <state key="normal" title="Create New Account">
                         <color key="titleColor" name="divvyGreen"/>
                     </state>
+                    <connections>
+                        <action selector="CreateAccountTapped:" destination="-1" eventType="touchUpInside" id="ta6-h6-37L"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

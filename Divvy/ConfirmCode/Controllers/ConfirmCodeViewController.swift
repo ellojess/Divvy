@@ -19,13 +19,20 @@
 import UIKit
 
 class ConfirmCodeViewController: UIViewController {
-
+    @IBOutlet weak var VerifyButton: UIButton!
+    @IBOutlet weak var ResendButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
+    @IBAction func VerifyTapped(_ sender: UIButton) {
+        let nextVC = MarketplaceViewController()
+        self.navigationController?.pushViewController(nextVC, animated: true)
+    }
+    
+    
 
     /*
     // MARK: - Navigation
