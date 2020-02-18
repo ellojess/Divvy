@@ -22,7 +22,6 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
@@ -31,6 +30,12 @@ class LoginViewController: UIViewController {
         let nextVC = SignUpViewController()
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
+    
+    @IBAction func continueWithGoogleTapped(_ sender: UIButton) {
+        let nextVC = SignUpViewController()
+        self.navigationController?.pushViewController(nextVC, animated: true)
+    }
+    
     
 
     /*
