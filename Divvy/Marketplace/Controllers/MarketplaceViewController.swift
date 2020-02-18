@@ -23,17 +23,34 @@
 import UIKit
 
 class MarketplaceViewController: UIViewController {
+    
+    //MARK: Table View Items
+    @IBOutlet weak var MarketTableView: UITableView!
+    @IBOutlet var MarketItemCell: UITableViewCell!
+        //Table View Cell Items
+        @IBOutlet weak var ItemCellView: UIImageView!
+        @IBOutlet weak var ItemDetailOneLabel: UILabel!
+        @IBOutlet weak var ItemDetailTwoLabel: UILabel!
+        @IBOutlet weak var ItemDetailThreeLabel: UILabel!
+    
+    
+    //MARK: NAV Bar Buttons
     @IBOutlet weak var PreviousOrdersButton: UIBarButtonItem!
     @IBOutlet weak var HomeButton: UIBarButtonItem!
     @IBOutlet weak var ProfileButton: UIBarButtonItem!
     
+    
+    //MARK: View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
+        MarketTableView.register(UINib(nibName: "MarketItemCell", bundle: nil), forCellReuseIdentifier: "MarketItemCell")
 //        self.navigationController?.initRootViewController(vc: self)
         self.navigationController?.isNavigationBarHidden = false
 
         // Do any additional setup after loading the view.
     }
+    
+    
     @IBAction func OrdersTapped(_ sender: UIBarButtonItem) {
     }
     @IBAction func ProfileTapped(_ sender: UIBarButtonItem) {
