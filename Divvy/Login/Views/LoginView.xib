@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Divvy" customModuleProvider="target">
             <connections>
+                <outlet property="loginButton" destination="tgv-4p-q7j" id="dNo-6d-pFh"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Spk-Js-YGz"/>
             </connections>
         </placeholder>
@@ -44,6 +45,9 @@
                     <state key="normal" title="Login">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="loginViewTapped:" destination="-1" eventType="touchUpInside" id="m4u-Pp-In3"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTQ-IZ-iH5">
                     <rect key="frame" x="87" y="472" width="200" height="40"/>

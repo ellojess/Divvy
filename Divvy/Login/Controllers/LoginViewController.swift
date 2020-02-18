@@ -18,13 +18,24 @@ import UIKit
 
 class LoginViewController: UIViewController {
     //Test 1
-
+    @IBOutlet weak var loginButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func loginViewTapped(_ sender: UIButton) {
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        guard let nextVC = mainStoryboard.instantiateViewController(withIdentifier: "nextVC") as? ViewController else {
+          return print("storyboard not set up correctly, check the identity of \"nextVC\"")
+        }
 
+        present(nextVC, animated: true, completion: nil)
+    }
+    
 
     /*
     // MARK: - Navigation
