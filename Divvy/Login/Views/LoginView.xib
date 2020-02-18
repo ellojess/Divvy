@@ -10,6 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Divvy" customModuleProvider="target">
             <connections>
+                <outlet property="CreateAccountButton" destination="0fh-e2-nyb" id="zxY-co-ZD1"/>
+                <outlet property="GoogleButton" destination="oTQ-IZ-iH5" id="dLz-cW-SIj"/>
+                <outlet property="LoginButton" destination="tgv-4p-q7j" id="V0V-5A-dpm"/>
                 <outlet property="loginButton" destination="tgv-4p-q7j" id="dNo-6d-pFh"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Spk-Js-YGz"/>
             </connections>
@@ -74,6 +77,9 @@
                     <state key="normal" title="Create New Account">
                         <color key="titleColor" name="divvyGreen"/>
                     </state>
+                    <connections>
+                        <action selector="CreateAccountTapped:" destination="-1" eventType="touchUpInside" id="ta6-h6-37L"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
