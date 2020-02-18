@@ -45,13 +45,19 @@ class MarketplaceViewController: UIViewController {
         super.viewDidLoad()
         MarketTableView.register(UINib(nibName: "MarketItemCell", bundle: nil), forCellReuseIdentifier: "MarketItemCell")
 //        self.navigationController?.initRootViewController(vc: self)
-        self.navigationController?.isNavigationBarHidden = false
-
-        // Do any additional setup after loading the view.
+//        self.navigationController?.isNavigationBarHidden = false
+//        self.navigationController?.title = "Market Place"
+        setMarketPlace()
     }
     
+    //MARK: Setting Up the Market Place.
+    func setMarketPlace(){
+        
+    }
     
+    //MARK: Buttons that link the views all together
     @IBAction func OrdersTapped(_ sender: UIBarButtonItem) {
+        
     }
     @IBAction func ProfileTapped(_ sender: UIBarButtonItem) {
         let nextVC = ProfileViewController()

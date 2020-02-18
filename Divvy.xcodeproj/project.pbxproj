@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F16CF0D23FC593700DCECC4 /* MarketItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F16CF0C23FC593700DCECC4 /* MarketItemCell.swift */; };
+		3F16CF0F23FC6A9800DCECC4 /* MarketModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F16CF0E23FC6A9800DCECC4 /* MarketModels.swift */; };
 		3F2BA75623F74DA200E91400 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F2BA75523F74DA200E91400 /* LoginView.xib */; };
 		3F2BA75823F74F1A00E91400 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2BA75723F74F1A00E91400 /* LoginView.swift */; };
 		3F2BA75A23F75F2300E91400 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2BA75923F75F2300E91400 /* SignUpView.swift */; };
@@ -24,7 +25,7 @@
 		C070980923F3ADBC00CEC9E4 /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C070980723F3ADBC00CEC9E4 /* ProfileView.xib */; };
 		C070980C23F3ADD800CEC9E4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070980A23F3ADD800CEC9E4 /* LoginViewController.swift */; };
 		C070981023F3AE0000CEC9E4 /* MarketplaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070980E23F3AE0000CEC9E4 /* MarketplaceViewController.swift */; };
-		C070981123F3AE0000CEC9E4 /* MarketplaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C070980F23F3AE0000CEC9E4 /* MarketplaceViewController.xib */; };
+		C070981123F3AE0000CEC9E4 /* MarketplaceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C070980F23F3AE0000CEC9E4 /* MarketplaceView.xib */; };
 		C070981423F3AE2E00CEC9E4 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070981223F3AE2E00CEC9E4 /* ChatViewController.swift */; };
 		C070981523F3AE2E00CEC9E4 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C070981323F3AE2E00CEC9E4 /* ChatViewController.xib */; };
 		C070981C23F3E40A00CEC9E4 /* CurrentOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070981A23F3E40A00CEC9E4 /* CurrentOrdersViewController.swift */; };
@@ -61,6 +62,7 @@
 
 /* Begin PBXFileReference section */
 		3F16CF0C23FC593700DCECC4 /* MarketItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketItemCell.swift; sourceTree = "<group>"; };
+		3F16CF0E23FC6A9800DCECC4 /* MarketModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketModels.swift; sourceTree = "<group>"; };
 		3F2BA75523F74DA200E91400 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		3F2BA75723F74F1A00E91400 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		3F2BA75923F75F2300E91400 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -78,7 +80,7 @@
 		C070980723F3ADBC00CEC9E4 /* ProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
 		C070980A23F3ADD800CEC9E4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C070980E23F3AE0000CEC9E4 /* MarketplaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketplaceViewController.swift; sourceTree = "<group>"; };
-		C070980F23F3AE0000CEC9E4 /* MarketplaceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketplaceViewController.xib; sourceTree = "<group>"; };
+		C070980F23F3AE0000CEC9E4 /* MarketplaceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketplaceView.xib; sourceTree = "<group>"; };
 		C070981223F3AE2E00CEC9E4 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		C070981323F3AE2E00CEC9E4 /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 		C070981A23F3E40A00CEC9E4 /* CurrentOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentOrdersViewController.swift; sourceTree = "<group>"; };
@@ -318,7 +320,7 @@
 		C092E33F23F0CECF00B79FF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C070980F23F3AE0000CEC9E4 /* MarketplaceViewController.xib */,
+				C070980F23F3AE0000CEC9E4 /* MarketplaceView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -457,6 +459,7 @@
 			isa = PBXGroup;
 			children = (
 				C092E31023F0CA8300B79FF8 /* Divvy.xcdatamodeld */,
+				3F16CF0E23FC6A9800DCECC4 /* MarketModels.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -575,7 +578,7 @@
 				C070981D23F3E40A00CEC9E4 /* CurrentOrdersViewController.xib in Resources */,
 				3F2BA75623F74DA200E91400 /* LoginView.xib in Resources */,
 				C092E31423F0CA8700B79FF8 /* Assets.xcassets in Resources */,
-				C070981123F3AE0000CEC9E4 /* MarketplaceViewController.xib in Resources */,
+				C070981123F3AE0000CEC9E4 /* MarketplaceView.xib in Resources */,
 				C092E30F23F0CA8300B79FF8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -602,6 +605,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C070980423F3AD8C00CEC9E4 /* SignUpViewController.swift in Sources */,
+				3F16CF0F23FC6A9800DCECC4 /* MarketModels.swift in Sources */,
 				3F2BA75A23F75F2300E91400 /* SignUpView.swift in Sources */,
 				C092E31223F0CA8300B79FF8 /* Divvy.xcdatamodeld in Sources */,
 				C070981023F3AE0000CEC9E4 /* MarketplaceViewController.swift in Sources */,
