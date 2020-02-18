@@ -23,13 +23,22 @@
 import UIKit
 
 class MarketplaceViewController: UIViewController {
-
+    @IBOutlet weak var PreviousOrdersButton: UIBarButtonItem!
+    @IBOutlet weak var HomeButton: UIBarButtonItem!
+    @IBOutlet weak var ProfileButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.navigationController?.initRootViewController(vc: self)
+        self.navigationController?.isNavigationBarHidden = false
 
         // Do any additional setup after loading the view.
     }
-
+    @IBAction func ProfileTapped(_ sender: UIBarButtonItem) {
+        let nextVC = ProfileViewController()
+        self.navigationController?.pushViewController(nextVC, animated: true)
+    }
+    
 
     /*
     // MARK: - Navigation

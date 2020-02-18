@@ -9,6 +9,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MarketplaceViewController" customModule="Divvy" customModuleProvider="target">
             <connections>
+                <outlet property="HomeButton" destination="bYI-ey-n5Y" id="qPi-j3-bib"/>
+                <outlet property="PreviousOrdersButton" destination="gTe-jp-OZa" id="ZXV-WM-2BN"/>
+                <outlet property="ProfileButton" destination="7ML-QN-xli" id="CI1-MP-ZOf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,13 +20,6 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5a4-AD-5Fy">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                    <items>
-                        <navigationItem title="Marketplace" id="et5-3z-LmR"/>
-                    </items>
-                </navigationBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hIm-I8-p3Q">
                     <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -41,7 +37,13 @@
                     <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <items>
-                        <barButtonItem title="Item" id="gTe-jp-OZa"/>
+                        <barButtonItem title="Orders" id="gTe-jp-OZa"/>
+                        <barButtonItem title="Home" id="bYI-ey-n5Y"/>
+                        <barButtonItem title="Profile" id="7ML-QN-xli">
+                            <connections>
+                                <action selector="ProfileTapped:" destination="-1" id="2Rq-vd-XFv"/>
+                            </connections>
+                        </barButtonItem>
                     </items>
                 </toolbar>
             </subviews>
