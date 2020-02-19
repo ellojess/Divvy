@@ -9,6 +9,12 @@
 import UIKit
 
 class MarketItemViewCell: UITableViewCell {
+    @IBOutlet weak var ItemImage: UIImageView!
+    @IBOutlet weak var DetailLableOne: UILabel!
+    @IBOutlet weak var DetailLabelTwo: UILabel!
+    @IBOutlet weak var DetailLabelThree: UILabel!
+    @IBOutlet weak var JoinButton: UIButton!
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,10 +28,9 @@ class MarketItemViewCell: UITableViewCell {
     }
     
     func setContents(marketItem: MarketItem){
-//        DetailLabelOne?.text = "What"
-//        DetailLabelOne.text = marketItem.itemDetail1
-//         DetailLabelTwo.text = marketItem.itemDetail2
-//         DetailLabelThree.text = marketItem.itemDetail3
+        DetailLableOne.text = marketItem.itemDetail1
+         DetailLabelTwo.text = marketItem.itemDetail2
+         DetailLabelThree.text = marketItem.itemDetail3
 
     }
     
