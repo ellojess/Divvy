@@ -28,6 +28,7 @@ class MarketItemViewCell: UITableViewCell {
     }
     
     func setContents(marketItem: MarketItem){
+        ItemImage.image =  UIImage(named: marketItem.image)
         DetailLableOne.text = marketItem.itemDetail1
          DetailLabelTwo.text = marketItem.itemDetail2
          DetailLabelThree.text = marketItem.itemDetail3

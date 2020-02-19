@@ -58,7 +58,7 @@ class MarketplaceViewController: UIViewController {
     }
     
     func getData(){
-        let testBox = MarketItem(itemDetail1: "I", itemDetail2: "Need", itemDetail3: "Help")
+        let testBox = MarketItem(image: "testTomato",itemDetail1: "I", itemDetail2: "Need", itemDetail3: "Help")
         marketItems.append(testBox)
     }
     
