@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MarketplaceViewController" customModule="Divvy" customModuleProvider="target">
+            <connections>
+                <outlet property="AddItemButton" destination="1uc-S0-dfx" id="zZe-dt-yWU"/>
+                <outlet property="HomeButton" destination="bYI-ey-n5Y" id="qPi-j3-bib"/>
+                <outlet property="MarketTableView" destination="hIm-I8-p3Q" id="P97-j0-btO"/>
+                <outlet property="PreviousOrdersButton" destination="gTe-jp-OZa" id="ZXV-WM-2BN"/>
+                <outlet property="ProfileButton" destination="7ML-QN-xli" id="CI1-MP-ZOf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hIm-I8-p3Q">
+                    <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+                <toolbar clearsContextBeforeDrawing="NO" alpha="0.90000000000000002" contentMode="scaleToFill" id="M49-46-14L">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem title="Orders" id="gTe-jp-OZa">
+                            <connections>
+                                <action selector="OrdersTapped:" destination="-1" id="GBe-ON-kFX"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Home" id="bYI-ey-n5Y"/>
+                        <barButtonItem title="Profile" id="7ML-QN-xli">
+                            <connections>
+                                <action selector="ProfileTapped:" destination="-1" id="2Rq-vd-XFv"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aAU-ga-QZ4">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <items>
+                        <navigationItem title="Market Place" id="FaZ-ZM-0Sl">
+                            <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="1uc-S0-dfx">
+                                <color key="tintColor" name="divvyGreen"/>
+                                <connections>
+                                    <action selector="AddItemTapped:" destination="-1" id="irk-Ip-RMA"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="152.47376311844079"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="plus" catalog="system" width="64" height="56"/>
+        <namedColor name="divvyGreen">
+            <color red="0.25900000333786011" green="0.68500000238418579" blue="0.16300000250339508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

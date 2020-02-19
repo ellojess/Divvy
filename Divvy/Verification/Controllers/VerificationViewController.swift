@@ -18,13 +18,28 @@
 import UIKit
 
 class VerificationViewController: UIViewController {
-
+    @IBOutlet weak var SendCodeButton: UIButton!
+    @IBOutlet weak var BackToLoginButton: UIButton!
+    @IBOutlet weak var PhoneNumberEntry: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
+    @IBAction func SendCodeTapped(_ sender: UIButton) {
+        let nextVC = ConfirmCodeViewController()
+        self.navigationController?.pushViewController(nextVC, animated: true)
+    }
+    @IBAction func BackToLoginTapped(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popToRootViewController(animated: true)
+//        let nextVC = MarketplaceViewController()
+//        self.navigationController?.pushViewController(nextVC, animated: true)
+    }
+    
+    
+    
 
     /*
     // MARK: - Navigation

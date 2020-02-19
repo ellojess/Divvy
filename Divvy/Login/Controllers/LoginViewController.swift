@@ -18,13 +18,32 @@ import UIKit
 
 class LoginViewController: UIViewController {
     //Test 1
-
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var GoogleButton: UIButton!
+    @IBOutlet weak var CreateAccountButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationController?.isNavigationBarHidden = true
         // Do any additional setup after loading the view.
     }
-
+    
+    @IBAction func loginViewTapped(_ sender: UIButton) {
+        let nextVC = MarketplaceViewController()
+        self.navigationController?.pushViewController(nextVC, animated: true)
+        
+    }
+    
+    @IBAction func continueWithGoogleTapped(_ sender: UIButton) {
+        let nextVC = MarketplaceViewController()
+        self.navigationController?.pushViewController(nextVC, animated: true)
+    }
+    @IBAction func CreateAccountTapped(_ sender: UIButton) {
+        let nextVC = SignUpViewController()
+        self.navigationController?.pushViewController(nextVC, animated: true)
+    }
+    
+    
 
     /*
     // MARK: - Navigation
