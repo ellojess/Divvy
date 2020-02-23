@@ -42,6 +42,11 @@ import UIKit
      Set interval time between each characters
      */
     @IBInspectable open var charInterval: Double = 0.1
+
+    /*
+     Optional handler which fires when typing animation is finished
+     */
+    open var onTypingAnimationFinished: (() -> Void)?
     
     /*
      If text is always centered during typing
@@ -136,9 +141,12 @@ import UIKit
     
     private func setTextWithTypingAnimation(_ typedText: String, _ attributes: Dictionary<NSAttributedString.Key, Any>?, _ charInterval: TimeInterval, _ initial: Bool, _ dispatchID: Int) {
         
-        guard typedText.characters.count > 0 && currentDispatchID == dispatchID else {
+        guard !typedText.isEmpty && currentDispatchID == dispatchID else {
             typingOver = true
             typingStopped = false
+            if let nonNilBlock = onTypingAnimationFinished {
+                DispatchQueue.main.async(execute: nonNilBlock)
+            }
             return
         }
         
@@ -151,7 +159,7 @@ import UIKit
             super.text = ""
         }
         
-        let firstCharIndex = typedText.characters.index(typedText.startIndex, offsetBy: 1)
+        let firstCharIndex = typedText.index(typedText.startIndex, offsetBy: 1)
         
         DispatchQueue.main.async {
             if let attributes = attributes {
