@@ -3,22 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33607672133E15F0E0AABEAE /* Pods_Divvy_DivvyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A4AFB092F0FD4C7239AFFDC /* Pods_Divvy_DivvyUITests.framework */; };
+		3F16CF0F23FC6A9800DCECC4 /* MarketModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F16CF0E23FC6A9800DCECC4 /* MarketModels.swift */; };
+		3F16CF1423FC755900DCECC4 /* MarketItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F16CF1223FC755900DCECC4 /* MarketItemViewCell.swift */; };
+		3F16CF1523FC755900DCECC4 /* MarketItemViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F16CF1323FC755900DCECC4 /* MarketItemViewCell.xib */; };
+		3F2BA75623F74DA200E91400 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F2BA75523F74DA200E91400 /* LoginView.xib */; };
+		3F2BA75823F74F1A00E91400 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2BA75723F74F1A00E91400 /* LoginView.swift */; };
+		3F2BA75A23F75F2300E91400 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2BA75923F75F2300E91400 /* SignUpView.swift */; };
+		3F2BA75C23F761EE00E91400 /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2BA75B23F761EE00E91400 /* VerificationView.swift */; };
+		3F2BA75E23F7728600E91400 /* ConfirmCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2BA75D23F7728600E91400 /* ConfirmCodeView.swift */; };
+		3F2BA76023F774ED00E91400 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2BA75F23F774ED00E91400 /* ProfileView.swift */; };
+		84F3452447B090C4A68A9D11 /* Pods_DivvyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DBBB46B7ECF60DD454D258 /* Pods_DivvyTests.framework */; };
+		9229CB72344F15480392CC93 /* Pods_Divvy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07E54F0068012A230BA7C9D /* Pods_Divvy.framework */; };
+		C027676224032458000F41F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C027676124032458000F41F8 /* GoogleService-Info.plist */; };
+		C02767652403487C000F41F8 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02767642403487C000F41F8 /* Message.swift */; };
 		C031680223F47DD20094A6F3 /* ConfirmCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C031680023F47DD20094A6F3 /* ConfirmCodeViewController.swift */; };
 		C031680323F47DD20094A6F3 /* ConfirmCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C031680123F47DD20094A6F3 /* ConfirmCodeViewController.xib */; };
 		C070980023F3AD6900CEC9E4 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07097FE23F3AD6900CEC9E4 /* VerificationViewController.swift */; };
 		C070980123F3AD6900CEC9E4 /* VerificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C07097FF23F3AD6900CEC9E4 /* VerificationViewController.xib */; };
 		C070980423F3AD8C00CEC9E4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070980223F3AD8C00CEC9E4 /* SignUpViewController.swift */; };
-		C070980523F3AD8C00CEC9E4 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C070980323F3AD8C00CEC9E4 /* SignUpViewController.xib */; };
+		C070980523F3AD8C00CEC9E4 /* SignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C070980323F3AD8C00CEC9E4 /* SignUpView.xib */; };
 		C070980823F3ADBC00CEC9E4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070980623F3ADBC00CEC9E4 /* ProfileViewController.swift */; };
-		C070980923F3ADBC00CEC9E4 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C070980723F3ADBC00CEC9E4 /* ProfileViewController.xib */; };
+		C070980923F3ADBC00CEC9E4 /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C070980723F3ADBC00CEC9E4 /* ProfileView.xib */; };
 		C070980C23F3ADD800CEC9E4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070980A23F3ADD800CEC9E4 /* LoginViewController.swift */; };
-		C070980D23F3ADD800CEC9E4 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C070980B23F3ADD800CEC9E4 /* LoginViewController.xib */; };
 		C070981023F3AE0000CEC9E4 /* MarketplaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070980E23F3AE0000CEC9E4 /* MarketplaceViewController.swift */; };
-		C070981123F3AE0000CEC9E4 /* MarketplaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C070980F23F3AE0000CEC9E4 /* MarketplaceViewController.xib */; };
+		C070981123F3AE0000CEC9E4 /* MarketplaceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C070980F23F3AE0000CEC9E4 /* MarketplaceView.xib */; };
 		C070981423F3AE2E00CEC9E4 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070981223F3AE2E00CEC9E4 /* ChatViewController.swift */; };
 		C070981523F3AE2E00CEC9E4 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C070981323F3AE2E00CEC9E4 /* ChatViewController.xib */; };
 		C070981C23F3E40A00CEC9E4 /* CurrentOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070981A23F3E40A00CEC9E4 /* CurrentOrdersViewController.swift */; };
@@ -54,19 +67,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A4AFB092F0FD4C7239AFFDC /* Pods_Divvy_DivvyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Divvy_DivvyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F16CF0E23FC6A9800DCECC4 /* MarketModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketModels.swift; sourceTree = "<group>"; };
+		3F16CF1223FC755900DCECC4 /* MarketItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketItemViewCell.swift; sourceTree = "<group>"; };
+		3F16CF1323FC755900DCECC4 /* MarketItemViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketItemViewCell.xib; sourceTree = "<group>"; };
+		3F2BA75523F74DA200E91400 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		3F2BA75723F74F1A00E91400 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3F2BA75923F75F2300E91400 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		3F2BA75B23F761EE00E91400 /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
+		3F2BA75D23F7728600E91400 /* ConfirmCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmCodeView.swift; sourceTree = "<group>"; };
+		3F2BA75F23F774ED00E91400 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		9602DAA8C4B345C79FC3EED5 /* Pods-Divvy-DivvyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Divvy-DivvyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Divvy-DivvyUITests/Pods-Divvy-DivvyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		ADCB678D8EE13F0B583E8271 /* Pods-Divvy-DivvyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Divvy-DivvyUITests.release.xcconfig"; path = "Target Support Files/Pods-Divvy-DivvyUITests/Pods-Divvy-DivvyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B5DBBB46B7ECF60DD454D258 /* Pods_DivvyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DivvyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C027676124032458000F41F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C02767642403487C000F41F8 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		C031680023F47DD20094A6F3 /* ConfirmCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmCodeViewController.swift; sourceTree = "<group>"; };
 		C031680123F47DD20094A6F3 /* ConfirmCodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmCodeViewController.xib; sourceTree = "<group>"; };
 		C031680423F485810094A6F3 /* MaxFile.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = MaxFile.md; sourceTree = "<group>"; };
 		C07097FE23F3AD6900CEC9E4 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
 		C07097FF23F3AD6900CEC9E4 /* VerificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerificationViewController.xib; sourceTree = "<group>"; };
 		C070980223F3AD8C00CEC9E4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		C070980323F3AD8C00CEC9E4 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		C070980323F3AD8C00CEC9E4 /* SignUpView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpView.xib; sourceTree = "<group>"; };
 		C070980623F3ADBC00CEC9E4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		C070980723F3ADBC00CEC9E4 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		C070980723F3ADBC00CEC9E4 /* ProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
 		C070980A23F3ADD800CEC9E4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		C070980B23F3ADD800CEC9E4 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		C070980E23F3AE0000CEC9E4 /* MarketplaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketplaceViewController.swift; sourceTree = "<group>"; };
-		C070980F23F3AE0000CEC9E4 /* MarketplaceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketplaceViewController.xib; sourceTree = "<group>"; };
+		C070980F23F3AE0000CEC9E4 /* MarketplaceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketplaceView.xib; sourceTree = "<group>"; };
 		C070981223F3AE2E00CEC9E4 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		C070981323F3AE2E00CEC9E4 /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 		C070981A23F3E40A00CEC9E4 /* CurrentOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentOrdersViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +115,11 @@
 		C092E32823F0CA8700B79FF8 /* DivvyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DivvyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C092E32C23F0CA8700B79FF8 /* DivvyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivvyUITests.swift; sourceTree = "<group>"; };
 		C092E32E23F0CA8700B79FF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC9CF456A360EAE5AE06687B /* Pods-Divvy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Divvy.release.xcconfig"; path = "Target Support Files/Pods-Divvy/Pods-Divvy.release.xcconfig"; sourceTree = "<group>"; };
+		DF7ACCCCC8546751C07C84C5 /* Pods-DivvyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DivvyTests.release.xcconfig"; path = "Target Support Files/Pods-DivvyTests/Pods-DivvyTests.release.xcconfig"; sourceTree = "<group>"; };
+		F07E54F0068012A230BA7C9D /* Pods_Divvy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Divvy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDA61619F57DB26963CDDC13 /* Pods-DivvyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DivvyTests.debug.xcconfig"; path = "Target Support Files/Pods-DivvyTests/Pods-DivvyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FF8F9CD88B7E8255E01C44E2 /* Pods-Divvy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Divvy.debug.xcconfig"; path = "Target Support Files/Pods-Divvy/Pods-Divvy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9229CB72344F15480392CC93 /* Pods_Divvy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F3452447B090C4A68A9D11 /* Pods_DivvyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,12 +143,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33607672133E15F0E0AABEAE /* Pods_Divvy_DivvyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4CE36545A619AF0F3F928889 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F07E54F0068012A230BA7C9D /* Pods_Divvy.framework */,
+				2A4AFB092F0FD4C7239AFFDC /* Pods_Divvy_DivvyUITests.framework */,
+				B5DBBB46B7ECF60DD454D258 /* Pods_DivvyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C027676324034823000F41F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C02767642403487C000F41F8 /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C03167FD23F47D9A0094A6F3 /* ConfirmCode */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				C031680023F47DD20094A6F3 /* ConfirmCodeViewController.swift */,
+				3F2BA75D23F7728600E91400 /* ConfirmCodeView.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -206,6 +260,8 @@
 				C092E32023F0CA8700B79FF8 /* DivvyTests */,
 				C092E32B23F0CA8700B79FF8 /* DivvyUITests */,
 				C092E30523F0CA8300B79FF8 /* Products */,
+				D5013BD97E68150A06D61AA6 /* Pods */,
+				4CE36545A619AF0F3F928889 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -223,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				C092E31823F0CA8700B79FF8 /* Info.plist */,
+				C027676124032458000F41F8 /* GoogleService-Info.plist */,
 				C092E30723F0CA8300B79FF8 /* AppDelegate.swift */,
 				C092E34F23F0D3B500B79FF8 /* Model */,
 				C092E34D23F0D35500B79FF8 /* Views */,
@@ -271,6 +328,7 @@
 		C092E33B23F0CE9000B79FF8 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				C027676324034823000F41F8 /* Models */,
 				C092E33D23F0CEB500B79FF8 /* Controllers */,
 				C092E33C23F0CEA000B79FF8 /* Views */,
 			);
@@ -305,7 +363,8 @@
 		C092E33F23F0CECF00B79FF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C070980F23F3AE0000CEC9E4 /* MarketplaceViewController.xib */,
+				C070980F23F3AE0000CEC9E4 /* MarketplaceView.xib */,
+				3F16CF1323FC755900DCECC4 /* MarketItemViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -314,6 +373,7 @@
 			isa = PBXGroup;
 			children = (
 				C070980E23F3AE0000CEC9E4 /* MarketplaceViewController.swift */,
+				3F16CF1223FC755900DCECC4 /* MarketItemViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -330,7 +390,7 @@
 		C092E34223F0CF2A00B79FF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C070980B23F3ADD800CEC9E4 /* LoginViewController.xib */,
+				3F2BA75523F74DA200E91400 /* LoginView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -339,6 +399,7 @@
 			isa = PBXGroup;
 			children = (
 				C070980A23F3ADD800CEC9E4 /* LoginViewController.swift */,
+				3F2BA75723F74F1A00E91400 /* LoginView.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -355,7 +416,7 @@
 		C092E34523F0CF4200B79FF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C070980723F3ADBC00CEC9E4 /* ProfileViewController.xib */,
+				C070980723F3ADBC00CEC9E4 /* ProfileView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -364,6 +425,7 @@
 			isa = PBXGroup;
 			children = (
 				C070980623F3ADBC00CEC9E4 /* ProfileViewController.swift */,
+				3F2BA75F23F774ED00E91400 /* ProfileView.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -380,7 +442,7 @@
 		C092E34823F0CF5F00B79FF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C070980323F3AD8C00CEC9E4 /* SignUpViewController.xib */,
+				C070980323F3AD8C00CEC9E4 /* SignUpView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -389,6 +451,7 @@
 			isa = PBXGroup;
 			children = (
 				C070980223F3AD8C00CEC9E4 /* SignUpViewController.swift */,
+				3F2BA75923F75F2300E91400 /* SignUpView.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -414,6 +477,7 @@
 			isa = PBXGroup;
 			children = (
 				C07097FE23F3AD6900CEC9E4 /* VerificationViewController.swift */,
+				3F2BA75B23F761EE00E91400 /* VerificationView.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -439,8 +503,22 @@
 			isa = PBXGroup;
 			children = (
 				C092E31023F0CA8300B79FF8 /* Divvy.xcdatamodeld */,
+				3F16CF0E23FC6A9800DCECC4 /* MarketModels.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D5013BD97E68150A06D61AA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF8F9CD88B7E8255E01C44E2 /* Pods-Divvy.debug.xcconfig */,
+				DC9CF456A360EAE5AE06687B /* Pods-Divvy.release.xcconfig */,
+				9602DAA8C4B345C79FC3EED5 /* Pods-Divvy-DivvyUITests.debug.xcconfig */,
+				ADCB678D8EE13F0B583E8271 /* Pods-Divvy-DivvyUITests.release.xcconfig */,
+				FDA61619F57DB26963CDDC13 /* Pods-DivvyTests.debug.xcconfig */,
+				DF7ACCCCC8546751C07C84C5 /* Pods-DivvyTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -450,9 +528,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C092E33123F0CA8700B79FF8 /* Build configuration list for PBXNativeTarget "Divvy" */;
 			buildPhases = (
+				53F6B747B4F11742B8D56C53 /* [CP] Check Pods Manifest.lock */,
 				C092E30023F0CA8300B79FF8 /* Sources */,
 				C092E30123F0CA8300B79FF8 /* Frameworks */,
 				C092E30223F0CA8300B79FF8 /* Resources */,
+				5F0B5C2AC9D5D59DDA902D7E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -467,6 +547,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C092E33423F0CA8700B79FF8 /* Build configuration list for PBXNativeTarget "DivvyTests" */;
 			buildPhases = (
+				9843D94B51A5335B0CAB6546 /* [CP] Check Pods Manifest.lock */,
 				C092E31923F0CA8700B79FF8 /* Sources */,
 				C092E31A23F0CA8700B79FF8 /* Frameworks */,
 				C092E31B23F0CA8700B79FF8 /* Resources */,
@@ -485,9 +566,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C092E33723F0CA8700B79FF8 /* Build configuration list for PBXNativeTarget "DivvyUITests" */;
 			buildPhases = (
+				923F3CC21C67B2D00EFF2484 /* [CP] Check Pods Manifest.lock */,
 				C092E32423F0CA8700B79FF8 /* Sources */,
 				C092E32523F0CA8700B79FF8 /* Frameworks */,
 				C092E32623F0CA8700B79FF8 /* Resources */,
+				3C1BAC8CAD565ACE3FEFFD79 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -548,17 +631,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				C070982423F3E68200CEC9E4 /* AddItemViewController.xib in Resources */,
-				C070980923F3ADBC00CEC9E4 /* ProfileViewController.xib in Resources */,
+				C070980923F3ADBC00CEC9E4 /* ProfileView.xib in Resources */,
 				C031680323F47DD20094A6F3 /* ConfirmCodeViewController.xib in Resources */,
-				C070980523F3AD8C00CEC9E4 /* SignUpViewController.xib in Resources */,
+				3F16CF1523FC755900DCECC4 /* MarketItemViewCell.xib in Resources */,
+				C070980523F3AD8C00CEC9E4 /* SignUpView.xib in Resources */,
 				C070981523F3AE2E00CEC9E4 /* ChatViewController.xib in Resources */,
 				C092E31723F0CA8700B79FF8 /* LaunchScreen.storyboard in Resources */,
 				C070980123F3AD6900CEC9E4 /* VerificationViewController.xib in Resources */,
 				C070981D23F3E40A00CEC9E4 /* CurrentOrdersViewController.xib in Resources */,
+				3F2BA75623F74DA200E91400 /* LoginView.xib in Resources */,
 				C092E31423F0CA8700B79FF8 /* Assets.xcassets in Resources */,
-				C070980D23F3ADD800CEC9E4 /* LoginViewController.xib in Resources */,
-				C070981123F3AE0000CEC9E4 /* MarketplaceViewController.xib in Resources */,
+				C070981123F3AE0000CEC9E4 /* MarketplaceView.xib in Resources */,
 				C092E30F23F0CA8300B79FF8 /* Main.storyboard in Resources */,
+				C027676224032458000F41F8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,24 +663,135 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3C1BAC8CAD565ACE3FEFFD79 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Divvy-DivvyUITests/Pods-Divvy-DivvyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Divvy-DivvyUITests/Pods-Divvy-DivvyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Divvy-DivvyUITests/Pods-Divvy-DivvyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53F6B747B4F11742B8D56C53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Divvy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F0B5C2AC9D5D59DDA902D7E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Divvy/Pods-Divvy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Divvy/Pods-Divvy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Divvy/Pods-Divvy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		923F3CC21C67B2D00EFF2484 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Divvy-DivvyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9843D94B51A5335B0CAB6546 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DivvyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C092E30023F0CA8300B79FF8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C070980423F3AD8C00CEC9E4 /* SignUpViewController.swift in Sources */,
+				3F16CF0F23FC6A9800DCECC4 /* MarketModels.swift in Sources */,
+				3F2BA75A23F75F2300E91400 /* SignUpView.swift in Sources */,
 				C092E31223F0CA8300B79FF8 /* Divvy.xcdatamodeld in Sources */,
 				C070981023F3AE0000CEC9E4 /* MarketplaceViewController.swift in Sources */,
 				C092E30C23F0CA8300B79FF8 /* ViewController.swift in Sources */,
+				C02767652403487C000F41F8 /* Message.swift in Sources */,
 				C070980023F3AD6900CEC9E4 /* VerificationViewController.swift in Sources */,
 				C070982323F3E68200CEC9E4 /* AddItemViewController.swift in Sources */,
 				C070980C23F3ADD800CEC9E4 /* LoginViewController.swift in Sources */,
+				3F16CF1423FC755900DCECC4 /* MarketItemViewCell.swift in Sources */,
 				C070981C23F3E40A00CEC9E4 /* CurrentOrdersViewController.swift in Sources */,
+				3F2BA75823F74F1A00E91400 /* LoginView.swift in Sources */,
+				3F2BA76023F774ED00E91400 /* ProfileView.swift in Sources */,
 				C070980823F3ADBC00CEC9E4 /* ProfileViewController.swift in Sources */,
 				C092E30823F0CA8300B79FF8 /* AppDelegate.swift in Sources */,
 				C070981423F3AE2E00CEC9E4 /* ChatViewController.swift in Sources */,
 				C092E30A23F0CA8300B79FF8 /* SceneDelegate.swift in Sources */,
+				3F2BA75E23F7728600E91400 /* ConfirmCodeView.swift in Sources */,
 				C031680223F47DD20094A6F3 /* ConfirmCodeViewController.swift in Sources */,
+				3F2BA75C23F761EE00E91400 /* VerificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -766,6 +962,7 @@
 		};
 		C092E33223F0CA8700B79FF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF8F9CD88B7E8255E01C44E2 /* Pods-Divvy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -784,6 +981,7 @@
 		};
 		C092E33323F0CA8700B79FF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC9CF456A360EAE5AE06687B /* Pods-Divvy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -802,6 +1000,7 @@
 		};
 		C092E33523F0CA8700B79FF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDA61619F57DB26963CDDC13 /* Pods-DivvyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -824,6 +1023,7 @@
 		};
 		C092E33623F0CA8700B79FF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF7ACCCCC8546751C07C84C5 /* Pods-DivvyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -846,6 +1046,7 @@
 		};
 		C092E33823F0CA8700B79FF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9602DAA8C4B345C79FC3EED5 /* Pods-Divvy-DivvyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -866,6 +1067,7 @@
 		};
 		C092E33923F0CA8700B79FF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADCB678D8EE13F0B583E8271 /* Pods-Divvy-DivvyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
