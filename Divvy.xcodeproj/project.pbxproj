@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,7 @@
 		84F3452447B090C4A68A9D11 /* Pods_DivvyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DBBB46B7ECF60DD454D258 /* Pods_DivvyTests.framework */; };
 		9229CB72344F15480392CC93 /* Pods_Divvy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07E54F0068012A230BA7C9D /* Pods_Divvy.framework */; };
 		C027676224032458000F41F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C027676124032458000F41F8 /* GoogleService-Info.plist */; };
+		C02767652403487C000F41F8 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02767642403487C000F41F8 /* Message.swift */; };
 		C031680223F47DD20094A6F3 /* ConfirmCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C031680023F47DD20094A6F3 /* ConfirmCodeViewController.swift */; };
 		C031680323F47DD20094A6F3 /* ConfirmCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C031680123F47DD20094A6F3 /* ConfirmCodeViewController.xib */; };
 		C070980023F3AD6900CEC9E4 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07097FE23F3AD6900CEC9E4 /* VerificationViewController.swift */; };
@@ -80,6 +81,7 @@
 		ADCB678D8EE13F0B583E8271 /* Pods-Divvy-DivvyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Divvy-DivvyUITests.release.xcconfig"; path = "Target Support Files/Pods-Divvy-DivvyUITests/Pods-Divvy-DivvyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B5DBBB46B7ECF60DD454D258 /* Pods_DivvyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DivvyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C027676124032458000F41F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C02767642403487C000F41F8 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		C031680023F47DD20094A6F3 /* ConfirmCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmCodeViewController.swift; sourceTree = "<group>"; };
 		C031680123F47DD20094A6F3 /* ConfirmCodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmCodeViewController.xib; sourceTree = "<group>"; };
 		C031680423F485810094A6F3 /* MaxFile.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = MaxFile.md; sourceTree = "<group>"; };
@@ -156,6 +158,14 @@
 				B5DBBB46B7ECF60DD454D258 /* Pods_DivvyTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C027676324034823000F41F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C02767642403487C000F41F8 /* Message.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		C03167FD23F47D9A0094A6F3 /* ConfirmCode */ = {
@@ -318,6 +328,7 @@
 		C092E33B23F0CE9000B79FF8 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				C027676324034823000F41F8 /* Models */,
 				C092E33D23F0CEB500B79FF8 /* Controllers */,
 				C092E33C23F0CEA000B79FF8 /* Views */,
 			);
@@ -507,7 +518,6 @@
 				FDA61619F57DB26963CDDC13 /* Pods-DivvyTests.debug.xcconfig */,
 				DF7ACCCCC8546751C07C84C5 /* Pods-DivvyTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -767,6 +777,7 @@
 				C092E31223F0CA8300B79FF8 /* Divvy.xcdatamodeld in Sources */,
 				C070981023F3AE0000CEC9E4 /* MarketplaceViewController.swift in Sources */,
 				C092E30C23F0CA8300B79FF8 /* ViewController.swift in Sources */,
+				C02767652403487C000F41F8 /* Message.swift in Sources */,
 				C070980023F3AD6900CEC9E4 /* VerificationViewController.swift in Sources */,
 				C070982323F3E68200CEC9E4 /* AddItemViewController.swift in Sources */,
 				C070980C23F3ADD800CEC9E4 /* LoginViewController.swift in Sources */,
