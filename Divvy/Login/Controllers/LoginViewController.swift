@@ -15,8 +15,13 @@
     [] "Create New Account" button, takes users to SignUp page
 */
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
+    
+    @IBOutlet weak var emailTextfield: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     //Test 1
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var GoogleButton: UIButton!
@@ -30,7 +35,20 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginViewTapped(_ sender: UIButton) {
         let nextVC = MarketplaceViewController()
-        self.navigationController?.pushViewController(nextVC, animated: true)
+        
+        if let email = emailTextfield.text, let password = passwordTextField.text {
+            Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+                if let e = error {
+                    // TODO: Implement popup displaying error to user 
+                    print(e.localizedDescription)
+                } else {
+                    self.navigationController?.pushViewController(nextVC, animated: true)
+                }
+        }
+            
+            
+        }
+//        self.navigationController?.pushViewController(nextVC, animated: true)
         
     }
     
