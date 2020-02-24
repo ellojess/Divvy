@@ -52,13 +52,13 @@ class MarketplaceViewController: UIViewController {
     //MARK: Setting Up the Market Place.
     func setMarketPlace(){
 //        MarketTableView.register(MarCell.self, forCellReuseIdentifier: PastBoxesCell.identifier)
-       MarketTableView.register(UINib(nibName: "MarketItemViewCell", bundle: nil), forCellReuseIdentifier: "MarketCell")
+        MarketTableView.register(UINib(nibName: "MarketItemViewCell", bundle: nil), forCellReuseIdentifier: "MarketCell")
         MarketTableView.delegate = self
         MarketTableView.dataSource = self
     }
     
     func getData(){
-        let testBox = MarketItem(itemDetail1: "I", itemDetail2: "Need", itemDetail3: "Help")
+        let testBox = MarketItem(image: "testTomato",itemDetail1: "I", itemDetail2: "Need", itemDetail3: "Help")
         marketItems.append(testBox)
     }
     
