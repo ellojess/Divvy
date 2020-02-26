@@ -15,11 +15,11 @@ struct MarketItem: Codable {
     let itemDetail2: String
     let itemDetail3: String
     
-    var imagess: UIImage {
-        guard let image = UIImage(named: String(describing: self)) else {
-            fatalError("image \(self) not found")
-        }
-
-        return image
-    }
+//    var imagess: UIImage {
+//        guard let image = UIImage(named: String(describing: self)) else {
+//            fatalError("image \(self) not found")
+//        }
+//
+//        return image
+//    }
 }

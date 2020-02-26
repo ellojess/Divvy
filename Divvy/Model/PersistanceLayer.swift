@@ -28,37 +28,37 @@ struct PersistenceLayer {
     }
 //==============================================================
     
-//    // Step 7
-//    @discardableResult
-//
-//       // Step 8
-//       mutating func createNewMarketItem() -> MarketItem {
-//
-//           let newItem = MarketItem()
-//           self.items.insert(newItem, at: 0) // Prepend the habits to the array
-//           self.saveItems()
-//
-//           return newItem
-//       }
+    // Step 7
+    @discardableResult
+
+       // Step 8
+    mutating func createNewMarketItem(image: String, itemDetail1: String,itemDetail2: String,itemDetail3: String) -> MarketItem {
+
+           let newItem = MarketItem(image: image, itemDetail1: itemDetail1 , itemDetail2: itemDetail2, itemDetail3: itemDetail3)
+           self.items.insert(newItem, at: 0) // Prepend the habits to the array
+           self.saveItems()
+
+           return newItem
+       }
     //Saving Items
-//    private func saveHabits() {
-//        // Step 9
-//        guard let habitsData = try? JSONEncoder().encode(self.habits) else {
-//            fatalError("could not encode list of habits")
-//        }
-//
-//        // Step 10
-//        let userDefaults = UserDefaults.standard
-//        userDefaults.set(habitsData, forKey: PersistenceLayer.userDefaultsHabitsKeyValue)
-//        userDefaults.synchronize()
-//
-//    }
+    private func saveItems() {
+        // Step 9
+        guard let itemsData = try? JSONEncoder().encode(self.items) else {
+            fatalError("could not encode list of habits")
+        }
+
+        // Step 10
+        let userDefaults = UserDefaults.standard
+        userDefaults.set(itemsData, forKey: PersistenceLayer.userDefaultsHabitsKeyValue)
+        userDefaults.synchronize()
+
+    }
     
 //    //Completeing the Items
-//    mutating func markHabitAsCompleted(_ habitIndex: Int) -> Habit {
+//    mutating func markHabitAsCompleted(_ itemIndex: Int) -> MarketItem {
 //
 //       // Step 12
-//        var updatedHabit = self.habits[habitIndex]
+//        var updatedItem = self.items[itemIndex]
 //
 //       // Step 13
 //        guard updatedHabit.completedToday == false else { return updatedHabit }
