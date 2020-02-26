@@ -44,6 +44,9 @@
                     <state key="normal" title="Add Item">
                         <color key="titleColor" name="divvyGreen"/>
                     </state>
+                    <connections>
+                        <action selector="addItemPressed:" destination="-1" eventType="touchUpInside" id="teL-P4-9st"/>
+                    </connections>
                 </button>
                 <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zau-pI-37B">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

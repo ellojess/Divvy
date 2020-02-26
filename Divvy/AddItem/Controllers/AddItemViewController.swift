@@ -48,7 +48,7 @@ class AddItemViewController: UIViewController {
         self.itemCategoryPicker.delegate = self
         self.itemCategoryPicker.dataSource = self
         
-        pickerCategories = ["Vegetable","Fruit","Dairy","Bread","Candy","Chips","Drink","...","Other"]
+        pickerCategories = ["Vegetable","Fruit","Meat & Seafood","Grain","Canned","Dairy","Baked Goods","Candy","Chips","Drink","Baby","Pet","Health & Wellness","Personal Care","Household","Other"]
         // Do any additional setup after loading the view.
     }
     
@@ -56,6 +56,9 @@ class AddItemViewController: UIViewController {
     @IBAction func cancelButtonPressed(_ sender: UIBarButtonItem) {
         self.navigationController?.popViewController(animated: true)
     }
+    @IBAction func addItemPressed(_ sender: Any) {
+    }
+    
     
 
     /*
