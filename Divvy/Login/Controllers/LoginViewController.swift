@@ -36,19 +36,19 @@ class LoginViewController: UIViewController {
     @IBAction func loginViewTapped(_ sender: UIButton) {
         let nextVC = MarketplaceViewController()
         
-        if let email = emailTextfield.text, let password = passwordTextField.text {
-            Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
-                if let e = error {
-                    // TODO: Implement popup displaying error to user 
-                    print(e.localizedDescription)
-                } else {
-                    self.navigationController?.pushViewController(nextVC, animated: true)
-                }
-        }
-            
-            
-        }
-//        self.navigationController?.pushViewController(nextVC, animated: true)
+//        if let email = emailTextfield.text, let password = passwordTextField.text {
+//            Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+//                if let e = error {
+//                    // TODO: Implement popup displaying error to user
+//                    print(e.localizedDescription)
+//                } else {
+//                    self.navigationController?.pushViewController(nextVC, animated: true)
+//                }
+//        }
+//
+//
+//        }
+        self.navigationController?.pushViewController(nextVC, animated: true)
         
     }
     

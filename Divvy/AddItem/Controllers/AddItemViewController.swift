@@ -26,13 +26,37 @@
 import UIKit
 
 class AddItemViewController: UIViewController {
-
+    //Creating and Item
+    @IBOutlet weak var itemImage: UIImageView!
+    @IBOutlet weak var itemNameField: UITextField!
+    @IBOutlet weak var itemPriceField: UITextField!
+    @IBOutlet weak var itemURLField: UITextField!
+    //https://codewithchris.com/uipickerview-example/ source reference
+    @IBOutlet weak var itemCategoryPicker: UIPickerView!
+    @IBOutlet weak var itemAddButton: UIButton!
+    
+    var pickerCategories: [String] = [String]()
+    
+    //Nav Bar Stuff
+    @IBOutlet weak var NavBar: UINavigationBar!
+    @IBOutlet weak var cancelButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //Connecting data to the item picker thing
+        self.itemCategoryPicker.delegate = self
+        self.itemCategoryPicker.dataSource = self
+        
+        pickerCategories = ["Vegetable","Fruit","Dairy","Bread","Candy","Chips","Drink","...","Other"]
         // Do any additional setup after loading the view.
     }
-
+    
+    //MARK: IBAction here
+    @IBAction func cancelButtonPressed(_ sender: UIBarButtonItem) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
 
     /*
     // MARK: - Navigation
@@ -44,4 +68,20 @@ class AddItemViewController: UIViewController {
     }
     */
 
+}
+
+extension AddItemViewController: UIPickerViewDelegate, UIPickerViewDataSource{
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerCategories.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerCategories[row]
+    }
+    
+    
 }
