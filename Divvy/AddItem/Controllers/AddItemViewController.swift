@@ -57,6 +57,13 @@ class AddItemViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     @IBAction func addItemPressed(_ sender: Any) {
+        var persistenceLayer = PersistenceLayer()
+        guard let itemD1 = itemNameField.text else { return }
+        guard let itemD2 = itemPriceField.text else { return }
+        guard let itemD3 = itemURLField.text else { return }
+        persistenceLayer.createNewMarketItem(image: "tomato", itemDetail1: itemD1, itemDetail2: itemD2, itemDetail3: itemD3)
+//        self.presentingViewController?.dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
     }
     
     

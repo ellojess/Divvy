@@ -44,7 +44,7 @@ struct PersistenceLayer {
     private func saveItems() {
         // Step 9
         guard let itemsData = try? JSONEncoder().encode(self.items) else {
-            fatalError("could not encode list of habits")
+            fatalError("could not encode list of items")
         }
 
         // Step 10
@@ -56,36 +56,25 @@ struct PersistenceLayer {
     
 //    //Completeing the Items
 //    mutating func markHabitAsCompleted(_ itemIndex: Int) -> MarketItem {
-//
-//       // Step 12
+
+       // Step 12
 //        var updatedItem = self.items[itemIndex]
-//
-//       // Step 13
-//        guard updatedHabit.completedToday == false else { return updatedHabit }
-//
-//        updatedHabit.numberOfCompletions += 1
-//
-//        // Step 14
-//        if let lastCompletionDate = updatedHabit.lastCompletionDate, lastCompletionDate.isYesterday {
-//            updatedHabit.currentStreak += 1
-//        } else {
-//            updatedHabit.currentStreak = 1
-//        }
-//
-//        // Step 15
-//        if updatedHabit.currentStreak > updatedHabit.bestStreak {
-//            updatedHabit.bestStreak = updatedHabit.currentStreak
-//        }
-//
-//        // Step 16
+
+        // Step 16
 //        let now = Date()
 //        updatedHabit.lastCompletionDate = now
-//
-//        // Step 17
+
+        // Step 17
 //        self.habits[habitIndex] = updatedHabit
-//
-//        // Step 18
+
+        // Step 18
 //        self.saveHabits()
 //        return updatedHabit
 //    }
+    
+    // Step 20
+     mutating func setNeedsToReloadHabits() {
+            self.loadItems()
+    }
+
 }
