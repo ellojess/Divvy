@@ -77,7 +77,7 @@ class MarketplaceViewController: UIViewController {
     @IBAction func AddItemTapped(_ sender: UIBarButtonItem) {
         let nextVC = AddItemViewController()
         self.navigationController?.pushViewController(nextVC, animated: true)
-        
+        //DO NOT KNOW if code bellow needed or not
 //        let addHabitVC = AddHabitViewController.instantiate()
 //        let navigationController = UINavigationController(rootViewController: addHabitVC)
 //        navigationController.modalPresentationStyle = .fullScreen
@@ -99,15 +99,14 @@ class MarketplaceViewController: UIViewController {
 //MARK: Extenstion
 extension MarketplaceViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return marketItems.count
+        //Returns the number of items in persistance
         return persistance.items.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MarketCell", for: indexPath) as! MarketItemViewCell
-        //        cell.textLabel?.text = "\(indexPath.row) \(testBoxes[indexPath.row].date)"
+        //Creates the cell and adds
         let item = persistance.items[indexPath.row]
-//        cell.setContents(marketItem:marketItems[indexPath.row])
         cell.setContents(marketItem: item)
         return cell
     }

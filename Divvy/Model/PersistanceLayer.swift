@@ -31,7 +31,7 @@ struct PersistenceLayer {
     // Step 7
     @discardableResult
 
-       // Step 8
+       // This Generates the item and saves it.
     mutating func createNewMarketItem(image: String, itemDetail1: String,itemDetail2: String,itemDetail3: String) -> MarketItem {
 
            let newItem = MarketItem(image: image, itemDetail1: itemDetail1 , itemDetail2: itemDetail2, itemDetail3: itemDetail3)
@@ -40,14 +40,14 @@ struct PersistenceLayer {
 
            return newItem
        }
-    //Saving Items
+    //What allows the item data to be saved.
     private func saveItems() {
         // Step 9
         guard let itemsData = try? JSONEncoder().encode(self.items) else {
             fatalError("could not encode list of items")
         }
 
-        // Step 10
+        //Step 10: If we do successfully decode our array of habits we then set that json data inside our User Defaults for its given key!
         let userDefaults = UserDefaults.standard
         userDefaults.set(itemsData, forKey: PersistenceLayer.userDefaultsHabitsKeyValue)
         userDefaults.synchronize()
@@ -72,7 +72,7 @@ struct PersistenceLayer {
 //        return updatedHabit
 //    }
     
-    // Step 20
+    // Step 20: The next function comes in handy after we added a new habit and update the collection of habits present in the table view!
      mutating func setNeedsToReloadHabits() {
             self.loadItems()
     }
