@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		33607672133E15F0E0AABEAE /* Pods_Divvy_DivvyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A4AFB092F0FD4C7239AFFDC /* Pods_Divvy_DivvyUITests.framework */; };
+		3F132D292406F61E00972879 /* PersistanceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F132D282406F61E00972879 /* PersistanceLayer.swift */; };
 		3F16CF0F23FC6A9800DCECC4 /* MarketModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F16CF0E23FC6A9800DCECC4 /* MarketModels.swift */; };
 		3F16CF1423FC755900DCECC4 /* MarketItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F16CF1223FC755900DCECC4 /* MarketItemViewCell.swift */; };
 		3F16CF1523FC755900DCECC4 /* MarketItemViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F16CF1323FC755900DCECC4 /* MarketItemViewCell.xib */; };
@@ -68,6 +69,7 @@
 
 /* Begin PBXFileReference section */
 		2A4AFB092F0FD4C7239AFFDC /* Pods_Divvy_DivvyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Divvy_DivvyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F132D282406F61E00972879 /* PersistanceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceLayer.swift; sourceTree = "<group>"; };
 		3F16CF0E23FC6A9800DCECC4 /* MarketModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketModels.swift; sourceTree = "<group>"; };
 		3F16CF1223FC755900DCECC4 /* MarketItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketItemViewCell.swift; sourceTree = "<group>"; };
 		3F16CF1323FC755900DCECC4 /* MarketItemViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketItemViewCell.xib; sourceTree = "<group>"; };
@@ -504,6 +506,7 @@
 			children = (
 				C092E31023F0CA8300B79FF8 /* Divvy.xcdatamodeld */,
 				3F16CF0E23FC6A9800DCECC4 /* MarketModels.swift */,
+				3F132D282406F61E00972879 /* PersistanceLayer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -782,6 +785,7 @@
 				C070982323F3E68200CEC9E4 /* AddItemViewController.swift in Sources */,
 				C070980C23F3ADD800CEC9E4 /* LoginViewController.swift in Sources */,
 				3F16CF1423FC755900DCECC4 /* MarketItemViewCell.swift in Sources */,
+				3F132D292406F61E00972879 /* PersistanceLayer.swift in Sources */,
 				C070981C23F3E40A00CEC9E4 /* CurrentOrdersViewController.swift in Sources */,
 				3F2BA75823F74F1A00E91400 /* LoginView.swift in Sources */,
 				3F2BA76023F774ED00E91400 /* ProfileView.swift in Sources */,
