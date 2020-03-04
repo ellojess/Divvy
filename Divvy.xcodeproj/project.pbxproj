@@ -18,6 +18,9 @@
 		3F2BA75C23F761EE00E91400 /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2BA75B23F761EE00E91400 /* VerificationView.swift */; };
 		3F2BA75E23F7728600E91400 /* ConfirmCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2BA75D23F7728600E91400 /* ConfirmCodeView.swift */; };
 		3F2BA76023F774ED00E91400 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2BA75F23F774ED00E91400 /* ProfileView.swift */; };
+		3F818855240F8EE10023E4BF /* profileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F818854240F8EE10023E4BF /* profileImage.swift */; };
+		3F818857240F8EFB0023E4BF /* ProfileContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F818856240F8EFB0023E4BF /* ProfileContentView.swift */; };
+		3F818859240F8F0F0023E4BF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F818858240F8F0F0023E4BF /* MapView.swift */; };
 		84F3452447B090C4A68A9D11 /* Pods_DivvyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DBBB46B7ECF60DD454D258 /* Pods_DivvyTests.framework */; };
 		9229CB72344F15480392CC93 /* Pods_Divvy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07E54F0068012A230BA7C9D /* Pods_Divvy.framework */; };
 		C027676224032458000F41F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C027676124032458000F41F8 /* GoogleService-Info.plist */; };
@@ -79,6 +82,9 @@
 		3F2BA75B23F761EE00E91400 /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
 		3F2BA75D23F7728600E91400 /* ConfirmCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmCodeView.swift; sourceTree = "<group>"; };
 		3F2BA75F23F774ED00E91400 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		3F818854240F8EE10023E4BF /* profileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileImage.swift; sourceTree = "<group>"; };
+		3F818856240F8EFB0023E4BF /* ProfileContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileContentView.swift; sourceTree = "<group>"; };
+		3F818858240F8F0F0023E4BF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		9602DAA8C4B345C79FC3EED5 /* Pods-Divvy-DivvyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Divvy-DivvyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Divvy-DivvyUITests/Pods-Divvy-DivvyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		ADCB678D8EE13F0B583E8271 /* Pods-Divvy-DivvyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Divvy-DivvyUITests.release.xcconfig"; path = "Target Support Files/Pods-Divvy-DivvyUITests/Pods-Divvy-DivvyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B5DBBB46B7ECF60DD454D258 /* Pods_DivvyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DivvyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +158,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F818853240F8EAC0023E4BF /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				3F818854240F8EE10023E4BF /* profileImage.swift */,
+				3F818856240F8EFB0023E4BF /* ProfileContentView.swift */,
+				3F818858240F8F0F0023E4BF /* MapView.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
 		4CE36545A619AF0F3F928889 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -409,6 +425,7 @@
 		C092E34423F0CF3900B79FF8 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				3F818853240F8EAC0023E4BF /* SwiftUI */,
 				C092E34623F0CF4700B79FF8 /* Controllers */,
 				C092E34523F0CF4200B79FF8 /* Views */,
 			);
@@ -786,11 +803,14 @@
 				C070980C23F3ADD800CEC9E4 /* LoginViewController.swift in Sources */,
 				3F16CF1423FC755900DCECC4 /* MarketItemViewCell.swift in Sources */,
 				3F132D292406F61E00972879 /* PersistanceLayer.swift in Sources */,
+				3F818859240F8F0F0023E4BF /* MapView.swift in Sources */,
 				C070981C23F3E40A00CEC9E4 /* CurrentOrdersViewController.swift in Sources */,
 				3F2BA75823F74F1A00E91400 /* LoginView.swift in Sources */,
 				3F2BA76023F774ED00E91400 /* ProfileView.swift in Sources */,
 				C070980823F3ADBC00CEC9E4 /* ProfileViewController.swift in Sources */,
+				3F818855240F8EE10023E4BF /* profileImage.swift in Sources */,
 				C092E30823F0CA8300B79FF8 /* AppDelegate.swift in Sources */,
+				3F818857240F8EFB0023E4BF /* ProfileContentView.swift in Sources */,
 				C070981423F3AE2E00CEC9E4 /* ChatViewController.swift in Sources */,
 				C092E30A23F0CA8300B79FF8 /* SceneDelegate.swift in Sources */,
 				3F2BA75E23F7728600E91400 /* ConfirmCodeView.swift in Sources */,

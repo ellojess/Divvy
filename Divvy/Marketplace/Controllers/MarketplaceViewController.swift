@@ -21,6 +21,7 @@
         [] scroll horizonally, populated with user postings from Add Item Page
 */
 import UIKit
+import SwiftUI
 
 class MarketplaceViewController: UIViewController {
     private var persistance = PersistenceLayer()
@@ -90,7 +91,9 @@ class MarketplaceViewController: UIViewController {
         
     }
     @IBAction func ProfileTapped(_ sender: UIBarButtonItem) {
-        let nextVC = ProfileViewController()
+        let profileView = ProfileContentView()
+        let nextVC = UIHostingController(rootView: profileView)
+//        let nextVC = ProfileViewController()
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
 
