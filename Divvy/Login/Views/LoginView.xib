@@ -13,7 +13,9 @@
                 <outlet property="CreateAccountButton" destination="0fh-e2-nyb" id="zxY-co-ZD1"/>
                 <outlet property="GoogleButton" destination="oTQ-IZ-iH5" id="dLz-cW-SIj"/>
                 <outlet property="LoginButton" destination="tgv-4p-q7j" id="V0V-5A-dpm"/>
+                <outlet property="emailTextfield" destination="ygw-8v-vse" id="O02-uZ-ri7"/>
                 <outlet property="loginButton" destination="tgv-4p-q7j" id="dNo-6d-pFh"/>
+                <outlet property="passwordTextField" destination="XqK-MR-oDT" id="Zuf-Ce-rvR"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Spk-Js-YGz"/>
             </connections>
         </placeholder>
@@ -26,7 +28,7 @@
                     <rect key="frame" x="67" y="58" width="240" height="211"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Phone Number" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ygw-8v-vse">
+                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ygw-8v-vse">
                     <rect key="frame" x="97" y="307" width="181" height="34"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

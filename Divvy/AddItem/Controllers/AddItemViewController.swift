@@ -26,22 +26,62 @@
 import UIKit
 
 class AddItemViewController: UIViewController {
-
+    //Creating and Item
+    @IBOutlet weak var itemImage: UIImageView!
+    @IBOutlet weak var itemNameField: UITextField!
+    @IBOutlet weak var itemPriceField: UITextField!
+    @IBOutlet weak var itemURLField: UITextField!
+    
+    //https://codewithchris.com/uipickerview-example/ source reference
+    @IBOutlet weak var itemCategoryPicker: UIPickerView!
+    @IBOutlet weak var itemAddButton: UIButton!
+    
+    var pickerCategories: [String] = [String]()
+    
+    //Nav Bar Stuff
+    @IBOutlet weak var NavBar: UINavigationBar!
+    @IBOutlet weak var cancelButton: UIBarButtonItem!
+    //MARK: View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        //Connecting data to the item picker thing
+        self.itemCategoryPicker.delegate = self
+        self.itemCategoryPicker.dataSource = self
+        
+        pickerCategories = ["Vegetable","Fruit","Meat & Seafood","Grain","Canned","Dairy","Baked Goods","Candy","Chips","Drink","Baby","Pet","Health & Wellness","Personal Care","Household","Other"]
+    }
+    
+    //MARK: IBAction here
+    @IBAction func cancelButtonPressed(_ sender: UIBarButtonItem) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    //MARK: This will add the item to the marketplace and then dismiss the view
+    @IBAction func addItemPressed(_ sender: Any) {
+        var persistenceLayer = PersistenceLayer()
+        guard let itemD1 = itemNameField.text else { return }
+        guard let itemD2 = itemPriceField.text else { return }
+        guard let itemD3 = itemURLField.text else { return }
+        persistenceLayer.createNewMarketItem(image: "tomato", itemDetail1: itemD1, itemDetail2: itemD2, itemDetail3: itemD3)
+//        self.presentingViewController?.dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+}
+//MARK: Extension
+extension AddItemViewController: UIPickerViewDelegate, UIPickerViewDataSource{
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
     }
-    */
-
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerCategories.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerCategories[row]
+    }
+    
+    
 }
