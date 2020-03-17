@@ -9,10 +9,15 @@
 import UIKit
 
 class TitleCell: UICollectionViewCell {
-
+    static var identifier: String = "TitleCell"
+    @IBOutlet weak var titleLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+    }
+    
+    func set(title: String) {
+        titleLabel.text = title
     }
 
 }
