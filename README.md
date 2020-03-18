@@ -7,7 +7,6 @@ These items include food, household items, pet product, baby products, and more!
 ## How to Install 
 Note: Divvy is still in the process of developmemt. Follow the link here <> to stay up to date with our team's development process. 
 
-
 ## How To Use Divvy 
 1. Install the app onto your mobile device 
 2. Create an account or choose to continue as guest
@@ -19,18 +18,24 @@ Note: Divvy recommends users meet in a public location and refrain from giving o
 6. Last but not least, enjoy(:
 
 ## Keep an Eye Out for Our Updates and Latest Features 
-checklist: 
-[ ] Community Chatroom: look forward to being able to connect with those in your community for non-transaction related fun! 
-[ ] Token system: look forward to buying/selling items with our incoming credit feature instead of cash! 
-[ ]  Friends Circle: Be able to keep track of those you plan on continuing your Divvy relationship/Divvyship with.
+checklist:
+
+- [ ] Community Chatroom: look forward to being able to connect with those in your community for non-transaction related fun! 
+
+- [ ] Token system: look forward to buying/selling items with our incoming credit feature instead of cash! 
+
+- [ ]  Friends Circle: Be able to keep track of those you plan on continuing your Divvy relationship/Divvyship with.
 
 ### Have an idea for a feature you'd like to see in Divvy? 
 Submit a request here: <link> 
 
 ## Meet the team: 
 Jessica: Product Manager, Project Manager, Technical Manager, Software Engineer, iOS Developer
+
 Henry: Front End Lead, Software Engineer, iOS Developer 
+
 Gonzo: Design Lead, Software Engineer, iOS Developer 
+
 Max: Back End Lead, Software Engineer, Web Developer 
 
 
