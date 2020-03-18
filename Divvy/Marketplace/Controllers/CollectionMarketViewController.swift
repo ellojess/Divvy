@@ -14,6 +14,7 @@ class CollectionMarketViewController: UIViewController {
     
     lazy var sections: [Section] = [
         TitleSection(title: "Categories"),
+        CategorySection(),
         TitleSection(title: "Recently Added")
     ]
     
@@ -41,6 +42,7 @@ class CollectionMarketViewController: UIViewController {
         marketCollection.backgroundColor = UIColor.white
         //MARK: Register the cells
         marketCollection.register(UINib(nibName: "TitleCell", bundle: .main), forCellWithReuseIdentifier: TitleCell.identifier)
+        marketCollection.register(UINib(nibName: "CategoryCell", bundle: .main), forCellWithReuseIdentifier: CategoryCell.identifier)
         //MARK: Market Collection Adding
         self.view.addSubview(marketCollection)
         marketCollection.reloadData()

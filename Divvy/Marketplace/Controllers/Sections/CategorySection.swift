@@ -9,7 +9,16 @@
 import UIKit
 
 struct CategorySection: Section{
-    var numberOfItems: Int = 6
+/*    Categories: Cleaning; snacks; Beverages; Baby & Kids; Health & Beauty;
+     Paper Products; Candy, Gum, and Mints; Canned & Packaged
+     Specific ones: Berkley Jensen, Wellsley Farms
+     
+ */
+    let categories: [CategoryItems] = [
+        CategoryItems(image: "wash", categoryName: "Cleaning"),
+        CategoryItems(image: "popcorn", categoryName: "Snacks")
+    ]
+    var numberOfItems: Int = 2
     
     func layoutSection() -> NSCollectionLayoutSection? {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.9), heightDimension: .fractionalHeight(0.9))
@@ -27,8 +36,18 @@ struct CategorySection: Section{
     
     func configureCell(collectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: CategoryCell.identifier), for: indexPath) as! CategoryCell
+        cell.categoryImage.image = UIImage(named: categories[indexPath.row].image)
+        cell.categoryLabel.text = categories[indexPath.row].categoryName
         return cell
     }
     
     
 }
+//MARK: Attributions
+
+/*
+ --Cleaning--
+ Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+ --Snacks--
+ Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+ */

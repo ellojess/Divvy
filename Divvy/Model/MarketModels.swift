@@ -14,12 +14,9 @@ struct MarketItem: Codable {
     let itemDetail1: String
     let itemDetail2: String
     let itemDetail3: String
-    
-//    var imagess: UIImage {
-//        guard let image = UIImage(named: String(describing: self)) else {
-//            fatalError("image \(self) not found")
-//        }
-//
-//        return image
-//    }
+}
+
+struct CategoryItems{
+    let image: String
+    let categoryName: String
 }
