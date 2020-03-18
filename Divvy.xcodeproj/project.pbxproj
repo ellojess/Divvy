@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		33607672133E15F0E0AABEAE /* Pods_Divvy_DivvyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A4AFB092F0FD4C7239AFFDC /* Pods_Divvy_DivvyUITests.framework */; };
+		3F0174B12422C08A00D493A3 /* ShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0174AF2422C08A00D493A3 /* ShoppingCartViewController.swift */; };
+		3F0174B22422C08A00D493A3 /* ShoppingCartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F0174B02422C08A00D493A3 /* ShoppingCartViewController.xib */; };
 		3F132D292406F61E00972879 /* PersistanceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F132D282406F61E00972879 /* PersistanceLayer.swift */; };
 		3F16CF0F23FC6A9800DCECC4 /* MarketModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F16CF0E23FC6A9800DCECC4 /* MarketModels.swift */; };
 		3F16CF1423FC755900DCECC4 /* MarketItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F16CF1223FC755900DCECC4 /* MarketItemViewCell.swift */; };
@@ -85,6 +87,8 @@
 
 /* Begin PBXFileReference section */
 		2A4AFB092F0FD4C7239AFFDC /* Pods_Divvy_DivvyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Divvy_DivvyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F0174AF2422C08A00D493A3 /* ShoppingCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartViewController.swift; sourceTree = "<group>"; };
+		3F0174B02422C08A00D493A3 /* ShoppingCartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoppingCartViewController.xib; sourceTree = "<group>"; };
 		3F132D282406F61E00972879 /* PersistanceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceLayer.swift; sourceTree = "<group>"; };
 		3F16CF0E23FC6A9800DCECC4 /* MarketModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketModels.swift; sourceTree = "<group>"; };
 		3F16CF1223FC755900DCECC4 /* MarketItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketItemViewCell.swift; sourceTree = "<group>"; };
@@ -237,6 +241,8 @@
 		3FC775A824216A2600AD5C16 /* ShoppingCart */ = {
 			isa = PBXGroup;
 			children = (
+				3F0174AF2422C08A00D493A3 /* ShoppingCartViewController.swift */,
+				3F0174B02422C08A00D493A3 /* ShoppingCartViewController.xib */,
 			);
 			path = ShoppingCart;
 			sourceTree = "<group>";
@@ -746,6 +752,7 @@
 				3FC775B42421994200AD5C16 /* RecentCell.xib in Resources */,
 				C070981123F3AE0000CEC9E4 /* MarketplaceView.xib in Resources */,
 				C092E30F23F0CA8300B79FF8 /* Main.storyboard in Resources */,
+				3F0174B22422C08A00D493A3 /* ShoppingCartViewController.xib in Resources */,
 				C027676224032458000F41F8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -903,6 +910,7 @@
 				3F818857240F8EFB0023E4BF /* ProfileContentView.swift in Sources */,
 				C070981423F3AE2E00CEC9E4 /* ChatViewController.swift in Sources */,
 				3FC7759F2421648800AD5C16 /* TitleCell.swift in Sources */,
+				3F0174B12422C08A00D493A3 /* ShoppingCartViewController.swift in Sources */,
 				C092E30A23F0CA8300B79FF8 /* SceneDelegate.swift in Sources */,
 				3FC775982421637C00AD5C16 /* CollectionMarketViewController.swift in Sources */,
 				3F2BA75E23F7728600E91400 /* ConfirmCodeView.swift in Sources */,
