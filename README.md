@@ -7,6 +7,7 @@ These items include food, household items, pet product, baby products, and more!
 ## How to Install 
 Note: Divvy is still in the process of developmemt. Follow the link here <> to stay up to date with our team's development process. 
 
+
 ## How To Use Divvy 
 1. Install the app onto your mobile device 
 2. Create an account or choose to continue as guest
