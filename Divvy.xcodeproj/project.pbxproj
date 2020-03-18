@@ -188,6 +188,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F0174B32422C1EC00D493A3 /* ShoppingCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ShoppingCells;
+			sourceTree = "<group>";
+		};
 		3F818853240F8EAC0023E4BF /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +248,7 @@
 		3FC775A824216A2600AD5C16 /* ShoppingCart */ = {
 			isa = PBXGroup;
 			children = (
+				3F0174B32422C1EC00D493A3 /* ShoppingCells */,
 				3F0174AF2422C08A00D493A3 /* ShoppingCartViewController.swift */,
 				3F0174B02422C08A00D493A3 /* ShoppingCartViewController.xib */,
 			);
