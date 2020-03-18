@@ -3,6 +3,7 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,9 +24,23 @@
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N7d-Eu-eqf">
                     <rect key="frame" x="0.0" y="587" width="375" height="80"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dlr-8A-5P7">
+                            <rect key="frame" x="5" y="5" width="365" height="70"/>
+                            <color key="backgroundColor" name="divvyGreen"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                            <state key="normal" title="Checkout">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Dlr-8A-5P7" secondAttribute="trailing" constant="5" id="1nT-Qb-FR8"/>
                         <constraint firstAttribute="height" constant="80" id="3dL-8f-cXp"/>
+                        <constraint firstItem="Dlr-8A-5P7" firstAttribute="top" secondItem="N7d-Eu-eqf" secondAttribute="top" constant="5" id="GPp-ey-P3j"/>
+                        <constraint firstItem="Dlr-8A-5P7" firstAttribute="leading" secondItem="N7d-Eu-eqf" secondAttribute="leading" constant="5" id="aPA-cH-v2b"/>
+                        <constraint firstAttribute="bottom" secondItem="Dlr-8A-5P7" secondAttribute="bottom" constant="5" id="fsb-ng-vGU"/>
                     </constraints>
                 </view>
             </subviews>
@@ -43,4 +58,9 @@
             <point key="canvasLocation" x="138.40000000000001" y="142.57871064467767"/>
         </view>
     </objects>
+    <resources>
+        <namedColor name="divvyGreen">
+            <color red="0.25900000333786011" green="0.68500000238418579" blue="0.16300000250339508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

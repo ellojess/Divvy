@@ -10,6 +10,8 @@
 		33607672133E15F0E0AABEAE /* Pods_Divvy_DivvyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A4AFB092F0FD4C7239AFFDC /* Pods_Divvy_DivvyUITests.framework */; };
 		3F0174B12422C08A00D493A3 /* ShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0174AF2422C08A00D493A3 /* ShoppingCartViewController.swift */; };
 		3F0174B22422C08A00D493A3 /* ShoppingCartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F0174B02422C08A00D493A3 /* ShoppingCartViewController.xib */; };
+		3F0174B62422C3E800D493A3 /* ShoppingCartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0174B42422C3E800D493A3 /* ShoppingCartCell.swift */; };
+		3F0174B72422C3E800D493A3 /* ShoppingCartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F0174B52422C3E800D493A3 /* ShoppingCartCell.xib */; };
 		3F132D292406F61E00972879 /* PersistanceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F132D282406F61E00972879 /* PersistanceLayer.swift */; };
 		3F16CF0F23FC6A9800DCECC4 /* MarketModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F16CF0E23FC6A9800DCECC4 /* MarketModels.swift */; };
 		3F16CF1423FC755900DCECC4 /* MarketItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F16CF1223FC755900DCECC4 /* MarketItemViewCell.swift */; };
@@ -89,6 +91,8 @@
 		2A4AFB092F0FD4C7239AFFDC /* Pods_Divvy_DivvyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Divvy_DivvyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F0174AF2422C08A00D493A3 /* ShoppingCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartViewController.swift; sourceTree = "<group>"; };
 		3F0174B02422C08A00D493A3 /* ShoppingCartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoppingCartViewController.xib; sourceTree = "<group>"; };
+		3F0174B42422C3E800D493A3 /* ShoppingCartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartCell.swift; sourceTree = "<group>"; };
+		3F0174B52422C3E800D493A3 /* ShoppingCartCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoppingCartCell.xib; sourceTree = "<group>"; };
 		3F132D282406F61E00972879 /* PersistanceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceLayer.swift; sourceTree = "<group>"; };
 		3F16CF0E23FC6A9800DCECC4 /* MarketModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketModels.swift; sourceTree = "<group>"; };
 		3F16CF1223FC755900DCECC4 /* MarketItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketItemViewCell.swift; sourceTree = "<group>"; };
@@ -191,6 +195,8 @@
 		3F0174B32422C1EC00D493A3 /* ShoppingCells */ = {
 			isa = PBXGroup;
 			children = (
+				3F0174B42422C3E800D493A3 /* ShoppingCartCell.swift */,
+				3F0174B52422C3E800D493A3 /* ShoppingCartCell.xib */,
 			);
 			path = ShoppingCells;
 			sourceTree = "<group>";
@@ -750,6 +756,7 @@
 				3F16CF1523FC755900DCECC4 /* MarketItemViewCell.xib in Resources */,
 				3FC775AE24218E6800AD5C16 /* CategoryCell.xib in Resources */,
 				C070980523F3AD8C00CEC9E4 /* SignUpView.xib in Resources */,
+				3F0174B72422C3E800D493A3 /* ShoppingCartCell.xib in Resources */,
 				C070981523F3AE2E00CEC9E4 /* ChatViewController.xib in Resources */,
 				C092E31723F0CA8700B79FF8 /* LaunchScreen.storyboard in Resources */,
 				C070980123F3AD6900CEC9E4 /* VerificationViewController.xib in Resources */,
@@ -908,6 +915,7 @@
 				3F132D292406F61E00972879 /* PersistanceLayer.swift in Sources */,
 				3F818859240F8F0F0023E4BF /* MapView.swift in Sources */,
 				3FC775B32421994200AD5C16 /* RecentCell.swift in Sources */,
+				3F0174B62422C3E800D493A3 /* ShoppingCartCell.swift in Sources */,
 				C070981C23F3E40A00CEC9E4 /* CurrentOrdersViewController.swift in Sources */,
 				3F2BA75823F74F1A00E91400 /* LoginView.swift in Sources */,
 				3F2BA76023F774ED00E91400 /* ProfileView.swift in Sources */,
