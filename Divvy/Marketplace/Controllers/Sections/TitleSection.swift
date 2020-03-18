@@ -29,8 +29,7 @@ struct TitleSection: Section {
     //Step 6
     func configureCell(collectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: TitleCell.self), for: indexPath) as! TitleCell
-        //TODO: set the cell's title
-//        cell.set(title: title)
+        cell.set(title: title)
         return cell
     }
 }
