@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class TabBarController: UITabBarController, UITabBarControllerDelegate{
 
@@ -19,10 +20,21 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate{
     func setupViewControllers(){
         let marketplace = CollectionMarketViewController()
 //        CollectionMarketViewController.title = "Marketplace"
-        let nav1 = UINavigationController(rootViewController: marketplace)
+        let navMark = UINavigationController(rootViewController: marketplace)
         marketplace.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
         
-        viewControllers = [nav1]
+        let profile = ProfileContentView()
+        let profileVC = UIHostingController(rootView: profile)
+        let navProf = UINavigationController(rootViewController: profileVC)
+        marketplace.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 1)
+        
+        let chat = ChatViewController()
+        let navChat = UINavigationController(rootViewController: chat)
+        marketplace.tabBarItem = UITabBarItem(tabBarSystemItem: .downloads, tag: 2)
+
+        
+//        viewControllers = [navMark, navProf]
+        viewControllers = [navMark, navProf, navChat]
     }
     
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
