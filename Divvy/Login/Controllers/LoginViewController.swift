@@ -34,7 +34,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginViewTapped(_ sender: UIButton) {
-        let nextVC = MarketplaceViewController()
+        let nextVC = TabBarController()
         
 //        if let email = emailTextfield.text, let password = passwordTextField.text {
 //            Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
