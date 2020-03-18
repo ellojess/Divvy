@@ -10,6 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShoppingCartViewController" customModule="Divvy" customModuleProvider="target">
             <connections>
+                <outlet property="buttonView" destination="N7d-Eu-eqf" id="fhA-91-xSQ"/>
+                <outlet property="cartTable" destination="NZ9-uz-RHq" id="ZmL-ke-bVY"/>
+                <outlet property="checkoutButton" destination="Dlr-8A-5P7" id="Pvo-S7-iT8"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -32,6 +35,9 @@
                             <state key="normal" title="Checkout">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
+                            <connections>
+                                <action selector="checkoutPressed:" destination="-1" eventType="touchUpInside" id="kPW-Ah-3tR"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
