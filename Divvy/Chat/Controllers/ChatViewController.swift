@@ -13,6 +13,7 @@
         [] Chat label in center
 */
 import UIKit
+import Firebase
 
 class ChatViewController: UIViewController {
     
@@ -24,12 +25,13 @@ class ChatViewController: UIViewController {
     var messages: [Message] = [
         Message(sender: "1@2.com", body: "Hey"),
         Message(sender: "3@4.com", body: "Hello"),
-        Message(sender: "a@b.com", body: "What's up?")
+        Message(sender: "1@2.com", body: "What's up?")
     ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        title = K.appName
     }
     
     @IBAction func sendPressed(_ sender: Any) {
@@ -55,7 +57,7 @@ extension ChatViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ReusableCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath)
         cell.textLabel?.text = messages[indexPath.row].body
         return cell
     }
