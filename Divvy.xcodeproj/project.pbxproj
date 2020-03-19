@@ -22,6 +22,7 @@
 		3F2BA75C23F761EE00E91400 /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2BA75B23F761EE00E91400 /* VerificationView.swift */; };
 		3F2BA75E23F7728600E91400 /* ConfirmCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2BA75D23F7728600E91400 /* ConfirmCodeView.swift */; };
 		3F2BA76023F774ED00E91400 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2BA75F23F774ED00E91400 /* ProfileView.swift */; };
+		3F64323A2424145E002B2522 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6432392424145E002B2522 /* TestViewController.swift */; };
 		3F818855240F8EE10023E4BF /* profileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F818854240F8EE10023E4BF /* profileImage.swift */; };
 		3F818857240F8EFB0023E4BF /* ProfileContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F818856240F8EFB0023E4BF /* ProfileContentView.swift */; };
 		3F818859240F8F0F0023E4BF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F818858240F8F0F0023E4BF /* MapView.swift */; };
@@ -103,6 +104,7 @@
 		3F2BA75B23F761EE00E91400 /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
 		3F2BA75D23F7728600E91400 /* ConfirmCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmCodeView.swift; sourceTree = "<group>"; };
 		3F2BA75F23F774ED00E91400 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		3F6432392424145E002B2522 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		3F818854240F8EE10023E4BF /* profileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileImage.swift; sourceTree = "<group>"; };
 		3F818856240F8EFB0023E4BF /* ProfileContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileContentView.swift; sourceTree = "<group>"; };
 		3F818858240F8F0F0023E4BF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -226,6 +228,14 @@
 				C070980F23F3AE0000CEC9E4 /* MarketplaceView.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		3F6432382424143C002B2522 /* TestView */ = {
+			isa = PBXGroup;
+			children = (
+				3F6432392424145E002B2522 /* TestViewController.swift */,
+			);
+			path = TestView;
 			sourceTree = "<group>";
 		};
 		3F818853240F8EAC0023E4BF /* SwiftUI */ = {
@@ -416,6 +426,7 @@
 		C092E30623F0CA8300B79FF8 /* Divvy */ = {
 			isa = PBXGroup;
 			children = (
+				3F6432382424143C002B2522 /* TestView */,
 				3FC775A824216A2600AD5C16 /* ShoppingCart */,
 				3FC775A5242168D700AD5C16 /* LandingBar */,
 				C092E31823F0CA8700B79FF8 /* Info.plist */,
@@ -926,6 +937,7 @@
 				3FC775AA24218BB400AD5C16 /* CategorySection.swift in Sources */,
 				3FC775B02421969F00AD5C16 /* RecentSection.swift in Sources */,
 				3FC775A72421698300AD5C16 /* TabBarController.swift in Sources */,
+				3F64323A2424145E002B2522 /* TestViewController.swift in Sources */,
 				C092E31223F0CA8300B79FF8 /* Divvy.xcdatamodeld in Sources */,
 				C070981023F3AE0000CEC9E4 /* MarketplaceViewController.swift in Sources */,
 				C092E30C23F0CA8300B79FF8 /* ViewController.swift in Sources */,
