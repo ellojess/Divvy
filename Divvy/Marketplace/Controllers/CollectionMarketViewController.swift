@@ -64,6 +64,8 @@ class CollectionMarketViewController: UIViewController {
     //MARK: Actions
     @objc func openCart(){
         let nextVC = ShoppingCartViewController()
+        //The below doesn't work. Need to find best solution here
+//        self.navigationController?.popToViewController(nextVC, animated: true)
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
 }

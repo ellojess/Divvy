@@ -13,6 +13,8 @@
                 <outlet property="buttonView" destination="N7d-Eu-eqf" id="fhA-91-xSQ"/>
                 <outlet property="cartTable" destination="NZ9-uz-RHq" id="ZmL-ke-bVY"/>
                 <outlet property="checkoutButton" destination="Dlr-8A-5P7" id="Pvo-S7-iT8"/>
+                <outlet property="totalPriceLabel" destination="zsS-j5-bjh" id="Ca0-jc-cAm"/>
+                <outlet property="totalTitle" destination="ngG-0F-8r9" id="4op-E1-Zft"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,14 +24,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NZ9-uz-RHq">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="587"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="595.5"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N7d-Eu-eqf">
-                    <rect key="frame" x="0.0" y="587" width="375" height="80"/>
+                    <rect key="frame" x="0.0" y="595.5" width="375" height="71.5"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dlr-8A-5P7">
-                            <rect key="frame" x="5" y="5" width="365" height="70"/>
+                            <rect key="frame" x="5" y="30.5" width="365" height="36"/>
                             <color key="backgroundColor" name="divvyGreen"/>
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                             <state key="normal" title="Checkout">
@@ -39,14 +41,33 @@
                                 <action selector="checkoutPressed:" destination="-1" eventType="touchUpInside" id="kPW-Ah-3tR"/>
                             </connections>
                         </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="224" translatesAutoresizingMaskIntoConstraints="NO" id="puk-kJ-kFk">
+                            <rect key="frame" x="5" y="5" width="365" height="20.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngG-0F-8r9">
+                                    <rect key="frame" x="0.0" y="0.0" width="70.5" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsS-j5-bjh">
+                                    <rect key="frame" x="294.5" y="0.0" width="70.5" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="Dlr-8A-5P7" secondAttribute="trailing" constant="5" id="1nT-Qb-FR8"/>
-                        <constraint firstAttribute="height" constant="80" id="3dL-8f-cXp"/>
-                        <constraint firstItem="Dlr-8A-5P7" firstAttribute="top" secondItem="N7d-Eu-eqf" secondAttribute="top" constant="5" id="GPp-ey-P3j"/>
-                        <constraint firstItem="Dlr-8A-5P7" firstAttribute="leading" secondItem="N7d-Eu-eqf" secondAttribute="leading" constant="5" id="aPA-cH-v2b"/>
-                        <constraint firstAttribute="bottom" secondItem="Dlr-8A-5P7" secondAttribute="bottom" constant="5" id="fsb-ng-vGU"/>
+                        <constraint firstItem="Dlr-8A-5P7" firstAttribute="top" secondItem="puk-kJ-kFk" secondAttribute="bottom" constant="5" id="7jE-1d-dxe"/>
+                        <constraint firstItem="Dlr-8A-5P7" firstAttribute="leading" secondItem="N7d-Eu-eqf" secondAttribute="leading" constant="5" id="B0S-vw-cGC"/>
+                        <constraint firstAttribute="trailing" secondItem="puk-kJ-kFk" secondAttribute="trailing" constant="5" id="G4n-0r-2T0"/>
+                        <constraint firstAttribute="trailing" secondItem="Dlr-8A-5P7" secondAttribute="trailing" constant="5" id="QgG-RR-GtT"/>
+                        <constraint firstItem="puk-kJ-kFk" firstAttribute="leading" secondItem="N7d-Eu-eqf" secondAttribute="leading" constant="5" id="Yos-ON-mY0"/>
+                        <constraint firstAttribute="bottom" secondItem="Dlr-8A-5P7" secondAttribute="bottom" constant="5" id="sAt-ag-vcK"/>
+                        <constraint firstItem="puk-kJ-kFk" firstAttribute="top" secondItem="N7d-Eu-eqf" secondAttribute="top" constant="5" id="yAJ-l8-jsE"/>
                     </constraints>
                 </view>
             </subviews>
@@ -56,7 +77,7 @@
                 <constraint firstItem="NZ9-uz-RHq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Evj-hG-16V"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NZ9-uz-RHq" secondAttribute="trailing" id="FlQ-3U-AnY"/>
                 <constraint firstItem="N7d-Eu-eqf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="K6r-s2-XAa"/>
-                <constraint firstItem="N7d-Eu-eqf" firstAttribute="top" secondItem="NZ9-uz-RHq" secondAttribute="bottom" id="nGo-Ps-GfF"/>
+                <constraint firstItem="N7d-Eu-eqf" firstAttribute="top" secondItem="NZ9-uz-RHq" secondAttribute="bottom" id="LTj-iV-iDL"/>
                 <constraint firstItem="N7d-Eu-eqf" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="no7-25-6k0"/>
                 <constraint firstItem="N7d-Eu-eqf" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="suF-me-Zoc"/>
             </constraints>

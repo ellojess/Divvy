@@ -12,6 +12,8 @@ class ShoppingCartViewController: UIViewController {
     @IBOutlet weak var cartTable: UITableView!
     @IBOutlet weak var buttonView: UIView!
     @IBOutlet weak var checkoutButton: UIButton!
+    @IBOutlet weak var totalTitle: UILabel!
+    @IBOutlet weak var totalPriceLabel: UILabel!
     
     //MARK: View Did Load
     override func viewDidLoad() {
@@ -44,6 +46,7 @@ extension ShoppingCartViewController: UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ShoppingCartCell", for: indexPath) as! ShoppingCartCell
+//        cell.setup(name: <#T##String#>, image: <#T##String#>, quantity: <#T##Int#>, price: <#T##Double#>)
         return cell
     }
     
