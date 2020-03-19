@@ -43,6 +43,9 @@
 		C027676224032458000F41F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C027676124032458000F41F8 /* GoogleService-Info.plist */; };
 		C031680223F47DD20094A6F3 /* ConfirmCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C031680023F47DD20094A6F3 /* ConfirmCodeViewController.swift */; };
 		C031680323F47DD20094A6F3 /* ConfirmCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C031680123F47DD20094A6F3 /* ConfirmCodeViewController.xib */; };
+		C037A1A22422ED4600CD1CFB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C037A1A12422ED4600CD1CFB /* Constants.swift */; };
+		C037A1A52423524300CD1CFB /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C037A1A32423524300CD1CFB /* MessageCell.swift */; };
+		C037A1A62423524300CD1CFB /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C037A1A42423524300CD1CFB /* MessageCell.xib */; };
 		C070980023F3AD6900CEC9E4 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07097FE23F3AD6900CEC9E4 /* VerificationViewController.swift */; };
 		C070980123F3AD6900CEC9E4 /* VerificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C07097FF23F3AD6900CEC9E4 /* VerificationViewController.xib */; };
 		C070980423F3AD8C00CEC9E4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070980223F3AD8C00CEC9E4 /* SignUpViewController.swift */; };
@@ -123,6 +126,9 @@
 		C031680023F47DD20094A6F3 /* ConfirmCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmCodeViewController.swift; sourceTree = "<group>"; };
 		C031680123F47DD20094A6F3 /* ConfirmCodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmCodeViewController.xib; sourceTree = "<group>"; };
 		C031680423F485810094A6F3 /* MaxFile.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = MaxFile.md; sourceTree = "<group>"; };
+		C037A1A12422ED4600CD1CFB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C037A1A32423524300CD1CFB /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		C037A1A42423524300CD1CFB /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		C07097FE23F3AD6900CEC9E4 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
 		C07097FF23F3AD6900CEC9E4 /* VerificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerificationViewController.xib; sourceTree = "<group>"; };
 		C070980223F3AD8C00CEC9E4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -295,6 +301,8 @@
 		C027676324034823000F41F8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C02767642403487C000F41F8 /* Message.swift */,
+				C037A1A12422ED4600CD1CFB /* Constants.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -471,6 +479,9 @@
 		C092E33C23F0CEA000B79FF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C070981323F3AE2E00CEC9E4 /* ChatViewController.xib */,
+				C037A1A32423524300CD1CFB /* MessageCell.swift */,
+				C037A1A42423524300CD1CFB /* MessageCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -772,6 +783,7 @@
 				3FC775AE24218E6800AD5C16 /* CategoryCell.xib in Resources */,
 				C070980523F3AD8C00CEC9E4 /* SignUpView.xib in Resources */,
 				3F0174B72422C3E800D493A3 /* ShoppingCartCell.xib in Resources */,
+				C037A1A62423524300CD1CFB /* MessageCell.xib in Resources */,
 				C070981523F3AE2E00CEC9E4 /* ChatViewController.xib in Resources */,
 				C092E31723F0CA8700B79FF8 /* LaunchScreen.storyboard in Resources */,
 				C070980123F3AD6900CEC9E4 /* VerificationViewController.xib in Resources */,
@@ -927,6 +939,7 @@
 				C070980C23F3ADD800CEC9E4 /* LoginViewController.swift in Sources */,
 				3F16CF1423FC755900DCECC4 /* MarketItemViewCell.swift in Sources */,
 				3F132D292406F61E00972879 /* PersistanceLayer.swift in Sources */,
+				C037A1A52423524300CD1CFB /* MessageCell.swift in Sources */,
 				3F818859240F8F0F0023E4BF /* MapView.swift in Sources */,
 				3FC775B32421994200AD5C16 /* RecentCell.swift in Sources */,
 				3F0174B62422C3E800D493A3 /* ShoppingCartCell.swift in Sources */,
@@ -936,6 +949,7 @@
 				C070980823F3ADBC00CEC9E4 /* ProfileViewController.swift in Sources */,
 				3FC775A22421652000AD5C16 /* Section.swift in Sources */,
 				3F818855240F8EE10023E4BF /* profileImage.swift in Sources */,
+				C037A1A22422ED4600CD1CFB /* Constants.swift in Sources */,
 				C092E30823F0CA8300B79FF8 /* AppDelegate.swift in Sources */,
 				3F818857240F8EFB0023E4BF /* ProfileContentView.swift in Sources */,
 				3FC7759F2421648800AD5C16 /* TitleCell.swift in Sources */,
