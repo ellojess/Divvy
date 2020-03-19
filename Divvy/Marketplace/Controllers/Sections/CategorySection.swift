@@ -15,10 +15,19 @@ struct CategorySection: Section{
      
  */
     let categories: [CategoryItems] = [
+        CategoryItems(image: "popcorn", categoryName: "Meat"),
+        CategoryItems(image: "popcorn", categoryName: "Produce"),
+        CategoryItems(image: "popcorn", categoryName: "Bread"),
+        CategoryItems(image: "popcorn", categoryName: "Dairy"),
+        CategoryItems(image: "popcorn", categoryName: "Paper Products"),
+        CategoryItems(image: "popcorn", categoryName: "Beauty"),
+        CategoryItems(image: "popcorn", categoryName: "Health"),
+        CategoryItems(image: "popcorn", categoryName: "Baby & Kids"),
+        CategoryItems(image: "popcorn", categoryName: "Drinks"),
         CategoryItems(image: "wash", categoryName: "Cleaning"),
         CategoryItems(image: "popcorn", categoryName: "Snacks")
     ]
-    var numberOfItems: Int = 2
+    var numberOfItems: Int = 11
     
     func layoutSection() -> NSCollectionLayoutSection? {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.9), heightDimension: .fractionalHeight(0.9))
