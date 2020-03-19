@@ -21,8 +21,10 @@
         [] scroll horizonally, populated with user postings from Add Item Page
 */
 import UIKit
+import SwiftUI
 
 class MarketplaceViewController: UIViewController {
+    private var persistance = PersistenceLayer()
     
     var marketItems = [MarketItem]()
     //MARK: NAV Top Bar
@@ -41,13 +43,21 @@ class MarketplaceViewController: UIViewController {
     //MARK: View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        self.navigationController?.initRootViewController(vc: self)
-//        self.navigationController?.isNavigationBarHidden = false
-//        self.navigationController?.title = "Market Place"
+//        Mar.register(
+//                    MarketItemViewCell.nib,
+//                    forCellReuseIdentifier: MarketItemViewCell.identifier
+//        )
         setMarketPlace()
         getData()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        persistance.setNeedsToReloadHabits()
+        MarketTableView.reloadData()
+    }
+
     
     //MARK: Setting Up the Market Place.
     func setMarketPlace(){
@@ -68,6 +78,11 @@ class MarketplaceViewController: UIViewController {
     @IBAction func AddItemTapped(_ sender: UIBarButtonItem) {
         let nextVC = AddItemViewController()
         self.navigationController?.pushViewController(nextVC, animated: true)
+        //DO NOT KNOW if code bellow needed or not
+//        let addHabitVC = AddHabitViewController.instantiate()
+//        let navigationController = UINavigationController(rootViewController: addHabitVC)
+//        navigationController.modalPresentationStyle = .fullScreen
+//        present(navigationController, animated: true, completion: nil)
     }
     
     
@@ -76,7 +91,9 @@ class MarketplaceViewController: UIViewController {
         
     }
     @IBAction func ProfileTapped(_ sender: UIBarButtonItem) {
-        let nextVC = ProfileViewController()
+        let profileView = ProfileContentView()
+        let nextVC = UIHostingController(rootView: profileView)
+//        let nextVC = ProfileViewController()
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
 
@@ -85,13 +102,15 @@ class MarketplaceViewController: UIViewController {
 //MARK: Extenstion
 extension MarketplaceViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return marketItems.count
+        //Returns the number of items in persistance
+        return persistance.items.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MarketCell", for: indexPath) as! MarketItemViewCell
-        //        cell.textLabel?.text = "\(indexPath.row) \(testBoxes[indexPath.row].date)"
-        cell.setContents(marketItem:marketItems[indexPath.row])
+        //Creates the cell and adds
+        let item = persistance.items[indexPath.row]
+        cell.setContents(marketItem: item)
         return cell
     }
     
