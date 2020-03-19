@@ -26,11 +26,15 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate{
         let profile = ProfileContentView()
         let profileVC = UIHostingController(rootView: profile)
         let navProf = UINavigationController(rootViewController: profileVC)
-        marketplace.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 1)
+        profileVC.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 1)
         
         let chat = ChatViewController()
         let navChat = UINavigationController(rootViewController: chat)
-        marketplace.tabBarItem = UITabBarItem(tabBarSystemItem: .downloads, tag: 2)
+        chat.tabBarItem = UITabBarItem(tabBarSystemItem: .downloads, tag: 2)
+        
+//        let test = TestViewController()
+//        let navTest = UINavigationController(rootViewController: test)
+        
 
         
 //        viewControllers = [navMark, navProf]
