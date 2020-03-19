@@ -15,15 +15,24 @@ class ShoppingCartViewController: UIViewController {
     @IBOutlet weak var totalTitle: UILabel!
     @IBOutlet weak var totalPriceLabel: UILabel!
     
+    var testData: [MarketItems] = [
+        MarketItems(image: "testTomato", name: "Tomato", price: 0.50, quantity: 1),
+        MarketItems(image: "testTomato", name: "Tomatos", price: 1.00, quantity: 2)
+    ]
+    
+    var totalPrice: Double = 0.00
+    
     //MARK: View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
+//        totalPriceLabel.text = "$\(totalPrice)"
         setupCart()
     }
     
     //MARK: View Will Appear
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+//        totalPriceLabel.text = "$\(totalPrice)"
         cartTable.reloadData()
     }
 
@@ -32,6 +41,10 @@ class ShoppingCartViewController: UIViewController {
         cartTable.register(UINib(nibName: "ShoppingCartCell", bundle: nil), forCellReuseIdentifier: "ShoppingCartCell")
         cartTable.dataSource = self
         cartTable.delegate = self
+        for item in testData{
+            totalPrice += item.price
+        }
+        totalPriceLabel.text = "$\(totalPrice)"
     }
     @IBAction func checkoutPressed(_ sender: UIButton) {
         print("Checkout pressed")
@@ -41,12 +54,14 @@ class ShoppingCartViewController: UIViewController {
 //MARK: Extension
 extension ShoppingCartViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+//        return 5
+        return testData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ShoppingCartCell", for: indexPath) as! ShoppingCartCell
-//        cell.setup(name: <#T##String#>, image: <#T##String#>, quantity: <#T##Int#>, price: <#T##Double#>)
+        cell.setup(name: testData[indexPath.row].name, image: testData[indexPath.row].image, quantity: testData[indexPath.row].quantity, price: testData[indexPath.row].price)
+//        totalPrice = totalPrice + testData[indexPath.row].price
         return cell
     }
     

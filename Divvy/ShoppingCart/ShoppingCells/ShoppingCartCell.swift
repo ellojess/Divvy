@@ -27,7 +27,7 @@ class ShoppingCartCell: UITableViewCell {
     func setup(name: String, image:String, quantity: Int, price: Double){
         itemName.text = name
         itemImage.image = UIImage(named: image)
-        quantityLabel.text = String(quantity)
+        quantityLabel.text = "Quantity: \(quantity)"
         priceLabel.text = "$\(price)"
     }
     
