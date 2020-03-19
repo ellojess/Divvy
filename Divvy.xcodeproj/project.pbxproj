@@ -37,7 +37,6 @@
 		84F3452447B090C4A68A9D11 /* Pods_DivvyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DBBB46B7ECF60DD454D258 /* Pods_DivvyTests.framework */; };
 		9229CB72344F15480392CC93 /* Pods_Divvy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07E54F0068012A230BA7C9D /* Pods_Divvy.framework */; };
 		C027676224032458000F41F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C027676124032458000F41F8 /* GoogleService-Info.plist */; };
-		C02767652403487C000F41F8 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02767642403487C000F41F8 /* Message.swift */; };
 		C031680223F47DD20094A6F3 /* ConfirmCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C031680023F47DD20094A6F3 /* ConfirmCodeViewController.swift */; };
 		C031680323F47DD20094A6F3 /* ConfirmCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C031680123F47DD20094A6F3 /* ConfirmCodeViewController.xib */; };
 		C070980023F3AD6900CEC9E4 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07097FE23F3AD6900CEC9E4 /* VerificationViewController.swift */; };
@@ -49,8 +48,6 @@
 		C070980C23F3ADD800CEC9E4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070980A23F3ADD800CEC9E4 /* LoginViewController.swift */; };
 		C070981023F3AE0000CEC9E4 /* MarketplaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070980E23F3AE0000CEC9E4 /* MarketplaceViewController.swift */; };
 		C070981123F3AE0000CEC9E4 /* MarketplaceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C070980F23F3AE0000CEC9E4 /* MarketplaceView.xib */; };
-		C070981423F3AE2E00CEC9E4 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070981223F3AE2E00CEC9E4 /* ChatViewController.swift */; };
-		C070981523F3AE2E00CEC9E4 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C070981323F3AE2E00CEC9E4 /* ChatViewController.xib */; };
 		C070981C23F3E40A00CEC9E4 /* CurrentOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070981A23F3E40A00CEC9E4 /* CurrentOrdersViewController.swift */; };
 		C070981D23F3E40A00CEC9E4 /* CurrentOrdersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C070981B23F3E40A00CEC9E4 /* CurrentOrdersViewController.xib */; };
 		C070982323F3E68200CEC9E4 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070982123F3E68200CEC9E4 /* AddItemViewController.swift */; };
@@ -115,7 +112,6 @@
 		ADCB678D8EE13F0B583E8271 /* Pods-Divvy-DivvyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Divvy-DivvyUITests.release.xcconfig"; path = "Target Support Files/Pods-Divvy-DivvyUITests/Pods-Divvy-DivvyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B5DBBB46B7ECF60DD454D258 /* Pods_DivvyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DivvyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C027676124032458000F41F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		C02767642403487C000F41F8 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		C031680023F47DD20094A6F3 /* ConfirmCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmCodeViewController.swift; sourceTree = "<group>"; };
 		C031680123F47DD20094A6F3 /* ConfirmCodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmCodeViewController.xib; sourceTree = "<group>"; };
 		C031680423F485810094A6F3 /* MaxFile.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = MaxFile.md; sourceTree = "<group>"; };
@@ -128,8 +124,6 @@
 		C070980A23F3ADD800CEC9E4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C070980E23F3AE0000CEC9E4 /* MarketplaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketplaceViewController.swift; sourceTree = "<group>"; };
 		C070980F23F3AE0000CEC9E4 /* MarketplaceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketplaceView.xib; sourceTree = "<group>"; };
-		C070981223F3AE2E00CEC9E4 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
-		C070981323F3AE2E00CEC9E4 /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 		C070981A23F3E40A00CEC9E4 /* CurrentOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentOrdersViewController.swift; sourceTree = "<group>"; };
 		C070981B23F3E40A00CEC9E4 /* CurrentOrdersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrentOrdersViewController.xib; sourceTree = "<group>"; };
 		C070982123F3E68200CEC9E4 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
@@ -254,7 +248,6 @@
 		C027676324034823000F41F8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C02767642403487C000F41F8 /* Message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -431,7 +424,6 @@
 		C092E33C23F0CEA000B79FF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C070981323F3AE2E00CEC9E4 /* ChatViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -439,7 +431,6 @@
 		C092E33D23F0CEB500B79FF8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C070981223F3AE2E00CEC9E4 /* ChatViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -736,7 +727,6 @@
 				3F16CF1523FC755900DCECC4 /* MarketItemViewCell.xib in Resources */,
 				3FC775AE24218E6800AD5C16 /* CategoryCell.xib in Resources */,
 				C070980523F3AD8C00CEC9E4 /* SignUpView.xib in Resources */,
-				C070981523F3AE2E00CEC9E4 /* ChatViewController.xib in Resources */,
 				C092E31723F0CA8700B79FF8 /* LaunchScreen.storyboard in Resources */,
 				C070980123F3AD6900CEC9E4 /* VerificationViewController.xib in Resources */,
 				C070981D23F3E40A00CEC9E4 /* CurrentOrdersViewController.xib in Resources */,
@@ -883,7 +873,6 @@
 				C092E31223F0CA8300B79FF8 /* Divvy.xcdatamodeld in Sources */,
 				C070981023F3AE0000CEC9E4 /* MarketplaceViewController.swift in Sources */,
 				C092E30C23F0CA8300B79FF8 /* ViewController.swift in Sources */,
-				C02767652403487C000F41F8 /* Message.swift in Sources */,
 				3FC775A4242165B900AD5C16 /* TitleSection.swift in Sources */,
 				C070980023F3AD6900CEC9E4 /* VerificationViewController.swift in Sources */,
 				3FC775AD24218E6800AD5C16 /* CategoryCell.swift in Sources */,
@@ -901,7 +890,6 @@
 				3F818855240F8EE10023E4BF /* profileImage.swift in Sources */,
 				C092E30823F0CA8300B79FF8 /* AppDelegate.swift in Sources */,
 				3F818857240F8EFB0023E4BF /* ProfileContentView.swift in Sources */,
-				C070981423F3AE2E00CEC9E4 /* ChatViewController.swift in Sources */,
 				3FC7759F2421648800AD5C16 /* TitleCell.swift in Sources */,
 				C092E30A23F0CA8300B79FF8 /* SceneDelegate.swift in Sources */,
 				3FC775982421637C00AD5C16 /* CollectionMarketViewController.swift in Sources */,
