@@ -31,6 +31,9 @@ class CollectionMarketViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Marketplace"
+//        let button1 = UIBarButtonItem(image: UIImage(named: "imagename"), style: .plain, target: self, action: Selector("action")) // action:#selector(Class.MethodName) for swift 3
+        let cartButton = UIBarButtonItem(title: "Cart", style: .plain, target: self, action: #selector(openCart))
+        self.navigationItem.rightBarButtonItem = cartButton
         self.view.backgroundColor = UIColor.white
         setupCollectionView()
     }
@@ -56,6 +59,14 @@ class CollectionMarketViewController: UIViewController {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         marketCollection.reloadData()
+    }
+    
+    //MARK: Actions
+    @objc func openCart(){
+        let nextVC = ShoppingCartViewController()
+        //The below doesn't work. Need to find best solution here
+//        self.navigationController?.popToViewController(nextVC, animated: true)
+        self.navigationController?.pushViewController(nextVC, animated: true)
     }
 }
 
