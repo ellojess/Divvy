@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,7 +29,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" name="divvyGreen"/>
+                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="Afp-sl-reR" firstAttribute="top" secondItem="aAW-bC-3rh" secondAttribute="top" constant="10" id="VAi-tV-dgw"/>
                                     <constraint firstAttribute="bottom" secondItem="Afp-sl-reR" secondAttribute="bottom" constant="10" id="kmC-ac-8cV"/>
@@ -66,8 +65,5 @@
     </objects>
     <resources>
         <image name="person.crop.square.fill" catalog="system" width="64" height="56"/>
-        <namedColor name="divvyGreen">
-            <color red="0.25900000333786011" green="0.68500000238418579" blue="0.16300000250339508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
     </resources>
 </document>
