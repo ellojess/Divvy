@@ -46,6 +46,9 @@
                             <constraint firstAttribute="width" constant="45" id="mUr-ki-fdy"/>
                         </constraints>
                         <state key="normal" title="Add"/>
+                        <connections>
+                            <action selector="addPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="0d3-m4-s62"/>
+                        </connections>
                     </button>
                 </subviews>
             </view>

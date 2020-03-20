@@ -9,13 +9,16 @@
 import UIKit
 
 class CollectionMarketViewController: UIViewController {
+    //Persistance stuff
+    private var persistance = PersistenceLayer()
     
     var marketCollection: UICollectionView!
     
     lazy var sections: [Section] = [
         TitleSection(title: "Categories"),
         CategorySection(),
-        TitleSection(title: "Recently Added")
+        TitleSection(title: "Recently Added"),
+        RecentSection()
     ]
     
     lazy var collectionViewLayout: UICollectionViewLayout = {
@@ -45,6 +48,7 @@ class CollectionMarketViewController: UIViewController {
         //MARK: Register the cells
         marketCollection.register(UINib(nibName: "TitleCell", bundle: .main), forCellWithReuseIdentifier: TitleCell.identifier)
         marketCollection.register(UINib(nibName: "CategoryCell", bundle: .main), forCellWithReuseIdentifier: CategoryCell.identifier)
+        marketCollection.register(UINib(nibName: "RecentCell", bundle: .main), forCellWithReuseIdentifier: RecentCell.identifier)
         //MARK: Market Collection Adding
         self.view.addSubview(marketCollection)
         marketCollection.reloadData()
@@ -59,6 +63,8 @@ class CollectionMarketViewController: UIViewController {
     //MARK: View Did Appear
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        //Persistance stuff
+        persistance.setNeedsToReloadHabits()
         marketCollection.reloadData()
     }
     

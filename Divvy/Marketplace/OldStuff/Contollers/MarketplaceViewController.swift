@@ -110,7 +110,7 @@ extension MarketplaceViewController: UITableViewDelegate, UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "MarketCell", for: indexPath) as! MarketItemViewCell
         //Creates the cell and adds
         let item = persistance.items[indexPath.row]
-        cell.setContents(marketItem: item)
+//        cell.setContents(marketItem: item)
         return cell
     }
     
