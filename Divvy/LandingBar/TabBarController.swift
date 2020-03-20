@@ -28,17 +28,17 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate{
         let navProf = UINavigationController(rootViewController: profileVC)
         profileVC.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 1)
         
-        let chat = ChatViewController()
-        let navChat = UINavigationController(rootViewController: chat)
-        chat.tabBarItem = UITabBarItem(tabBarSystemItem: .downloads, tag: 2)
+//        let chat = ChatViewController()
+//        let navChat = UINavigationController(rootViewController: chat)
+//        chat.tabBarItem = UITabBarItem(tabBarSystemItem: .downloads, tag: 2)
         
 //        let test = TestViewController()
 //        let navTest = UINavigationController(rootViewController: test)
         
 
         
-//        viewControllers = [navMark, navProf]
-        viewControllers = [navMark, navProf, navChat]
+        viewControllers = [navMark, navProf]
+//        viewControllers = [navMark, navProf, navChat]
     }
     
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
