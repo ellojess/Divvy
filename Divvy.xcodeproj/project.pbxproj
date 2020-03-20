@@ -46,6 +46,7 @@
 		C031680323F47DD20094A6F3 /* ConfirmCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C031680123F47DD20094A6F3 /* ConfirmCodeViewController.xib */; };
 		C035B40024244C6D00653DDA /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C035B3FF24244C6D00653DDA /* ChatViewController.swift */; };
 		C035B40224244E4A00653DDA /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C035B40124244E4A00653DDA /* Message.swift */; };
+		C035B40424246EC900653DDA /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C035B40324246EC900653DDA /* ChatViewController.xib */; };
 		C037A1A22422ED4600CD1CFB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C037A1A12422ED4600CD1CFB /* Constants.swift */; };
 		C037A1A52423524300CD1CFB /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C037A1A32423524300CD1CFB /* MessageCell.swift */; };
 		C037A1A62423524300CD1CFB /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C037A1A42423524300CD1CFB /* MessageCell.xib */; };
@@ -132,6 +133,7 @@
 		C031680423F485810094A6F3 /* MaxFile.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = MaxFile.md; sourceTree = "<group>"; };
 		C035B3FF24244C6D00653DDA /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		C035B40124244E4A00653DDA /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		C035B40324246EC900653DDA /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 		C037A1A12422ED4600CD1CFB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C037A1A32423524300CD1CFB /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		C037A1A42423524300CD1CFB /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
@@ -494,6 +496,7 @@
 		C092E33C23F0CEA000B79FF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C035B40324246EC900653DDA /* ChatViewController.xib */,
 				C037A1A32423524300CD1CFB /* MessageCell.swift */,
 				C037A1A42423524300CD1CFB /* MessageCell.xib */,
 			);
@@ -792,6 +795,7 @@
 			files = (
 				3FC775A02421648800AD5C16 /* TitleCell.xib in Resources */,
 				C070982423F3E68200CEC9E4 /* AddItemViewController.xib in Resources */,
+				C035B40424246EC900653DDA /* ChatViewController.xib in Resources */,
 				C070980923F3ADBC00CEC9E4 /* ProfileView.xib in Resources */,
 				C031680323F47DD20094A6F3 /* ConfirmCodeViewController.xib in Resources */,
 				3F16CF1523FC755900DCECC4 /* MarketItemViewCell.xib in Resources */,
