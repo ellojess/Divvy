@@ -15,15 +15,15 @@ struct CategorySection: Section{
      
  */
     let categories: [CategoryItems] = [
-        CategoryItems(image: "popcorn", categoryName: "Meat"),
-        CategoryItems(image: "popcorn", categoryName: "Produce"),
-        CategoryItems(image: "popcorn", categoryName: "Bread"),
-        CategoryItems(image: "popcorn", categoryName: "Dairy"),
-        CategoryItems(image: "popcorn", categoryName: "Paper Products"),
-        CategoryItems(image: "popcorn", categoryName: "Beauty"),
-        CategoryItems(image: "popcorn", categoryName: "Health"),
-        CategoryItems(image: "popcorn", categoryName: "Baby & Kids"),
-        CategoryItems(image: "popcorn", categoryName: "Drinks"),
+        CategoryItems(image: "meat", categoryName: "Meat"),
+        CategoryItems(image: "fruit", categoryName: "Produce"),
+        CategoryItems(image: "bread", categoryName: "Bread"),
+        CategoryItems(image: "milk", categoryName: "Dairy"),
+        CategoryItems(image: "paper", categoryName: "Paper Products"),
+        CategoryItems(image: "makeup", categoryName: "Beauty"),
+        CategoryItems(image: "drug", categoryName: "Health"),
+        CategoryItems(image: "boy", categoryName: "Baby & Kids"),
+        CategoryItems(image: "beer", categoryName: "Drinks"),
         CategoryItems(image: "wash", categoryName: "Cleaning"),
         CategoryItems(image: "popcorn", categoryName: "Snacks")
     ]

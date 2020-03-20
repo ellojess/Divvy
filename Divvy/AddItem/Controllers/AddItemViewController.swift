@@ -63,7 +63,8 @@ class AddItemViewController: UIViewController {
         guard let itemD1 = itemNameField.text else { return }
         guard let itemD2 = itemPriceField.text else { return }
         guard let itemD3 = itemURLField.text else { return }
-        persistenceLayer.createNewMarketItem(image: "tomato", itemDetail1: itemD1, itemDetail2: itemD2, itemDetail3: itemD3)
+//        persistenceLayer.createNewMarketItem(image: "testTomato", name: itemD1, price: itemD2, quantity: itemD3)
+//        (image: "tomato", itemDetail1: itemD1, itemDetail2: itemD2, itemDetail3: itemD3)
 //        self.presentingViewController?.dismiss(animated: true, completion: nil)
         self.navigationController?.popViewController(animated: true)
     }
