@@ -20,6 +20,7 @@ class ChatViewController: UIViewController {
     @IBOutlet weak var messageTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
     
+    // database for Firestore
     let db = Firestore.firestore()
     
     var messages: [Message] = [
@@ -41,10 +42,12 @@ class ChatViewController: UIViewController {
     
     // helper func to load messages from Firestore
     func loadMessages() {
-        messages = []
-        
+        // closure called to retrieve data from database
         // https://cloud.google.com/nodejs/docs/reference/firestore/0.11.x/QueryDocumentSnapshot
-        db.collection(K.FStore.collectionName).getDocuments { (querySnapshot, error) in
+        db.collection(K.FStore.collectionName).addSnapshotListener { (querySnapshot, error) in
+
+            self.messages = []
+            
             if let e = error {
                 print("there was an issue retrieving data from Firestore. \(e)")
             } else {
