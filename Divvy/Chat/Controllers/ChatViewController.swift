@@ -34,6 +34,26 @@ class ChatViewController: UIViewController {
         title = K.appName
         
         tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
+        
+        loadMessages()
+    }
+    
+    // helper func to load messages from Firestore
+    func loadMessages() {
+        messages = []
+        
+        // https://cloud.google.com/nodejs/docs/reference/firestore/0.11.x/QueryDocumentSnapshot
+        db.collection(K.FStore.collectionName).getDocuments { (querySnapshot, error) in
+            if let e = error {
+                print("there was an issue retrieving data from firestore")
+            } else {
+                if let snapshotDocuments = querySnapshot?.documents {
+                    for doc in snapshotDocuments {
+                        print(doc.data())
+                    }
+                }
+            }
+        }
     }
     
     @IBAction func sendPressed(_ sender: Any) {
