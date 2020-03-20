@@ -23,9 +23,10 @@ class ChatViewController: UIViewController {
     let db = Firestore.firestore()
     
     var messages: [Message] = [
-        Message(sender: "1@2.com", body: "Hey"),
-        Message(sender: "3@4.com", body: "Hello"),
-        Message(sender: "1@2.com", body: "What's up?")
+        // dummy data for testing
+//        Message(sender: "1@2.com", body: "Hey"),
+//        Message(sender: "3@4.com", body: "Hello"),
+//        Message(sender: "1@2.com", body: "What's up?")
     ]
 
     override func viewDidLoad() {
@@ -45,11 +46,23 @@ class ChatViewController: UIViewController {
         // https://cloud.google.com/nodejs/docs/reference/firestore/0.11.x/QueryDocumentSnapshot
         db.collection(K.FStore.collectionName).getDocuments { (querySnapshot, error) in
             if let e = error {
-                print("there was an issue retrieving data from firestore")
+                print("there was an issue retrieving data from Firestore. \(e)")
             } else {
+                // retrieve data from Firestore
                 if let snapshotDocuments = querySnapshot?.documents {
                     for doc in snapshotDocuments {
-                        print(doc.data())
+                        let data = doc.data()
+                        // Conditional downcast sender and messageBody to string because data type is any. Note: Do not remove or change type-casting
+                        if let messageSender = data[K.FStore.senderField] as? String, let messageBody = data[K.FStore.bodyField] as? String {
+                            let newMessage = Message(sender: messageSender, body: messageBody)
+                            // add live messages to messages array, store in Firestore
+                            self.messages.append(newMessage)
+                            
+                            // trigger data source methods in tableView
+                            DispatchQueue.main.async {
+                                self.tableView.reloadData()
+                            }
+                        }
                     }
                 }
             }
