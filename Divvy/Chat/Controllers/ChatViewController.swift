@@ -20,12 +20,14 @@ class ChatViewController: UIViewController {
     @IBOutlet weak var messageTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
     
-    
+    // database for Firestore
+    let db = Firestore.firestore()
     
     var messages: [Message] = [
-        Message(sender: "1@2.com", body: "Hey"),
-        Message(sender: "3@4.com", body: "Hello"),
-        Message(sender: "1@2.com", body: "What's up?")
+        // dummy data for testing
+//        Message(sender: "1@2.com", body: "Hey"),
+//        Message(sender: "3@4.com", body: "Hello"),
+//        Message(sender: "1@2.com", body: "What's up?")
     ]
 
     override func viewDidLoad() {
@@ -34,9 +36,61 @@ class ChatViewController: UIViewController {
         title = K.appName
         
         tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
+        
+        loadMessages()
+    }
+    
+    // helper func to load messages from Firestore
+    func loadMessages() {
+        // closure called to retrieve data from database
+        // https://cloud.google.com/nodejs/docs/reference/firestore/0.11.x/QueryDocumentSnapshot
+        db.collection(K.FStore.collectionName)
+            .order(by: K.FStore.dateField)
+            .addSnapshotListener { (querySnapshot, error) in
+
+            self.messages = []
+            
+            if let e = error {
+                print("there was an issue retrieving data from Firestore. \(e)")
+            } else {
+                // retrieve data from Firestore
+                if let snapshotDocuments = querySnapshot?.documents {
+                    for doc in snapshotDocuments {
+                        let data = doc.data()
+                        // Conditional downcast sender and messageBody to string because data type is any. Note: Do not remove or change type-casting
+                        if let messageSender = data[K.FStore.senderField] as? String, let messageBody = data[K.FStore.bodyField] as? String {
+                            let newMessage = Message(sender: messageSender, body: messageBody)
+                            // add live messages to messages array, store in Firestore
+                            self.messages.append(newMessage)
+                            
+                            // trigger data source methods in tableView
+                            DispatchQueue.main.async {
+                                self.tableView.reloadData()
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     
     @IBAction func sendPressed(_ sender: Any) {
+        // if there is a message in the textfield and there is a user logged in (both not nil) then send data to firestore
+        if let messageBody = messageTextField.text, let messageSender = Auth.auth().currentUser?.email {
+            db.collection(K.FStore.collectionName).addDocument(data: [
+                K.FStore.senderField: messageSender,
+                K.FStore.bodyField: messageBody,
+                K.FStore.dateField: Date().timeIntervalSince1970
+            ]) { (error) in
+                if let e = error {
+                    print("issue saving data to firestore, \(e)")
+                } else {
+                    print("yay, data saved")
+                }
+                                                                        
+            }
+            
+        }
     }
     
 
