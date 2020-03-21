@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -47,6 +47,7 @@
 		C035B40024244C6D00653DDA /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C035B3FF24244C6D00653DDA /* ChatViewController.swift */; };
 		C035B40224244E4A00653DDA /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C035B40124244E4A00653DDA /* Message.swift */; };
 		C035B40424246EC900653DDA /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C035B40324246EC900653DDA /* ChatViewController.xib */; };
+		C035B40724260D3000653DDA /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C035B40624260D3000653DDA /* IQKeyboardManagerSwift */; };
 		C037A1A22422ED4600CD1CFB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C037A1A12422ED4600CD1CFB /* Constants.swift */; };
 		C037A1A52423524300CD1CFB /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C037A1A32423524300CD1CFB /* MessageCell.swift */; };
 		C037A1A62423524300CD1CFB /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C037A1A42423524300CD1CFB /* MessageCell.xib */; };
@@ -178,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9229CB72344F15480392CC93 /* Pods_Divvy.framework in Frameworks */,
+				C035B40724260D3000653DDA /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,6 +704,9 @@
 			dependencies = (
 			);
 			name = Divvy;
+			packageProductDependencies = (
+				C035B40624260D3000653DDA /* IQKeyboardManagerSwift */,
+			);
 			productName = Divvy;
 			productReference = C092E30423F0CA8300B79FF8 /* Divvy.app */;
 			productType = "com.apple.product-type.application";
@@ -777,6 +782,9 @@
 				Base,
 			);
 			mainGroup = C092E2FB23F0CA8300B79FF8;
+			packageReferences = (
+				C035B40524260D3000653DDA /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = C092E30523F0CA8300B79FF8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1314,6 +1322,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C035B40524260D3000653DDA /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C035B40624260D3000653DDA /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C035B40524260D3000653DDA /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		C092E31023F0CA8300B79FF8 /* Divvy.xcdatamodeld */ = {
