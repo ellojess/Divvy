@@ -26,31 +26,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$0.00" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u9V-Ly-PZD">
-                    <rect key="frame" x="42" y="330" width="296" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                </textField>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="URL" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KF9-aj-h41">
-                    <rect key="frame" x="42" y="382" width="296" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HL4-cG-QOX">
-                    <rect key="frame" x="115" y="537" width="150" height="40"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Add Item">
-                        <color key="titleColor" name="divvyGreen"/>
-                    </state>
-                    <connections>
-                        <action selector="addItemPressed:" destination="-1" eventType="touchUpInside" id="teL-P4-9st"/>
-                    </connections>
-                </button>
-                <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zau-pI-37B">
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zau-pI-37B">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                     <color key="barTintColor" name="divvyGreen"/>
                     <textAttributes key="largeTitleTextAttributes">
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -66,35 +43,69 @@
                         </navigationItem>
                     </items>
                 </navigationBar>
-                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7KH-vq-z5B">
-                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                    <items>
-                        <barButtonItem title="Item" id="iLF-zu-Ids"/>
-                    </items>
-                </toolbar>
-                <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ksu-Im-HsD">
+                <searchBar contentMode="redraw" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ksu-Im-HsD">
                     <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                     <color key="barTintColor" name="divvyGreen"/>
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
-                <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="giQ-y2-Ui7">
-                    <rect key="frame" x="16" y="424" width="343" height="105"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                </pickerView>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HkA-0p-mXP">
-                    <rect key="frame" x="42" y="273" width="296" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1bu-eS-LBp">
-                    <rect key="frame" x="112" y="102" width="150" height="150"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="QwX-Fg-sy5">
+                    <rect key="frame" x="0.0" y="93" width="375" height="574"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1bu-eS-LBp">
+                            <rect key="frame" x="112.5" y="0.0" width="150" height="150"/>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Bvl-8M-luD">
+                            <rect key="frame" x="154.5" y="162" width="66" height="142"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HkA-0p-mXP">
+                                    <rect key="frame" x="0.0" y="0.0" width="66" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$0.00" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u9V-Ly-PZD">
+                                    <rect key="frame" x="0.0" y="54" width="66" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="URL" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KF9-aj-h41">
+                                    <rect key="frame" x="0.0" y="108" width="66" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="giQ-y2-Ui7">
+                            <rect key="frame" x="27.5" y="316" width="320" height="216"/>
+                        </pickerView>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HL4-cG-QOX">
+                            <rect key="frame" x="156.5" y="544" width="62" height="30"/>
+                            <state key="normal" title="Add Item">
+                                <color key="titleColor" name="divvyGreen"/>
+                            </state>
+                            <connections>
+                                <action selector="addItemPressed:" destination="-1" eventType="touchUpInside" id="teL-P4-9st"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Bvl-8M-luD" firstAttribute="leading" secondItem="QwX-Fg-sy5" secondAttribute="leading" constant="10" id="1up-mb-ued"/>
+                        <constraint firstAttribute="trailing" secondItem="Bvl-8M-luD" secondAttribute="trailing" constant="10" id="mbI-FJ-Iaq"/>
+                    </constraints>
+                </stackView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QwX-Fg-sy5" firstAttribute="top" secondItem="Ksu-Im-HsD" secondAttribute="bottom" constant="10" id="31t-6U-fON"/>
+                <constraint firstItem="zau-pI-37B" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="406-Kw-oMo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QwX-Fg-sy5" secondAttribute="trailing" id="5I1-bC-53e"/>
+                <constraint firstItem="QwX-Fg-sy5" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="10" id="B6n-Lj-cEc"/>
+                <constraint firstItem="Ksu-Im-HsD" firstAttribute="top" secondItem="zau-pI-37B" secondAttribute="bottom" constant="8" symbolic="YES" id="KGS-ot-vtC"/>
+                <constraint firstItem="Ksu-Im-HsD" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="TjH-gI-3rw"/>
+                <constraint firstItem="zau-pI-37B" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="a3A-x5-VqJ"/>
+                <constraint firstItem="Ksu-Im-HsD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bqG-9v-Bid"/>
+                <constraint firstItem="zau-pI-37B" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="maS-gk-vDy"/>
+                <constraint firstItem="QwX-Fg-sy5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nW0-MP-cPm"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="138.40000000000001" y="152.47376311844079"/>
         </view>
