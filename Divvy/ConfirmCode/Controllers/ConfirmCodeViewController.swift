@@ -28,7 +28,7 @@ class ConfirmCodeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func VerifyTapped(_ sender: UIButton) {
-        let nextVC = MarketplaceViewController()
+        let nextVC = CollectionMarketViewController()
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
