@@ -3,33 +3,41 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ReusableChatCell" rowHeight="68" id="KGk-i7-Jjw" customClass="MessageCell" customModule="Divvy" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="391" height="68"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ReusableChatCell" rowHeight="63" id="KGk-i7-Jjw" customClass="MessageCell" customModule="Divvy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="416" height="63"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="391" height="68"/>
+                <rect key="frame" x="0.0" y="0.0" width="416" height="63"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dGP-hY-W48">
-                        <rect key="frame" x="10" y="10" width="371" height="50"/>
+                        <rect key="frame" x="10" y="10" width="396" height="40"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YouAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="MIQ-rG-FRN">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="EPq-O3-G1f"/>
+                                    <constraint firstAttribute="width" constant="40" id="XFZ-qf-a5m"/>
+                                </constraints>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAW-bC-3rh">
-                                <rect key="frame" x="0.0" y="0.0" width="323" height="50"/>
+                                <rect key="frame" x="48" y="0.0" width="300" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Afp-sl-reR">
-                                        <rect key="frame" x="10" y="10" width="303" height="30"/>
+                                        <rect key="frame" x="10" y="10" width="280" height="20"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" name="divvyPurple"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" name="divvyLightPurple"/>
                                 <constraints>
                                     <constraint firstItem="Afp-sl-reR" firstAttribute="top" secondItem="aAW-bC-3rh" secondAttribute="top" constant="10" id="VAi-tV-dgw"/>
                                     <constraint firstAttribute="bottom" secondItem="Afp-sl-reR" secondAttribute="bottom" constant="10" id="kmC-ac-8cV"/>
@@ -37,8 +45,8 @@
                                     <constraint firstAttribute="trailing" secondItem="Afp-sl-reR" secondAttribute="trailing" constant="10" id="tHL-IW-737"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.square.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0R1-RQ-i0Q">
-                                <rect key="frame" x="331" y="1" width="40" height="47.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MeAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="0R1-RQ-i0Q">
+                                <rect key="frame" x="356" y="0.0" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="IfK-OX-Mu6"/>
                                     <constraint firstAttribute="width" constant="40" id="M5Q-3U-iLg"/>
@@ -57,13 +65,21 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="label" destination="Afp-sl-reR" id="PxC-qs-ZMC"/>
+                <outlet property="leftImageView" destination="MIQ-rG-FRN" id="U8v-As-qQf"/>
                 <outlet property="messageBubble" destination="aAW-bC-3rh" id="kOo-cr-Sd1"/>
                 <outlet property="rightImageView" destination="0R1-RQ-i0Q" id="R95-lf-rAk"/>
             </connections>
-            <point key="canvasLocation" x="189.13043478260872" y="107.8125"/>
+            <point key="canvasLocation" x="210.1449275362319" y="106.13839285714285"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="person.crop.square.fill" catalog="system" width="64" height="56"/>
+        <image name="MeAvatar" width="36" height="36"/>
+        <image name="YouAvatar" width="36" height="36"/>
+        <namedColor name="divvyLightPurple">
+            <color red="0.98000001907348633" green="0.9649999737739563" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="divvyPurple">
+            <color red="0.67500001192092896" green="0.43500000238418579" blue="0.9179999828338623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
