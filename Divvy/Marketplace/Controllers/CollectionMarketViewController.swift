@@ -41,6 +41,7 @@ class CollectionMarketViewController: UIViewController {
     }
     
     func setupCollectionView(){
+        
         marketCollection = UICollectionView(frame: view.bounds, collectionViewLayout: collectionViewLayout)
         marketCollection.delegate = self
         marketCollection.dataSource = self
