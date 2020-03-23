@@ -18,6 +18,12 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate{
     }
     
     func setupViewControllers(){
+        //Setup color scheme
+        self.tabBar.barTintColor = UIColor.white
+        self.tabBar.unselectedItemTintColor = UIColor(named: "divvyGreen")
+        self.tabBar.tintColor = UIColor(named: "divvyDarkGreen")
+        
+        //======================
         let marketplace = CollectionMarketViewController()
 //        CollectionMarketViewController.title = "Marketplace"
         let navMark = UINavigationController(rootViewController: marketplace)
