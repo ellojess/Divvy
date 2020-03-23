@@ -34,8 +34,8 @@ class CollectionMarketViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Marketplace"
-        let cartButton = UIBarButtonItem(title: "Cart", style: .plain, target: self, action: #selector(openCart))
-        self.navigationItem.rightBarButtonItem = cartButton
+//        let cartButton = UIBarButtonItem(title: "Cart", style: .plain, target: self, action: #selector(openCart))
+//        self.navigationItem.rightBarButtonItem = cartButton
         self.view.backgroundColor = UIColor.white
         setupCollectionView()
     }
@@ -74,12 +74,10 @@ class CollectionMarketViewController: UIViewController {
     }
     
     //MARK: Actions
-    @objc func openCart(){
-        let nextVC = ShoppingCartViewController()
-        //The below doesn't work. Need to find best solution here
-//        self.navigationController?.popToViewController(nextVC, animated: true)
-        self.navigationController?.pushViewController(nextVC, animated: true)
-    }
+//    @objc func openCart(){
+//        let nextVC = ShoppingCartViewController()
+//        self.navigationController?.pushViewController(nextVC, animated: true)
+//    }
 }
 
 extension CollectionMarketViewController: UICollectionViewDataSource, UICollectionViewDelegate{
