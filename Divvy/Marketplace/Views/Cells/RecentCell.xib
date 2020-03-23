@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -46,8 +47,11 @@
                         </subviews>
                     </stackView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01i-EB-1g1">
-                        <rect key="frame" x="177.5" y="24" width="126.5" height="30"/>
-                        <state key="normal" title="Add"/>
+                        <rect key="frame" x="187.5" y="24" width="116.5" height="30"/>
+                        <color key="backgroundColor" name="divvyGreen"/>
+                        <state key="normal" title="Add">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
                         <connections>
                             <action selector="addPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="0d3-m4-s62"/>
                         </connections>
@@ -59,7 +63,7 @@
                 <constraint firstAttribute="bottom" secondItem="Otz-8d-znm" secondAttribute="bottom" constant="5" id="3AM-Dz-cAX"/>
                 <constraint firstItem="01i-EB-1g1" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="NDo-pA-aue"/>
                 <constraint firstItem="qNc-31-Kxp" firstAttribute="leading" secondItem="Otz-8d-znm" secondAttribute="trailing" constant="10" id="XJd-Uv-qe3"/>
-                <constraint firstItem="01i-EB-1g1" firstAttribute="leading" secondItem="qNc-31-Kxp" secondAttribute="trailing" constant="10" id="c6N-Uj-A2r"/>
+                <constraint firstItem="01i-EB-1g1" firstAttribute="leading" secondItem="qNc-31-Kxp" secondAttribute="trailing" constant="20" id="c6N-Uj-A2r"/>
                 <constraint firstItem="Otz-8d-znm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="fbC-7X-SyC"/>
                 <constraint firstAttribute="bottom" secondItem="qNc-31-Kxp" secondAttribute="bottom" constant="5" id="jaZ-04-uF0"/>
                 <constraint firstItem="Otz-8d-znm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="jz7-2m-Xdz"/>
@@ -77,4 +81,9 @@
             <point key="canvasLocation" x="336.23188405797106" y="174.77678571428569"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <namedColor name="divvyGreen">
+            <color red="0.25900000333786011" green="0.68500000238418579" blue="0.16300000250339508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
