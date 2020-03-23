@@ -26,6 +26,9 @@
 		3F818855240F8EE10023E4BF /* profileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F818854240F8EE10023E4BF /* profileImage.swift */; };
 		3F818857240F8EFB0023E4BF /* ProfileContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F818856240F8EFB0023E4BF /* ProfileContentView.swift */; };
 		3F818859240F8F0F0023E4BF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F818858240F8F0F0023E4BF /* MapView.swift */; };
+		3F929674242885030092B86E /* customCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F929673242885030092B86E /* customCategoryView.swift */; };
+		3F929678242894800092B86E /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F929676242894800092B86E /* CategoryViewController.swift */; };
+		3F929679242894800092B86E /* CategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F929677242894800092B86E /* CategoryViewController.xib */; };
 		3FC775982421637C00AD5C16 /* CollectionMarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC775962421637C00AD5C16 /* CollectionMarketViewController.swift */; };
 		3FC7759F2421648800AD5C16 /* TitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7759D2421648800AD5C16 /* TitleCell.swift */; };
 		3FC775A02421648800AD5C16 /* TitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FC7759E2421648800AD5C16 /* TitleCell.xib */; };
@@ -111,6 +114,9 @@
 		3F818854240F8EE10023E4BF /* profileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileImage.swift; sourceTree = "<group>"; };
 		3F818856240F8EFB0023E4BF /* ProfileContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileContentView.swift; sourceTree = "<group>"; };
 		3F818858240F8F0F0023E4BF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		3F929673242885030092B86E /* customCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customCategoryView.swift; sourceTree = "<group>"; };
+		3F929676242894800092B86E /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		3F929677242894800092B86E /* CategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryViewController.xib; sourceTree = "<group>"; };
 		3FC775962421637C00AD5C16 /* CollectionMarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionMarketViewController.swift; sourceTree = "<group>"; };
 		3FC7759D2421648800AD5C16 /* TitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCell.swift; sourceTree = "<group>"; };
 		3FC7759E2421648800AD5C16 /* TitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleCell.xib; sourceTree = "<group>"; };
@@ -254,9 +260,28 @@
 			path = SwiftUI;
 			sourceTree = "<group>";
 		};
+		3F92967024287D3A0092B86E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				3F9296752428895B0092B86E /* Cells */,
+				3F929673242885030092B86E /* customCategoryView.swift */,
+				3F929676242894800092B86E /* CategoryViewController.swift */,
+				3F929677242894800092B86E /* CategoryViewController.xib */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		3F9296752428895B0092B86E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		3FC7759A242163F900AD5C16 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				3F92967024287D3A0092B86E /* Category */,
 				3FC7759C2421642800AD5C16 /* SectionDetail */,
 				3FC775A3242165B900AD5C16 /* TitleSection.swift */,
 				3FC775A924218BB400AD5C16 /* CategorySection.swift */,
@@ -812,6 +837,7 @@
 				C070980123F3AD6900CEC9E4 /* VerificationViewController.xib in Resources */,
 				C070981D23F3E40A00CEC9E4 /* CurrentOrdersViewController.xib in Resources */,
 				3F2BA75623F74DA200E91400 /* LoginView.xib in Resources */,
+				3F929679242894800092B86E /* CategoryViewController.xib in Resources */,
 				C092E31423F0CA8700B79FF8 /* Assets.xcassets in Resources */,
 				3FC775B42421994200AD5C16 /* RecentCell.xib in Resources */,
 				C070981123F3AE0000CEC9E4 /* MarketplaceView.xib in Resources */,
@@ -951,7 +977,9 @@
 				3FC775AA24218BB400AD5C16 /* CategorySection.swift in Sources */,
 				3FC775B02421969F00AD5C16 /* RecentSection.swift in Sources */,
 				3FC775A72421698300AD5C16 /* TabBarController.swift in Sources */,
+				3F929678242894800092B86E /* CategoryViewController.swift in Sources */,
 				3F64323A2424145E002B2522 /* TestViewController.swift in Sources */,
+				3F929674242885030092B86E /* customCategoryView.swift in Sources */,
 				C092E31223F0CA8300B79FF8 /* Divvy.xcdatamodeld in Sources */,
 				C070981023F3AE0000CEC9E4 /* MarketplaceViewController.swift in Sources */,
 				C035B40224244E4A00653DDA /* Message.swift in Sources */,

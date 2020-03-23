@@ -93,5 +93,13 @@ extension CollectionMarketViewController: UICollectionViewDataSource, UICollecti
         sections[indexPath.section].configureCell(collectionView: marketCollection, indexPath: indexPath)
     }
     
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        let cell = collectionView.cellForItem(at: indexPath)
+//        let catVC = CategoryViewController()
+//        catVC.pageTitle = cell.
+//        self.navigationController?.pushViewController(catVC, animated: true)
+//        print("Selected an Category")
+//    }
+    
     
 }
