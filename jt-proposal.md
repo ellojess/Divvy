@@ -38,17 +38,26 @@ Currently Divvy's prototype and MVP is functional, I would like to continue to r
 
 **Start coding and finish “Skateboard” feature before beginning “Bike”.** 
 
-Be able to CRUD items in marketplace 
+Implement Firebase authentication and authorization for Login/Signup Page. Improve UX with prompts regarding password/email and "Continue as Guest" button to provide actionable instructions 
+
+Login: https://github.com/ellojess/Divvy/tree/master/Divvy/Login
+
+Signup: https://github.com/ellojess/Divvy/tree/master/Divvy/SignUp
+
 
 ## Bike
 **ONE additional features that get you closer to your idealized product. Examples: CRUD 2nd resource, add comments, API use, authentication, library use** 
 
-Use Firebase for Chatoom feature 
+Implement Firebase and Firestore for Chatoom feature 
+
+Chatroom code can be viewed here: https://github.com/ellojess/Divvy/tree/master/Divvy/Chat
 
 ## Car
 **ONE additional feature** 
 
-Work out kinks in web scraper and implement the web scraper API into the iOS framework
+Work out kinks in web scraper and implement the web scraper API into the iOS framework. Currently web scraper can only scrape categories but it needs to be able to scrape price, image, and other details as well.
+
+Web Scraper can be found here: https://github.com/ellojess/MakeScraper
 
 ## Personal Achievement Goals:
 
@@ -64,7 +73,7 @@ Work out kinks in web scraper and implement the web scraper API into the iOS fra
 
 **Insert wireframe pictures here**
 
-https://drive.google.com/drive/folders/1unBJLP-4GyDM9vyCHhDi7Jk-y73QeKXG?usp=sharing
+Divvy: https://drive.google.com/drive/folders/1unBJLP-4GyDM9vyCHhDi7Jk-y73QeKXG?usp=sharing
 
 ## Evaluation
 
@@ -92,4 +101,4 @@ https://drive.google.com/drive/folders/1unBJLP-4GyDM9vyCHhDi7Jk-y73QeKXG?usp=sha
 > Jessica Trinh / Mar 16, 2020
 
 **Make School Advisor Name**
-> Jess D.
+> Jessamyn

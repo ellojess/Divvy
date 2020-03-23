@@ -5,7 +5,11 @@ Divvy is a platform where users will be able to collaborate on bulk items with o
 These items include food, household items, pet product, baby products, and more! 
 
 ## How to Install 
-Note: Divvy is still in the process of developmemt. Follow the link here <> to stay up to date with our team's development process. 
+Note: Divvy is still in the process of developmemt. Follow the link here: https://ellojess.github.io/Divvy-Landing-Page/ to stay up to date with our team's development process. 
+
+In order to preview this app, you will need to clone this repository and open it in Xcode
+ - If you do not have Xcode you can download it [here](https://developer.apple.com/xcode/)
+ - After cloning, be sure to enable privacy and notifications settings for the app to work
 
 ## How To Use Divvy 
 1. Install the app onto your mobile device 
@@ -18,7 +22,7 @@ Note: Divvy recommends users meet in a public location and refrain from giving o
 6. Last but not least, enjoy(:
 
 ## Keep an Eye Out for Our Updates and Latest Features 
-checklist:
+Checklist:
 
 - [ ] Community Chatroom: look forward to being able to connect with those in your community for non-transaction related fun! 
 
@@ -30,10 +34,13 @@ checklist:
 Submit a request here: <link> 
 
 ## Meet the team: 
-Jessica: Product Manager, Project Manager, Technical Manager, Software Engineer, iOS Developer
+
+### Current Members
+Jessica: Product Manager, Technical Manager, Software Engineer, iOS Developer
 
 Henry: Front End Lead, Software Engineer, iOS Developer 
 
+### Past Members
 Gonzo: Design Lead, Software Engineer, iOS Developer 
 
 Max: Back End Lead, Software Engineer, Web Developer 
