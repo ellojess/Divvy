@@ -21,7 +21,7 @@ struct RecentSection: Section{
     ]
     
     func layoutSection() -> NSCollectionLayoutSection? {
-        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.5), heightDimension: .fractionalHeight(0.33))
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(0.33))
         
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         
