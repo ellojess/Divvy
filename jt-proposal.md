@@ -48,7 +48,9 @@ Use Firebase for Chatoom feature
 ## Car
 **ONE additional feature** 
 
-Work out kinks in web scraper and implement the web scraper API into the iOS framework
+Work out kinks in web scraper and implement the web scraper API into the iOS framework. Currently web scraper can only scrape categories but it needs to be able to scrape price, image, and other details as well.
+
+Web Scraper Repo can be found here: https://github.com/ellojess/MakeScraper
 
 ## Personal Achievement Goals:
 
@@ -64,7 +66,7 @@ Work out kinks in web scraper and implement the web scraper API into the iOS fra
 
 **Insert wireframe pictures here**
 
-https://drive.google.com/drive/folders/1unBJLP-4GyDM9vyCHhDi7Jk-y73QeKXG?usp=sharing
+Divvy: https://drive.google.com/drive/folders/1unBJLP-4GyDM9vyCHhDi7Jk-y73QeKXG?usp=sharing
 
 ## Evaluation
 
@@ -92,4 +94,4 @@ https://drive.google.com/drive/folders/1unBJLP-4GyDM9vyCHhDi7Jk-y73QeKXG?usp=sha
 > Jessica Trinh / Mar 16, 2020
 
 **Make School Advisor Name**
-> Jess D.
+> Jessamyn
