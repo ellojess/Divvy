@@ -25,6 +25,7 @@ class ShoppingCartViewController: UIViewController {
     //MARK: View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
+//        cartTable.reloadData()
 //        totalPriceLabel.text = "$\(totalPrice)"
         setupCart()
     }

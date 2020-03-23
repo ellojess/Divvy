@@ -30,6 +30,8 @@ class RecentCell: UICollectionViewCell {
     }
     
     @IBAction func addPressed(_ sender: UIButton) {
+//        let cart = ShoppingCartViewController()
+//        cart.testData.append(MarketItems(image: "", name: self.itemNameLabel.text!, price: 0.0, quantity: 0))
         print("recent add pressed")
     }
 }
