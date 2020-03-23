@@ -23,7 +23,7 @@ class RecentCell: UICollectionViewCell {
     
     func setup(image: String, name: String, quantity: Int, price: Double){
         itemImage.layer.cornerRadius = 10
-        itemImage.image = UIImage(named: "image")
+        itemImage.image = UIImage(named: image)
         itemNameLabel.text = name
         quantityLabel.text = "Quantity: \(quantity)"
         priceLabel.text = "$\(price)"
