@@ -20,37 +20,51 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fCw-YH-Kbn">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fCw-YH-Kbn">
+                    <rect key="frame" x="0.0" y="-2" width="375" height="44"/>
                     <items>
                         <navigationItem title="Chat" id="Kca-16-L96"/>
                     </items>
                 </navigationBar>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write a message..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zLq-y9-wfa">
-                    <rect key="frame" x="16" y="576" width="279" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write a message..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zLq-y9-wfa">
+                    <rect key="frame" x="10" y="623" width="324.5" height="34"/>
                     <color key="textColor" name="GoogleBlue"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oQw-Nv-WE1">
-                    <rect key="frame" x="0.0" y="44" width="375" height="524"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                </tableView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYz-gn-WJF">
-                    <rect key="frame" x="317" y="576" width="58" height="24"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYz-gn-WJF">
+                    <rect key="frame" x="344.5" y="623" width="20.5" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <color key="tintColor" name="GoogleBlue"/>
-                    <state key="normal" title="Button" image="paperplane.fill" catalog="system"/>
+                    <state key="normal" image="paperplane.fill" catalog="system"/>
                     <connections>
                         <action selector="sendPressed:" destination="-1" eventType="touchUpInside" id="GFR-Pw-rSE"/>
                     </connections>
                 </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oQw-Nv-WE1">
+                    <rect key="frame" x="0.0" y="42" width="375" height="571"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="571" id="uku-kB-js0"/>
+                    </constraints>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LYz-gn-WJF" firstAttribute="leading" secondItem="zLq-y9-wfa" secondAttribute="trailing" constant="10" id="76z-9b-zqj"/>
+                <constraint firstItem="LYz-gn-WJF" firstAttribute="top" secondItem="oQw-Nv-WE1" secondAttribute="bottom" constant="10" id="77h-to-D2C"/>
+                <constraint firstItem="oQw-Nv-WE1" firstAttribute="trailing" secondItem="fCw-YH-Kbn" secondAttribute="trailing" id="7cq-FY-gmK"/>
+                <constraint firstItem="oQw-Nv-WE1" firstAttribute="leading" secondItem="fCw-YH-Kbn" secondAttribute="leading" id="Ngr-5t-EoE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LYz-gn-WJF" secondAttribute="trailing" constant="10" id="O6l-9G-IqM"/>
+                <constraint firstItem="zLq-y9-wfa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Pts-Oz-DQk"/>
+                <constraint firstItem="oQw-Nv-WE1" firstAttribute="top" secondItem="fCw-YH-Kbn" secondAttribute="bottom" id="Z4i-qX-oWk"/>
+                <constraint firstItem="oQw-Nv-WE1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hNe-L1-Pkc"/>
+                <constraint firstItem="zLq-y9-wfa" firstAttribute="top" secondItem="oQw-Nv-WE1" secondAttribute="bottom" constant="10" id="k5r-hH-uCy"/>
+                <constraint firstItem="LYz-gn-WJF" firstAttribute="leading" secondItem="zLq-y9-wfa" secondAttribute="trailing" constant="10" id="tB7-yL-7F1"/>
+                <constraint firstAttribute="trailing" secondItem="oQw-Nv-WE1" secondAttribute="trailing" id="u13-LB-02f"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="zLq-y9-wfa" secondAttribute="bottom" constant="10" id="v5w-1m-TeM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="LYz-gn-WJF" secondAttribute="bottom" constant="10" id="yqi-MP-PIJ"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="138.40000000000001" y="152.47376311844079"/>
         </view>
