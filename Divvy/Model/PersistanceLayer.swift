@@ -10,21 +10,32 @@ import Foundation
 
 struct PersistenceLayer {
     private(set) var items: [MarketItems] = []
+    private(set) var cart: [MarketItems] = []
     private static let userDefaultsHabitsKeyValue = "ITEMS_ARRAY"
 
     init() {
         self.loadItems()
     }
-    
+    //For the market place
     private mutating func loadItems(){
         let userDefaults = UserDefaults.standard
         guard
-            let habitData = userDefaults.data(forKey: PersistenceLayer.userDefaultsHabitsKeyValue),
-            let items = try? JSONDecoder().decode([MarketItems].self, from: habitData) else {
+            let itemData = userDefaults.data(forKey: PersistenceLayer.userDefaultsHabitsKeyValue),
+            let items = try? JSONDecoder().decode([MarketItems].self, from: itemData) else {
                 return
         }
         self.items = items
-        
+    }
+    
+    //for the cart
+    private mutating func loadCartItems(){
+        let userDefaults = UserDefaults.standard
+        guard
+            let cartItemData = userDefaults.data(forKey: PersistenceLayer.userDefaultsHabitsKeyValue),
+            let cartItems = try? JSONDecoder().decode([MarketItems].self, from: cartItemData) else {
+                return
+            }
+        self.cart = cartItems
     }
 //==============================================================
     
@@ -39,10 +50,7 @@ struct PersistenceLayer {
 
            return newItem
     }
-    
-//    mutating func sendMarketItemToCart() -> MarketItems{
-//        
-//    }
+
     
     //What allows the item data to be saved.
     private func saveItems() {
