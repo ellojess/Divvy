@@ -53,7 +53,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func continueWithGoogleTapped(_ sender: UIButton) {
-        let nextVC = MarketplaceViewController()
+        let nextVC = TabBarController()
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     @IBAction func CreateAccountTapped(_ sender: UIButton) {
