@@ -49,7 +49,7 @@ class ShoppingCartViewController: UIViewController {
         formatter.numberStyle = .currency
         formatter.locale = Locale.current
         if let properTotal = formatter.string(from: totalPrice as NSNumber){
-            totalPriceLabel.text = "$\(totalPrice)"
+            totalPriceLabel.text = "\(properTotal)"
         }
     }
     @IBAction func checkoutPressed(_ sender: UIButton) {
