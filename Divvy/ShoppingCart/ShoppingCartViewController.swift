@@ -45,7 +45,12 @@ class ShoppingCartViewController: UIViewController {
         for item in testData{
             totalPrice += item.price
         }
-        totalPriceLabel.text = "$\(totalPrice)"
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.locale = Locale.current
+        if let properTotal = formatter.string(from: totalPrice as NSNumber){
+            totalPriceLabel.text = "$\(totalPrice)"
+        }
     }
     @IBAction func checkoutPressed(_ sender: UIButton) {
         print("Checkout pressed")
@@ -61,7 +66,8 @@ extension ShoppingCartViewController: UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ShoppingCartCell", for: indexPath) as! ShoppingCartCell
-        cell.setup(name: testData[indexPath.row].name, image: testData[indexPath.row].image, quantity: testData[indexPath.row].quantity, price: testData[indexPath.row].price)
+        let item = testData[indexPath.row]
+        cell.setup(name: item.name, image: item.image, quantity: item.quantity, price: item.price)
 //        totalPrice = totalPrice + testData[indexPath.row].price
         return cell
     }

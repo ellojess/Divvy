@@ -28,7 +28,12 @@ class ShoppingCartCell: UITableViewCell {
         itemName.text = name
         itemImage.image = UIImage(named: image)
         quantityLabel.text = "Quantity: \(quantity)"
-        priceLabel.text = "$\(price)"
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.locale = Locale.current
+        if let properPrice = formatter.string(from: price as NSNumber){
+            priceLabel.text = "\(properPrice)"
+        }
     }
     
 }

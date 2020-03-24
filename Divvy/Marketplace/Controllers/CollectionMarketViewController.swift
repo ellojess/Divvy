@@ -75,7 +75,7 @@ class CollectionMarketViewController: UIViewController {
     
     //MARK: Actions
     @objc func addItem(){
-        let addVC = AddItemViewController()
+        let addVC = AddingItemViewController()
         self.navigationController?.pushViewController(addVC, animated: true)
     }
 }

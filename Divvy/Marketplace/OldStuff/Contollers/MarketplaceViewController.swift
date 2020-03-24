@@ -76,8 +76,8 @@ class MarketplaceViewController: UIViewController {
     //MARK: Buttons that link the views all together
     //=======Top=======
     @IBAction func AddItemTapped(_ sender: UIBarButtonItem) {
-        let nextVC = AddItemViewController()
-        self.navigationController?.pushViewController(nextVC, animated: true)
+//        let nextVC = AddItemViewController()
+//        self.navigationController?.pushViewController(nextVC, animated: true)
         //DO NOT KNOW if code bellow needed or not
 //        let addHabitVC = AddHabitViewController.instantiate()
 //        let navigationController = UINavigationController(rootViewController: addHabitVC)
