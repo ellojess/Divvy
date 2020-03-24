@@ -54,7 +54,15 @@ class LoginViewController: UIViewController {
     
     @IBAction func continueWithGoogleTapped(_ sender: UIButton) {
         let nextVC = TabBarController()
+        
+        let alert = UIAlertController(title: "Hello, Guest! Welcome to Divvy(:", message: "You will not have access to all the features a verified member would, such as being able to message and talk to other members. But feel free to explore and make an account when you're ready", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("Okay!", comment: "Default action"), style: .default, handler: { _ in
+        NSLog("The \"OK\" alert occured.")
+        }))
         self.navigationController?.pushViewController(nextVC, animated: true)
+        self.present(alert, animated: true, completion: nil)
+        
+//        self.navigationController?.pushViewController(nextVC, animated: true)
     }
     @IBAction func CreateAccountTapped(_ sender: UIButton) {
         let nextVC = SignUpViewController()
