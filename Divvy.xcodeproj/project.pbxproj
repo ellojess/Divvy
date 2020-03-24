@@ -41,6 +41,9 @@
 		3FC775B02421969F00AD5C16 /* RecentSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC775AF2421969F00AD5C16 /* RecentSection.swift */; };
 		3FC775B32421994200AD5C16 /* RecentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC775B12421994200AD5C16 /* RecentCell.swift */; };
 		3FC775B42421994200AD5C16 /* RecentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FC775B22421994200AD5C16 /* RecentCell.xib */; };
+		3FE0F91424295F990038795D /* AddItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FE0F91324295F990038795D /* AddItemView.xib */; };
+		3FE0F917242968620038795D /* AddingItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE0F915242968620038795D /* AddingItemViewController.swift */; };
+		3FE0F918242968620038795D /* AddingItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FE0F916242968620038795D /* AddingItemViewController.xib */; };
 		84F3452447B090C4A68A9D11 /* Pods_DivvyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DBBB46B7ECF60DD454D258 /* Pods_DivvyTests.framework */; };
 		9229CB72344F15480392CC93 /* Pods_Divvy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07E54F0068012A230BA7C9D /* Pods_Divvy.framework */; };
 		C027676224032458000F41F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C027676124032458000F41F8 /* GoogleService-Info.plist */; };
@@ -64,8 +67,6 @@
 		C070981123F3AE0000CEC9E4 /* MarketplaceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C070980F23F3AE0000CEC9E4 /* MarketplaceView.xib */; };
 		C070981C23F3E40A00CEC9E4 /* CurrentOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070981A23F3E40A00CEC9E4 /* CurrentOrdersViewController.swift */; };
 		C070981D23F3E40A00CEC9E4 /* CurrentOrdersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C070981B23F3E40A00CEC9E4 /* CurrentOrdersViewController.xib */; };
-		C070982323F3E68200CEC9E4 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070982123F3E68200CEC9E4 /* AddItemViewController.swift */; };
-		C070982423F3E68200CEC9E4 /* AddItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C070982223F3E68200CEC9E4 /* AddItemViewController.xib */; };
 		C092E30823F0CA8300B79FF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C092E30723F0CA8300B79FF8 /* AppDelegate.swift */; };
 		C092E30A23F0CA8300B79FF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C092E30923F0CA8300B79FF8 /* SceneDelegate.swift */; };
 		C092E30C23F0CA8300B79FF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C092E30B23F0CA8300B79FF8 /* ViewController.swift */; };
@@ -129,6 +130,9 @@
 		3FC775AF2421969F00AD5C16 /* RecentSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSection.swift; sourceTree = "<group>"; };
 		3FC775B12421994200AD5C16 /* RecentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCell.swift; sourceTree = "<group>"; };
 		3FC775B22421994200AD5C16 /* RecentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentCell.xib; sourceTree = "<group>"; };
+		3FE0F91324295F990038795D /* AddItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddItemView.xib; sourceTree = "<group>"; };
+		3FE0F915242968620038795D /* AddingItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingItemViewController.swift; sourceTree = "<group>"; };
+		3FE0F916242968620038795D /* AddingItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddingItemViewController.xib; sourceTree = "<group>"; };
 		9602DAA8C4B345C79FC3EED5 /* Pods-Divvy-DivvyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Divvy-DivvyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Divvy-DivvyUITests/Pods-Divvy-DivvyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		ADCB678D8EE13F0B583E8271 /* Pods-Divvy-DivvyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Divvy-DivvyUITests.release.xcconfig"; path = "Target Support Files/Pods-Divvy-DivvyUITests/Pods-Divvy-DivvyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B5DBBB46B7ECF60DD454D258 /* Pods_DivvyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DivvyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,8 +157,6 @@
 		C070980F23F3AE0000CEC9E4 /* MarketplaceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketplaceView.xib; sourceTree = "<group>"; };
 		C070981A23F3E40A00CEC9E4 /* CurrentOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentOrdersViewController.swift; sourceTree = "<group>"; };
 		C070981B23F3E40A00CEC9E4 /* CurrentOrdersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrentOrdersViewController.xib; sourceTree = "<group>"; };
-		C070982123F3E68200CEC9E4 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
-		C070982223F3E68200CEC9E4 /* AddItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddItemViewController.xib; sourceTree = "<group>"; };
 		C092E30423F0CA8300B79FF8 /* Divvy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Divvy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C092E30723F0CA8300B79FF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C092E30923F0CA8300B79FF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -420,7 +422,8 @@
 		C070981F23F3E66300CEC9E4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C070982223F3E68200CEC9E4 /* AddItemViewController.xib */,
+				3FE0F916242968620038795D /* AddingItemViewController.xib */,
+				3FE0F91324295F990038795D /* AddItemView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -428,7 +431,7 @@
 		C070982023F3E66B00CEC9E4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C070982123F3E68200CEC9E4 /* AddItemViewController.swift */,
+				3FE0F915242968620038795D /* AddingItemViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -824,17 +827,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FC775A02421648800AD5C16 /* TitleCell.xib in Resources */,
-				C070982423F3E68200CEC9E4 /* AddItemViewController.xib in Resources */,
 				C035B40424246EC900653DDA /* ChatViewController.xib in Resources */,
 				C070980923F3ADBC00CEC9E4 /* ProfileView.xib in Resources */,
 				C031680323F47DD20094A6F3 /* ConfirmCodeViewController.xib in Resources */,
 				3F16CF1523FC755900DCECC4 /* MarketItemViewCell.xib in Resources */,
 				3FC775AE24218E6800AD5C16 /* CategoryCell.xib in Resources */,
+				3FE0F918242968620038795D /* AddingItemViewController.xib in Resources */,
 				C070980523F3AD8C00CEC9E4 /* SignUpView.xib in Resources */,
 				3F0174B72422C3E800D493A3 /* ShoppingCartCell.xib in Resources */,
 				C037A1A62423524300CD1CFB /* MessageCell.xib in Resources */,
 				C092E31723F0CA8700B79FF8 /* LaunchScreen.storyboard in Resources */,
 				C070980123F3AD6900CEC9E4 /* VerificationViewController.xib in Resources */,
+				3FE0F91424295F990038795D /* AddItemView.xib in Resources */,
 				C070981D23F3E40A00CEC9E4 /* CurrentOrdersViewController.xib in Resources */,
 				3F2BA75623F74DA200E91400 /* LoginView.xib in Resources */,
 				3F929679242894800092B86E /* CategoryViewController.xib in Resources */,
@@ -987,7 +991,6 @@
 				3FC775A4242165B900AD5C16 /* TitleSection.swift in Sources */,
 				C070980023F3AD6900CEC9E4 /* VerificationViewController.swift in Sources */,
 				3FC775AD24218E6800AD5C16 /* CategoryCell.swift in Sources */,
-				C070982323F3E68200CEC9E4 /* AddItemViewController.swift in Sources */,
 				C070980C23F3ADD800CEC9E4 /* LoginViewController.swift in Sources */,
 				3F16CF1423FC755900DCECC4 /* MarketItemViewCell.swift in Sources */,
 				3F132D292406F61E00972879 /* PersistanceLayer.swift in Sources */,
@@ -996,6 +999,7 @@
 				3FC775B32421994200AD5C16 /* RecentCell.swift in Sources */,
 				3F0174B62422C3E800D493A3 /* ShoppingCartCell.swift in Sources */,
 				C070981C23F3E40A00CEC9E4 /* CurrentOrdersViewController.swift in Sources */,
+				3FE0F917242968620038795D /* AddingItemViewController.swift in Sources */,
 				3F2BA75823F74F1A00E91400 /* LoginView.swift in Sources */,
 				3F2BA76023F774ED00E91400 /* ProfileView.swift in Sources */,
 				C070980823F3ADBC00CEC9E4 /* ProfileViewController.swift in Sources */,

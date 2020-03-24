@@ -9,6 +9,8 @@
 import UIKit
 
 struct RecentSection: Section{
+    private var persistence = PersistenceLayer()
+//    var numberOfItems: Int = PersistenceLayer().items.count
     var numberOfItems: Int = 6
     
     let testData: [MarketItems] = [
@@ -38,7 +40,12 @@ struct RecentSection: Section{
     
     func configureCell(collectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: RecentCell.identifier), for: indexPath) as! RecentCell
-        cell.setup(image: testData[indexPath.row].image, name: testData[indexPath.row].name, quantity: testData[indexPath.row].quantity, price: testData[indexPath.row].price)
+//        let item = persistence.items[indexPath.row]
+        let item = testData[indexPath.row]
+//        let formatter = NumberFormatter()
+//        formatter.numberStyle = .currency
+//        formatter.locale = Locale.current
+        cell.setup(image: item.image, name: item.name, quantity: item.quantity, price: item.price)
         return cell
     }
     
