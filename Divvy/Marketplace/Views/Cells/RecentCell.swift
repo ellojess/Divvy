@@ -18,10 +18,18 @@ class RecentCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        setup()
+//        setup()
     }
     
-    func setup(){
+    func setup(image: String, name: String, quantity: Int, price: Double){
         itemImage.layer.cornerRadius = 10
+        itemImage.image = UIImage(named: image)
+        itemNameLabel.text = name
+        quantityLabel.text = "Quantity: \(quantity)"
+        priceLabel.text = "$\(price)"
+    }
+    
+    @IBAction func addPressed(_ sender: UIButton) {
+        print("recent add pressed")
     }
 }

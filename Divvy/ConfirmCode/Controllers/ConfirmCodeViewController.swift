@@ -28,20 +28,8 @@ class ConfirmCodeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func VerifyTapped(_ sender: UIButton) {
-        let nextVC = MarketplaceViewController()
+        let nextVC = CollectionMarketViewController()
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

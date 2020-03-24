@@ -9,7 +9,7 @@
 import Foundation
 
 struct PersistenceLayer {
-    private(set) var items: [MarketItem] = []
+    private(set) var items: [MarketItems] = []
     private static let userDefaultsHabitsKeyValue = "ITEMS_ARRAY"
 
     init() {
@@ -20,7 +20,7 @@ struct PersistenceLayer {
         let userDefaults = UserDefaults.standard
         guard
             let habitData = userDefaults.data(forKey: PersistenceLayer.userDefaultsHabitsKeyValue),
-            let items = try? JSONDecoder().decode([MarketItem].self, from: habitData) else {
+            let items = try? JSONDecoder().decode([MarketItems].self, from: habitData) else {
                 return
         }
         self.items = items
@@ -31,15 +31,19 @@ struct PersistenceLayer {
     // Step 7
     @discardableResult
 
-       // This Generates the item and saves it.
-    mutating func createNewMarketItem(image: String, itemDetail1: String,itemDetail2: String,itemDetail3: String) -> MarketItem {
-
-           let newItem = MarketItem(image: image, itemDetail1: itemDetail1 , itemDetail2: itemDetail2, itemDetail3: itemDetail3)
+    // This Generates the item and saves it.
+    mutating func createNewMarketItem(image: String, name: String, price: Double, quantity: Int) -> MarketItems {
+        let newItem = MarketItems(image: image, name: name, price: price, quantity: quantity)
            self.items.insert(newItem, at: 0) // Prepend the habits to the array
            self.saveItems()
 
            return newItem
-       }
+    }
+    
+//    mutating func sendMarketItemToCart() -> MarketItems{
+//        
+//    }
+    
     //What allows the item data to be saved.
     private func saveItems() {
         // Step 9

@@ -24,9 +24,79 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DivvyLogo" translatesAutoresizingMaskIntoConstraints="NO" id="9Y1-xy-20M">
-                    <rect key="frame" x="67" y="58" width="240" height="211"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="OIk-60-0Zg">
+                    <rect key="frame" x="100" y="300" width="175" height="84"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ygw-8v-vse">
+                            <rect key="frame" x="0.0" y="0.0" width="175" height="34"/>
+                            <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XqK-MR-oDT">
+                            <rect key="frame" x="0.0" y="50" width="175" height="34"/>
+                            <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="RU3-fP-tQo">
+                    <rect key="frame" x="80" y="404" width="215" height="171.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="E00-RE-QfD">
+                            <rect key="frame" x="0.0" y="0.0" width="215" height="83"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgv-4p-q7j">
+                                    <rect key="frame" x="0.0" y="0.0" width="215" height="34"/>
+                                    <color key="backgroundColor" name="divvyGreen"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                    <state key="normal" title="Login">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="loginViewTapped:" destination="-1" eventType="touchUpInside" id="m4u-Pp-In3"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTQ-IZ-iH5">
+                                    <rect key="frame" x="0.0" y="51" width="215" height="32"/>
+                                    <color key="backgroundColor" name="GoogleBlue"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                    <state key="normal" title="Continue with Google">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="continueWithGoogleTapped:" destination="-1" eventType="touchUpInside" id="41f-9L-fm4"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2e-8K-t20">
+                            <rect key="frame" x="99.5" y="102" width="16" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fh-e2-nyb">
+                            <rect key="frame" x="37" y="141.5" width="141" height="30"/>
+                            <state key="normal" title="Create New Account">
+                                <color key="titleColor" name="divvyGreen"/>
+                            </state>
+                            <connections>
+                                <action selector="CreateAccountTapped:" destination="-1" eventType="touchUpInside" id="ta6-h6-37L"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="E00-RE-QfD" secondAttribute="trailing" id="9zB-0O-cbB"/>
+                    </constraints>
+                </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DivvyLogo" translatesAutoresizingMaskIntoConstraints="NO" id="9Y1-xy-20M">
+                    <rect key="frame" x="67.5" y="40" width="240" height="240"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="Rdn-Ux-rzN"/>
+                        <constraint firstAttribute="height" constant="240" id="yac-6j-qou"/>
+                    </constraints>
                 </imageView>
                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ygw-8v-vse">
                     <rect key="frame" x="97" y="307" width="181" height="34"/>
@@ -85,6 +155,16 @@
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="OIk-60-0Zg" firstAttribute="top" secondItem="9Y1-xy-20M" secondAttribute="bottom" constant="20" id="0Ki-vd-UCr"/>
+                <constraint firstItem="9Y1-xy-20M" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="40" id="FwF-Rh-IMi"/>
+                <constraint firstItem="9Y1-xy-20M" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="NUF-Me-zJo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="RU3-fP-tQo" secondAttribute="trailing" constant="80" id="XAC-gD-Wq1"/>
+                <constraint firstItem="RU3-fP-tQo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="80" id="i94-Qv-rED"/>
+                <constraint firstItem="RU3-fP-tQo" firstAttribute="top" secondItem="OIk-60-0Zg" secondAttribute="bottom" constant="20" id="iSw-6k-rba"/>
+                <constraint firstItem="OIk-60-0Zg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="100" id="iTc-zg-oXv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="OIk-60-0Zg" secondAttribute="trailing" constant="100" id="pYh-kZ-wo1"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="138.40000000000001" y="152.47376311844079"/>
         </view>
