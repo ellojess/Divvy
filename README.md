@@ -31,7 +31,10 @@ Checklist:
 - [ ]  Friends Circle: Be able to keep track of those you plan on continuing your Divvy relationship/Divvyship with.
 
 ### Have an idea for a feature you'd like to see in Divvy? 
-Submit a request here: <link> 
+Feel free to send a message!
+
+#### Pitch Deck: 
+[here](https://docs.google.com/presentation/d/1FMkew1JQR_2c2gP4QulJ81nxlaiuahiWjmOFP7TUWOI/edit#slide=id.g35ed75ccf_044)
 
 ## Meet the team: 
 
