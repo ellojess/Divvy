@@ -5,7 +5,7 @@ Divvy is a platform where users will be able to collaborate on bulk items with o
 These items include food, household items, pet product, baby products, and more! 
 
 ## How to Install 
-Note: Divvy is still in the process of developmemt. Follow the link here: https://ellojess.github.io/Divvy-Landing-Page/ to stay up to date with our team's development process. 
+Note: Divvy is still in the process of developmemt. Follow the link  [here](https://ellojess.github.io/Divvy-Landing-Page/) to stay up to date with our team's development process. 
 
 In order to preview this app, you will need to clone this repository and open it in Xcode
  - If you do not have Xcode you can download it [here](https://developer.apple.com/xcode/)
